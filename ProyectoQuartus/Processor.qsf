@@ -73,3 +73,5 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE instructionDecoder.sv
+set_global_assignment -name MIF_FILE Processor.mif
+set_global_assignment -name QIP_FILE instructionMemory.qip
