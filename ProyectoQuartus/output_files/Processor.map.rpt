@@ -1,0 +1,829 @@
+Analysis & Synthesis report for Processor
+Fri Oct 28 16:57:04 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
+ 12. Parameter Settings for User Entity Instance: Operations:myOperations
+ 13. Parameter Settings for User Entity Instance: Operations:myOperations|sign_magnitud_to_complement:to_comp_1
+ 14. Parameter Settings for User Entity Instance: Operations:myOperations|sign_magnitud_to_complement:to_comp_2
+ 15. Parameter Settings for User Entity Instance: Operations:myOperations|adder:myadder
+ 16. Parameter Settings for User Entity Instance: Operations:myOperations|subtracter:mysubstracter
+ 17. Parameter Settings for User Entity Instance: Operations:myOperations|multiplier:mymultiplier
+ 18. Parameter Settings for User Entity Instance: Operations:myOperations|division:mydiv
+ 19. Parameter Settings for User Entity Instance: Operations:myOperations|mod:mymod
+ 20. Parameter Settings for User Entity Instance: Operations:myOperations|shifL:myshiftL
+ 21. Parameter Settings for User Entity Instance: Operations:myOperations|shifR:myshiftR
+ 22. Parameter Settings for User Entity Instance: Operations:myOperations|bitwise_and:myand
+ 23. Parameter Settings for User Entity Instance: Operations:myOperations|bitwise_or:myor
+ 24. Parameter Settings for User Entity Instance: Operations:myOperations|bitwise_xor:myxor
+ 25. Parameter Settings for User Entity Instance: Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1
+ 26. Parameter Settings for User Entity Instance: Operations:myOperations|complement_2_to_sign_magnitud:to_mag_2
+ 27. Parameter Settings for User Entity Instance: Operations:myOperations|complement_2_to_sign_magnitud:to_mag_3
+ 28. Parameter Settings for User Entity Instance: Operations:myOperations|complement_2_to_sign_magnitud:to_mag_4
+ 29. Parameter Settings for User Entity Instance: Operations:myOperations|complement_2_to_sign_magnitud:to_mag_5
+ 30. Parameter Settings for User Entity Instance: mux_9_1:myMux
+ 31. Parameter Settings for User Entity Instance: FlagsM:myFlags
+ 32. Parameter Settings for Inferred Entity Instance: Operations:myOperations|division:mydiv|lpm_divide:Div0
+ 33. Parameter Settings for Inferred Entity Instance: Operations:myOperations|mod:mymod|lpm_divide:Mod0
+ 34. Port Connectivity Checks: "mux_9_1:myMux"
+ 35. Port Connectivity Checks: "Operations:myOperations|bitwise_xor:myxor"
+ 36. Port Connectivity Checks: "Operations:myOperations|bitwise_or:myor"
+ 37. Port Connectivity Checks: "Operations:myOperations|bitwise_and:myand"
+ 38. Port Connectivity Checks: "Operations:myOperations|shifR:myshiftR"
+ 39. Port Connectivity Checks: "Operations:myOperations|shifL:myshiftL"
+ 40. Port Connectivity Checks: "Operations:myOperations"
+ 41. Post-Synthesis Netlist Statistics for Top Partition
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
+ 44. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Oct 28 16:57:04 2022       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; Processor                                   ;
+; Top-level Entity Name           ; ALU                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 26                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 1                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; ALU                ; Processor          ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+; subtracter.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/subtracter.sv                  ;         ;
+; sign_magnitud_to_complement.sv   ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/sign_magnitud_to_complement.sv ;         ;
+; shiftR.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/shiftR.sv                      ;         ;
+; shiftL.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/shiftL.sv                      ;         ;
+; Operations.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv                  ;         ;
+; mux_9_1.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/mux_9_1.sv                     ;         ;
+; multiplier.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/multiplier.sv                  ;         ;
+; mod.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/mod.sv                         ;         ;
+; FlagsM.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv                      ;         ;
+; division.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/division.sv                    ;         ;
+; complement_2.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/complement_2.sv                ;         ;
+; bitwise_xor.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/bitwise_xor.sv                 ;         ;
+; bitwise_or.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/bitwise_or.sv                  ;         ;
+; bitwise_and.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/bitwise_and.sv                 ;         ;
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/ALU.sv                         ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/adder.sv                       ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                       ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                      ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                  ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                       ;         ;
+; db/lpm_divide_tno.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/lpm_divide_tno.tdf          ;         ;
+; db/abs_divider_6ag.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/abs_divider_6ag.tdf         ;         ;
+; db/alt_u_div_sse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/alt_u_div_sse.tdf           ;         ;
+; db/lpm_abs_ln9.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/lpm_abs_ln9.tdf             ;         ;
+; db/lpm_divide_82m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/lpm_divide_82m.tdf          ;         ;
+; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/sign_div_unsign_bkh.tdf     ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 159        ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 269        ;
+;     -- 7 input functions                    ; 6          ;
+;     -- 6 input functions                    ; 42         ;
+;     -- 5 input functions                    ; 72         ;
+;     -- 4 input functions                    ; 50         ;
+;     -- <=3 input functions                  ; 99         ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 26         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 1          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; B[0]~input ;
+; Maximum fan-out                             ; 41         ;
+; Total fan-out                               ; 1150       ;
+; Average fan-out                             ; 3.57       ;
++---------------------------------------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                               ;
++------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------+
+; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                      ; Entity Name                   ; Library Name ;
++------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------+
+; |ALU                                           ; 269 (0)             ; 0 (0)                     ; 0                 ; 1          ; 26   ; 0            ; |ALU                                                                                                                                     ; ALU                           ; work         ;
+;    |FlagsM:myFlags|                            ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|FlagsM:myFlags                                                                                                                      ; FlagsM                        ; work         ;
+;    |Operations:myOperations|                   ; 225 (0)             ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |ALU|Operations:myOperations                                                                                                             ; Operations                    ; work         ;
+;       |adder:myadder|                          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|adder:myadder                                                                                               ; adder                         ; work         ;
+;       |bitwise_and:myand|                      ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|bitwise_and:myand                                                                                           ; bitwise_and                   ; work         ;
+;       |bitwise_xor:myxor|                      ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|bitwise_xor:myxor                                                                                           ; bitwise_xor                   ; work         ;
+;       |complement_2_to_sign_magnitud:to_mag_4| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_4                                                                      ; complement_2_to_sign_magnitud ; work         ;
+;       |complement_2_to_sign_magnitud:to_mag_5| ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_5                                                                      ; complement_2_to_sign_magnitud ; work         ;
+;       |division:mydiv|                         ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|division:mydiv                                                                                              ; division                      ; work         ;
+;          |lpm_divide:Div0|                     ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|division:mydiv|lpm_divide:Div0                                                                              ; lpm_divide                    ; work         ;
+;             |lpm_divide_tno:auto_generated|    ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|division:mydiv|lpm_divide:Div0|lpm_divide_tno:auto_generated                                                ; lpm_divide_tno                ; work         ;
+;                |abs_divider_6ag:divider|       ; 73 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|division:mydiv|lpm_divide:Div0|lpm_divide_tno:auto_generated|abs_divider_6ag:divider                        ; abs_divider_6ag               ; work         ;
+;                   |alt_u_div_sse:divider|      ; 48 (48)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|division:mydiv|lpm_divide:Div0|lpm_divide_tno:auto_generated|abs_divider_6ag:divider|alt_u_div_sse:divider  ; alt_u_div_sse                 ; work         ;
+;                   |lpm_abs_ln9:my_abs_den|     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|division:mydiv|lpm_divide:Div0|lpm_divide_tno:auto_generated|abs_divider_6ag:divider|lpm_abs_ln9:my_abs_den ; lpm_abs_ln9                   ; work         ;
+;                   |lpm_abs_ln9:my_abs_num|     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|division:mydiv|lpm_divide:Div0|lpm_divide_tno:auto_generated|abs_divider_6ag:divider|lpm_abs_ln9:my_abs_num ; lpm_abs_ln9                   ; work         ;
+;       |mod:mymod|                              ; 52 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|mod:mymod                                                                                                   ; mod                           ; work         ;
+;          |lpm_divide:Mod0|                     ; 52 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0                                                                                   ; lpm_divide                    ; work         ;
+;             |lpm_divide_82m:auto_generated|    ; 52 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0|lpm_divide_82m:auto_generated                                                     ; lpm_divide_82m                ; work         ;
+;                |sign_div_unsign_bkh:divider|   ; 52 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider                         ; sign_div_unsign_bkh           ; work         ;
+;                   |alt_u_div_sse:divider|      ; 52 (52)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0|lpm_divide_82m:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_sse:divider   ; alt_u_div_sse                 ; work         ;
+;       |multiplier:mymultiplier|                ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |ALU|Operations:myOperations|multiplier:mymultiplier                                                                                     ; multiplier                    ; work         ;
+;       |shifL:myshiftL|                         ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|shifL:myshiftL                                                                                              ; shifL                         ; work         ;
+;       |shifR:myshiftR|                         ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|shifR:myshiftR                                                                                              ; shifR                         ; work         ;
+;       |sign_magnitud_to_complement:to_comp_1|  ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_1                                                                       ; sign_magnitud_to_complement   ; work         ;
+;       |sign_magnitud_to_complement:to_comp_2|  ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_2                                                                       ; sign_magnitud_to_complement   ; work         ;
+;       |subtracter:mysubstracter|               ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|Operations:myOperations|subtracter:mysubstracter                                                                                    ; subtracter                    ; work         ;
+;    |mux_9_1:myMux|                             ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|mux_9_1:myMux                                                                                                                       ; mux_9_1                       ; work         ;
++------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Independent 9x9                 ; 1           ;
+; Total number of DSP blocks      ; 1           ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 1           ;
++---------------------------------+-------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ALU|Operations:myOperations|shifR:myshiftR|ShiftRight0                  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |ALU|Operations:myOperations|shifR:myshiftR|ShiftRight0                  ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |ALU|mux_9_1:myMux|Mux3                                                  ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU|Operations:myOperations|shifR:myshiftR|ShiftRight0                  ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU|Operations:myOperations|shifL:myshiftL|ShiftLeft0                   ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |ALU|Operations:myOperations|shifR:myshiftR|ShiftRight0                  ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 15 LEs               ; 0 LEs                  ; No         ; |ALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_5|Add0 ;
+; 10:1               ; 5 bits    ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |ALU|FlagsM:myFlags|Mux5                                                 ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 20 LEs               ; 5 LEs                  ; No         ; |ALU|mux_9_1:myMux|Mux1                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ALU ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; N              ; 6     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; N              ; 6     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|sign_magnitud_to_complement:to_comp_1 ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|sign_magnitud_to_complement:to_comp_2 ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|adder:myadder ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|subtracter:mysubstracter ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|multiplier:mymultiplier ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|division:mydiv ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|mod:mymod ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|shifL:myshiftL ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|shifR:myshiftR ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|bitwise_and:myand ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|bitwise_or:myor ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|bitwise_xor:myxor ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|complement_2_to_sign_magnitud:to_mag_2 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|complement_2_to_sign_magnitud:to_mag_3 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|complement_2_to_sign_magnitud:to_mag_4 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Operations:myOperations|complement_2_to_sign_magnitud:to_mag_5 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_9_1:myMux ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; N              ; 6     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FlagsM:myFlags ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 6     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Operations:myOperations|division:mydiv|lpm_divide:Div0 ;
++------------------------+----------------+---------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                          ;
++------------------------+----------------+---------------------------------------------------------------+
+; LPM_WIDTHN             ; 6              ; Untyped                                                       ;
+; LPM_WIDTHD             ; 6              ; Untyped                                                       ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                       ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                       ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                       ;
+; CBXI_PARAMETER         ; lpm_divide_tno ; Untyped                                                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                ;
++------------------------+----------------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Operations:myOperations|mod:mymod|lpm_divide:Mod0 ;
++------------------------+----------------+----------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                     ;
++------------------------+----------------+----------------------------------------------------------+
+; LPM_WIDTHN             ; 6              ; Untyped                                                  ;
+; LPM_WIDTHD             ; 6              ; Untyped                                                  ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                  ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                  ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                  ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                  ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                  ;
+; CBXI_PARAMETER         ; lpm_divide_82m ; Untyped                                                  ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                  ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                  ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                             ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                           ;
++------------------------+----------------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_9_1:myMux"                                                                                                                                                                  ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; f    ; Input ; Warning  ; Input port expression (7 bits) is wider than the input port (6 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; g    ; Input ; Warning  ; Input port expression (7 bits) is wider than the input port (6 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; h    ; Input ; Warning  ; Input port expression (7 bits) is wider than the input port (6 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i    ; Input ; Warning  ; Input port expression (7 bits) is wider than the input port (6 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; j    ; Input ; Warning  ; Input port expression (7 bits) is wider than the input port (6 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Operations:myOperations|bitwise_xor:myxor"                                                                                                                            ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; c    ; Output ; Warning  ; Output or bidir port (6 bits) is smaller than the port expression (7 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Operations:myOperations|bitwise_or:myor"                                                                                                                              ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; c    ; Output ; Warning  ; Output or bidir port (6 bits) is smaller than the port expression (7 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Operations:myOperations|bitwise_and:myand"                                                                                                                            ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; c    ; Output ; Warning  ; Output or bidir port (6 bits) is smaller than the port expression (7 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Operations:myOperations|shifR:myshiftR"                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; c    ; Output ; Warning  ; Output or bidir port (6 bits) is smaller than the port expression (7 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Operations:myOperations|shifL:myshiftL"                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; c    ; Output ; Warning  ; Output or bidir port (6 bits) is smaller than the port expression (7 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Operations:myOperations"                                                                                                                ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                          ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+; multOutComp ; Output ; Warning  ; Output or bidir port (12 bits) is wider than the port expression (6 bits) it drives; bit(s) "multOutComp[11..6]" have no fanouts ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 270                         ;
+;     arith             ; 80                          ;
+;         0 data inputs ; 19                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 11                          ;
+;         5 data inputs ; 37                          ;
+;     extend            ; 6                           ;
+;         7 data inputs ; 6                           ;
+;     normal            ; 170                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 30                          ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 35                          ;
+;         5 data inputs ; 35                          ;
+;         6 data inputs ; 42                          ;
+;     shared            ; 14                          ;
+;         0 data inputs ; 5                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 4                           ;
+; arriav_mac            ; 1                           ;
+; boundary_port         ; 26                          ;
+;                       ;                             ;
+; Max LUT depth         ; 21.00                       ;
+; Average LUT depth     ; 14.77                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Fri Oct 28 16:56:52 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor -c Processor
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file subtracter.sv
+    Info (12023): Found entity 1: subtracter File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/subtracter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sign_magnitud_to_complement.sv
+    Info (12023): Found entity 1: sign_magnitud_to_complement File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/sign_magnitud_to_complement.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shiftr.sv
+    Info (12023): Found entity 1: shifR File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/shiftR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shiftl.sv
+    Info (12023): Found entity 1: shifL File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/shiftL.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file operations.sv
+    Info (12023): Found entity 1: Operations File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_9_1.sv
+    Info (12023): Found entity 1: mux_9_1 File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/mux_9_1.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file multiplier.sv
+    Info (12023): Found entity 1: multiplier File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/multiplier.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mod.sv
+    Info (12023): Found entity 1: mod File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/mod.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flagsm.sv
+    Info (12023): Found entity 1: FlagsM File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file division.sv
+    Info (12023): Found entity 1: division File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/division.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file complement_2.sv
+    Info (12023): Found entity 1: complement_2_to_sign_magnitud File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/complement_2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bitwise_xor.sv
+    Info (12023): Found entity 1: bitwise_xor File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/bitwise_xor.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bitwise_or.sv
+    Info (12023): Found entity 1: bitwise_or File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/bitwise_or.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bitwise_and.sv
+    Info (12023): Found entity 1: bitwise_and File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/bitwise_and.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: ALU File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
+    Info (12023): Found entity 1: adder File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/adder.sv Line: 1
+Info (12127): Elaborating entity "ALU" for the top level hierarchy
+Info (12128): Elaborating entity "Operations" for hierarchy "Operations:myOperations" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/ALU.sv Line: 6
+Info (12128): Elaborating entity "sign_magnitud_to_complement" for hierarchy "Operations:myOperations|sign_magnitud_to_complement:to_comp_1" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 8
+Info (12128): Elaborating entity "adder" for hierarchy "Operations:myOperations|adder:myadder" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 14
+Info (12128): Elaborating entity "subtracter" for hierarchy "Operations:myOperations|subtracter:mysubstracter" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 15
+Info (12128): Elaborating entity "multiplier" for hierarchy "Operations:myOperations|multiplier:mymultiplier" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 16
+Info (12128): Elaborating entity "division" for hierarchy "Operations:myOperations|division:mydiv" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 17
+Info (12128): Elaborating entity "mod" for hierarchy "Operations:myOperations|mod:mymod" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 18
+Info (12128): Elaborating entity "shifL" for hierarchy "Operations:myOperations|shifL:myshiftL" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 19
+Info (12128): Elaborating entity "shifR" for hierarchy "Operations:myOperations|shifR:myshiftR" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 20
+Info (12128): Elaborating entity "bitwise_and" for hierarchy "Operations:myOperations|bitwise_and:myand" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 21
+Info (12128): Elaborating entity "bitwise_or" for hierarchy "Operations:myOperations|bitwise_or:myor" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 22
+Info (12128): Elaborating entity "bitwise_xor" for hierarchy "Operations:myOperations|bitwise_xor:myxor" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 23
+Info (12128): Elaborating entity "complement_2_to_sign_magnitud" for hierarchy "Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/Operations.sv Line: 25
+Info (12128): Elaborating entity "mux_9_1" for hierarchy "mux_9_1:myMux" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/ALU.sv Line: 7
+Info (12128): Elaborating entity "FlagsM" for hierarchy "FlagsM:myFlags" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/ALU.sv Line: 8
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(7): truncated value with size 7 to match size of target (6) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 7
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(13): truncated value with size 7 to match size of target (6) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 13
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(20): truncated value with size 12 to match size of target (6) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 20
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(27): truncated value with size 7 to match size of target (6) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 27
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(34): truncated value with size 7 to match size of target (6) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 34
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(42): truncated value with size 7 to match size of target (6) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 42
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(49): truncated value with size 7 to match size of target (6) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 49
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(56): truncated value with size 7 to match size of target (6) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 56
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(63): truncated value with size 7 to match size of target (6) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 63
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(70): truncated value with size 7 to match size of target (6) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 70
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(78): truncated value with size 7 to match size of target (6) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/FlagsM.sv Line: 78
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Operations:myOperations|division:mydiv|Div0" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/division.sv Line: 3
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Operations:myOperations|mod:mymod|Mod0" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/mod.sv Line: 3
+Info (12130): Elaborated megafunction instantiation "Operations:myOperations|division:mydiv|lpm_divide:Div0" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/division.sv Line: 3
+Info (12133): Instantiated megafunction "Operations:myOperations|division:mydiv|lpm_divide:Div0" with the following parameter: File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/division.sv Line: 3
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+    Info (12134): Parameter "LPM_WIDTHD" = "6"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_tno.tdf
+    Info (12023): Found entity 1: lpm_divide_tno File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/lpm_divide_tno.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_6ag.tdf
+    Info (12023): Found entity 1: abs_divider_6ag File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/abs_divider_6ag.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_sse.tdf
+    Info (12023): Found entity 1: alt_u_div_sse File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/alt_u_div_sse.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_ln9.tdf
+    Info (12023): Found entity 1: lpm_abs_ln9 File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/lpm_abs_ln9.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "Operations:myOperations|mod:mymod|lpm_divide:Mod0" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/mod.sv Line: 3
+Info (12133): Instantiated megafunction "Operations:myOperations|mod:mymod|lpm_divide:Mod0" with the following parameter: File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/mod.sv Line: 3
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+    Info (12134): Parameter "LPM_WIDTHD" = "6"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_82m.tdf
+    Info (12023): Found entity 1: lpm_divide_82m File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/lpm_divide_82m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/db/sign_div_unsign_bkh.tdf Line: 25
+Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/output_files/Processor.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 296 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 269 logic cells
+    Info (21062): Implemented 1 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Fri Oct 28 16:57:05 2022
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:27
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/TEC/Segundo Semestre 2022/taller/Proyecto/ProyectoQuartus/output_files/Processor.map.smsg.
+
+
