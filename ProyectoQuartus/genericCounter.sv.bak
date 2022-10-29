@@ -1,0 +1,4 @@
+module genericCounter #(parameter N, parameter Stop)();
+
+
+endmodule 

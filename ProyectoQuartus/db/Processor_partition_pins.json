@@ -4,107 +4,179 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "out[0]",
+					"name" : "readyFlag",
 					"strict" : false
 				},
 				{
-					"name" : "out[1]",
+					"name" : "instructionOutput[0]",
 					"strict" : false
 				},
 				{
-					"name" : "out[2]",
+					"name" : "instructionOutput[1]",
 					"strict" : false
 				},
 				{
-					"name" : "out[3]",
+					"name" : "instructionOutput[2]",
 					"strict" : false
 				},
 				{
-					"name" : "out[4]",
+					"name" : "instructionOutput[3]",
 					"strict" : false
 				},
 				{
-					"name" : "out[5]",
+					"name" : "instructionOutput[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Z",
+					"name" : "instructionOutput[5]",
 					"strict" : false
 				},
 				{
-					"name" : "O",
+					"name" : "instructionOutput[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Ca",
+					"name" : "instructionOutput[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Neg",
+					"name" : "instructionOutput[8]",
 					"strict" : false
 				},
 				{
-					"name" : "sel[3]",
+					"name" : "instructionOutput[9]",
 					"strict" : false
 				},
 				{
-					"name" : "sel[0]",
+					"name" : "instructionOutput[10]",
 					"strict" : false
 				},
 				{
-					"name" : "B[5]",
+					"name" : "instructionOutput[11]",
 					"strict" : false
 				},
 				{
-					"name" : "B[4]",
+					"name" : "instructionOutput[12]",
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "instructionOutput[13]",
 					"strict" : false
 				},
 				{
-					"name" : "B[2]",
+					"name" : "instructionOutput[14]",
 					"strict" : false
 				},
 				{
-					"name" : "B[1]",
+					"name" : "instructionOutput[15]",
 					"strict" : false
 				},
 				{
-					"name" : "B[0]",
+					"name" : "instructionOutput[16]",
 					"strict" : false
 				},
 				{
-					"name" : "A[5]",
+					"name" : "instructionOutput[17]",
 					"strict" : false
 				},
 				{
-					"name" : "A[4]",
+					"name" : "instructionOutput[18]",
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
+					"name" : "instructionOutput[19]",
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
+					"name" : "instructionOutput[20]",
 					"strict" : false
 				},
 				{
-					"name" : "A[0]",
+					"name" : "instructionOutput[21]",
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "instructionOutput[22]",
 					"strict" : false
 				},
 				{
-					"name" : "sel[1]",
+					"name" : "instructionOutput[23]",
 					"strict" : false
 				},
 				{
-					"name" : "sel[2]",
+					"name" : "instructionOutput[24]",
+					"strict" : false
+				},
+				{
+					"name" : "instructionOutput[25]",
+					"strict" : false
+				},
+				{
+					"name" : "instructionOutput[26]",
+					"strict" : false
+				},
+				{
+					"name" : "instructionOutput[27]",
+					"strict" : false
+				},
+				{
+					"name" : "instructionOutput[28]",
+					"strict" : false
+				},
+				{
+					"name" : "instructionOutput[29]",
+					"strict" : false
+				},
+				{
+					"name" : "instructionOutput[30]",
+					"strict" : false
+				},
+				{
+					"name" : "instructionOutput[31]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "parallelAddress[0]",
+					"strict" : false
+				},
+				{
+					"name" : "parallelFlag",
+					"strict" : false
+				},
+				{
+					"name" : "parallelAddress[1]",
+					"strict" : false
+				},
+				{
+					"name" : "parallelAddress[2]",
+					"strict" : false
+				},
+				{
+					"name" : "parallelAddress[3]",
+					"strict" : false
+				},
+				{
+					"name" : "parallelAddress[4]",
+					"strict" : false
+				},
+				{
+					"name" : "parallelAddress[5]",
+					"strict" : false
+				},
+				{
+					"name" : "parallelAddress[6]",
+					"strict" : false
+				},
+				{
+					"name" : "parallelAddress[7]",
 					"strict" : false
 				}
 			]
