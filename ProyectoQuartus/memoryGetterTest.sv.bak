@@ -1,0 +1,8 @@
+module memoryGetterTest();
+	logic clk,rst,parallelFlag;
+	logic [7:0] parallelAddress,instruction;
+	
+	instructionGetter memoryGetter (.clk(clk),.rst(rst),.parallelFlag(parallelFlag),.parallelAddress(parallelAddress),.instruction(instruction));
+
+
+endmodule 

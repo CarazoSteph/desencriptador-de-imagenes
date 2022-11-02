@@ -13,42 +13,94 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:23:10 on Oct 28,2022
+# Start time: 21:43:00 on Nov 01,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v 
 # -- Compiling module instructionMemory
 # 
 # Top level modules:
 # 	instructionMemory
-# End time: 23:23:10 on Oct 28,2022, Elapsed time: 0:00:00
+# End time: 21:43:00 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:43:01 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv 
+# -- Compiling module instructionGetter
+# 
+# Top level modules:
+# 	instructionGetter
+# End time: 21:43:01 on Nov 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:23:10 on Oct 28,2022
+# Start time: 21:43:01 on Nov 01,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv 
 # -- Compiling module instructionMemoryProgramCounter
 # 
 # Top level modules:
 # 	instructionMemoryProgramCounter
-# End time: 23:23:10 on Oct 28,2022, Elapsed time: 0:00:00
+# End time: 21:43:01 on Nov 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:23:10 on Oct 28,2022
+# Start time: 21:43:01 on Nov 01,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv 
 # -- Compiling module genericCounter
 # 
 # Top level modules:
 # 	genericCounter
-# End time: 23:23:11 on Oct 28,2022, Elapsed time: 0:00:01
+# End time: 21:43:01 on Nov 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv}
+# 
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:23:11 on Oct 28,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv 
-# -- Compiling module instructionManager
+# Start time: 21:43:01 on Nov 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv 
+# -- Compiling module memoryGetterTest
 # 
 # Top level modules:
-# 	instructionManager
-# End time: 23:23:11 on Oct 28,2022, Elapsed time: 0:00:00
+# 	memoryGetterTest
+# End time: 21:43:01 on Nov 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  memoryGetterTest
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" memoryGetterTest 
+# Start time: 21:43:01 on Nov 01,2022
+# Loading sv_std.std
+# Loading work.memoryGetterTest
+# Loading work.instructionGetter
+# Loading work.instructionMemoryProgramCounter
+# Loading work.genericCounter
+# Loading work.instructionMemory
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pcCounter'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /memoryGetterTest/memoryGetter/PC/pcCounter File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv Line: 11
+# ** Warning: (vsim-3722) C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv(11): [TFMPC] - Missing connection for port 'flag'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv(25)
+#    Time: 210 ps  Iteration: 0  Instance: /memoryGetterTest
+# 1
+# Break in Module memoryGetterTest at C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv line 25
+add wave -position insertpoint  \
+sim:/memoryGetterTest/memoryGetter/PC/address
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pcCounter'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /memoryGetterTest/memoryGetter/PC/pcCounter File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv Line: 11
+# ** Warning: (vsim-3722) C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv(11): [TFMPC] - Missing connection for port 'flag'.
+run -all
+# ** Note: $finish    : C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv(25)
+#    Time: 210 ps  Iteration: 0  Instance: /memoryGetterTest
+# 1
+# Break in Module memoryGetterTest at C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv line 25
+# End time: 21:46:31 on Nov 01,2022, Elapsed time: 0:03:30
+# Errors: 0, Warnings: 2

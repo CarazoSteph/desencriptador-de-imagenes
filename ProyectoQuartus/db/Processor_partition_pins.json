@@ -4,135 +4,35 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "readyFlag",
+					"name" : "instruction[0]",
 					"strict" : false
 				},
 				{
-					"name" : "instructionOutput[0]",
+					"name" : "instruction[1]",
 					"strict" : false
 				},
 				{
-					"name" : "instructionOutput[1]",
+					"name" : "instruction[2]",
 					"strict" : false
 				},
 				{
-					"name" : "instructionOutput[2]",
+					"name" : "instruction[3]",
 					"strict" : false
 				},
 				{
-					"name" : "instructionOutput[3]",
+					"name" : "instruction[4]",
 					"strict" : false
 				},
 				{
-					"name" : "instructionOutput[4]",
+					"name" : "instruction[5]",
 					"strict" : false
 				},
 				{
-					"name" : "instructionOutput[5]",
+					"name" : "instruction[6]",
 					"strict" : false
 				},
 				{
-					"name" : "instructionOutput[6]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[7]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[8]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[9]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[10]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[11]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[12]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[13]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[14]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[15]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[16]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[17]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[18]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[19]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[20]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[21]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[22]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[23]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[24]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[25]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[26]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[27]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[28]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[29]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[30]",
-					"strict" : false
-				},
-				{
-					"name" : "instructionOutput[31]",
+					"name" : "instruction[7]",
 					"strict" : false
 				},
 				{
@@ -140,11 +40,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
+					"name" : "parallelAddress[0]",
 					"strict" : false
 				},
 				{
-					"name" : "parallelAddress[0]",
+					"name" : "rst",
 					"strict" : false
 				},
 				{
