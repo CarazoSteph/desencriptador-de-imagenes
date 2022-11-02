@@ -1,5 +1,5 @@
 Flow report for Processor
-Tue Nov 01 21:42:44 2022
+Wed Nov 02 12:19:52 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Nov 01 21:42:44 2022       ;
+; Flow Status                     ; Successful - Wed Nov 02 12:19:52 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Processor                                   ;
 ; Top-level Entity Name           ; instructionGetter                           ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/01/2022 21:42:34 ;
+; Start date & time ; 11/02/2022 12:19:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Processor           ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name       ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 92668497380646.166736055415776         ; --            ; --                ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 92668497380646.166741318110124         ; --            ; --                ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                ; testMemoryRetrieve                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                ; Get Memory Info                   ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                ; romTest                           ;
@@ -120,8 +120,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4827 MB             ; 00:00:25                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:25                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4827 MB             ; 00:00:29                           ;
+; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
