@@ -1,0 +1,20 @@
+module instructionMemoryProgramCounter(
+	input clk,
+	input rst,
+	input paralellFlag,
+	input [7:0] parallelAdress,
+	output [31:0] instruction,
+	output readyFlag
+
+);
+
+
+	logic [7:0] PC;
+	
+	always_ff @(posedge clk or posedge rst) begin
+		if(rst)PC=0;
+	
+	end
+
+
+endmodule 
