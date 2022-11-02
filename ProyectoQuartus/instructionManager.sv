@@ -1,15 +1,16 @@
-module instructionManager(input clk,input rst,input parallelFlag, input [7:0] parallelAddress,output readyFlag, output [31:0] instructionOutput);
+module instructionManager(input clk,input rst,input parallelFlag, input [7:0] parallelAddress,output readyFlag, output logic [31:0] instructionOutput);
 
 
-	logic [7:0] address;
 	logic [7:0] currentInstruction;
 	logic [31:0] instruction;
 	logic [1:0] count;
-	instructionMemoryProgramCounter PC(.clk(clk),.rst(rst),.parallelFlag(parallelFlag),.parallelAddress(parallelAddress),.address(address));
-	instructionMemory memory(.address(address),.clock(clk),.q(currentInstruction));
+	instructionGetter myInstructionGetter(.clk(clk),.rst(rst),.parallelFlag(parallelFlag),.parallelAddress(parallelAddress),.instruction(currentInstruction));
 	genericCounter #(.N(2),.Stop(3)) instCount (.clk(clk),.rst(rst),.parallel(1'b0),.parallelFlag(1'b0),.count(count),.flag(readyFlag));
 	
-	always_ff @(count) begin
+	always_ff @(posedge rst)begin
+		instruction=0;
+	end
+	always_ff @(posedge clk) begin
 		
 		case(count)
 			0: 

@@ -1,6 +1,6 @@
-|instructionManager
-clk => clk.IN3
-rst => rst.IN2
+|instructionGetter
+clk => clk.IN2
+rst => rst.IN1
 parallelFlag => parallelFlag.IN1
 parallelAddress[0] => parallelAddress[0].IN1
 parallelAddress[1] => parallelAddress[1].IN1
@@ -10,42 +10,17 @@ parallelAddress[4] => parallelAddress[4].IN1
 parallelAddress[5] => parallelAddress[5].IN1
 parallelAddress[6] => parallelAddress[6].IN1
 parallelAddress[7] => parallelAddress[7].IN1
-readyFlag <= genericCounter:instCount.flag
-instructionOutput[0] <= instruction[0].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[1] <= instruction[1].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[2] <= instruction[2].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[3] <= instruction[3].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[4] <= instruction[4].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[5] <= instruction[5].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[6] <= instruction[6].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[7] <= instruction[7].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[8] <= instruction[8].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[9] <= instruction[9].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[10] <= instruction[10].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[11] <= instruction[11].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[12] <= instruction[12].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[13] <= instruction[13].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[14] <= instruction[14].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[15] <= instruction[15].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[16] <= instruction[16].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[17] <= instruction[17].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[18] <= instruction[18].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[19] <= instruction[19].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[20] <= instruction[20].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[21] <= instruction[21].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[22] <= instruction[22].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[23] <= instruction[23].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[24] <= instruction[24].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[25] <= instruction[25].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[26] <= instruction[26].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[27] <= instruction[27].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[28] <= instruction[28].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[29] <= instruction[29].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[30] <= instruction[30].DB_MAX_OUTPUT_PORT_TYPE
-instructionOutput[31] <= instruction[31].DB_MAX_OUTPUT_PORT_TYPE
+instruction[0] << instructionMemory:memory.q
+instruction[1] << instructionMemory:memory.q
+instruction[2] << instructionMemory:memory.q
+instruction[3] << instructionMemory:memory.q
+instruction[4] << instructionMemory:memory.q
+instruction[5] << instructionMemory:memory.q
+instruction[6] << instructionMemory:memory.q
+instruction[7] << instructionMemory:memory.q
 
 
-|instructionManager|instructionMemoryProgramCounter:PC
+|instructionGetter|instructionMemoryProgramCounter:PC
 clk => clk.IN1
 rst => rst.IN1
 parallelFlag => parallelFlag.IN1
@@ -67,7 +42,7 @@ address[6] <= genericCounter:pcCounter.count
 address[7] <= genericCounter:pcCounter.count
 
 
-|instructionManager|instructionMemoryProgramCounter:PC|genericCounter:pcCounter
+|instructionGetter|instructionMemoryProgramCounter:PC|genericCounter:pcCounter
 clk => current[0].CLK
 clk => current[1].CLK
 clk => current[2].CLK
@@ -111,7 +86,7 @@ count[7] <= current[7].DB_MAX_OUTPUT_PORT_TYPE
 flag <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|instructionManager|instructionMemory:memory
+|instructionGetter|instructionMemory:memory
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -131,7 +106,7 @@ q[6] <= altsyncram:altsyncram_component.q_a
 q[7] <= altsyncram:altsyncram_component.q_a
 
 
-|instructionManager|instructionMemory:memory|altsyncram:altsyncram_component
+|instructionGetter|instructionMemory:memory|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -180,7 +155,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|instructionManager|instructionMemory:memory|altsyncram:altsyncram_component|altsyncram_gpf1:auto_generated
+|instructionGetter|instructionMemory:memory|altsyncram:altsyncram_component|altsyncram_gpf1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -261,19 +236,5 @@ q_a[4] <= ram_block1a4.PORTADATAOUT
 q_a[5] <= ram_block1a5.PORTADATAOUT
 q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
-
-
-|instructionManager|genericCounter:instCount
-clk => current[0].CLK
-clk => current[1].CLK
-rst => current[0].ACLR
-rst => current[1].ACLR
-parallel[0] => next[0].DATAB
-parallel[1] => next[1].DATAB
-parallelFlag => next[1].OUTPUTSELECT
-parallelFlag => next[0].OUTPUTSELECT
-count[0] <= current[0].DB_MAX_OUTPUT_PORT_TYPE
-count[1] <= current[1].DB_MAX_OUTPUT_PORT_TYPE
-flag <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
