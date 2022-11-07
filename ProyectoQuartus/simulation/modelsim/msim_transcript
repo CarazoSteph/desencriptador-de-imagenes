@@ -12,29 +12,29 @@
 # 
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:34:20 on Nov 07,2022
+# Start time: 17:27:26 on Nov 07,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv 
 # -- Compiling module InstructionRom
 # 
 # Top level modules:
 # 	InstructionRom
-# End time: 11:34:20 on Nov 07,2022, Elapsed time: 0:00:00
+# End time: 17:27:26 on Nov 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:34:20 on Nov 07,2022
+# Start time: 17:27:26 on Nov 07,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv 
 # -- Compiling module customInstructionRomTest
 # 
 # Top level modules:
 # 	customInstructionRomTest
-# End time: 11:34:20 on Nov 07,2022, Elapsed time: 0:00:00
+# End time: 17:27:26 on Nov 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  customInstructionRomTest
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" customInstructionRomTest 
-# Start time: 11:34:20 on Nov 07,2022
+# Start time: 17:27:26 on Nov 07,2022
 # Loading sv_std.std
 # Loading work.customInstructionRomTest
 # Loading work.InstructionRom
@@ -46,6 +46,6 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Break key hit
-# Simulation stop requested.
-# End time: 11:34:59 on Nov 07,2022, Elapsed time: 0:00:39
+# Break in Module customInstructionRomTest at C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv line 12
+# End time: 17:27:53 on Nov 07,2022, Elapsed time: 0:00:27
 # Errors: 0, Warnings: 0

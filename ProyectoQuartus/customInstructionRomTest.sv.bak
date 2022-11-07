@@ -1,6 +1,5 @@
 module customInstructionRomTest();
-	logic [7:0] address;
-	logic [31:0] Q;
+	logic [7:0] address,Q;
 	
 	InstructionRom myRom(.address(address),.Q(Q));
 	
@@ -9,7 +8,7 @@ module customInstructionRomTest();
 	end
 	always begin
 		#10;
-		address=address+4;
+		address=address+1;
 	end
 
 

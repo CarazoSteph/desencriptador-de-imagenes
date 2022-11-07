@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processor
-Mon Nov 07 10:46:12 2022
+Mon Nov 07 17:27:17 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -44,14 +44,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 07 10:46:12 2022       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 07 17:27:17 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Processor                                   ;
 ; Top-level Entity Name           ; InstructionRom                              ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 16                                          ;
+; Total pins                      ; 40                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -172,36 +172,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                         ; Library ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; Processor.txt                    ; yes             ; User File                    ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Processor.txt     ;         ;
+; Processor.mem                    ; yes             ; User Unspecified File        ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Processor.mem     ;         ;
 ; InstructionRom.sv                ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimate of Logic utilization (ALMs needed) ; 1        ;
-;                                             ;          ;
-; Combinational ALUT usage for logic          ; 1        ;
-;     -- 7 input functions                    ; 0        ;
-;     -- 6 input functions                    ; 0        ;
-;     -- 5 input functions                    ; 0        ;
-;     -- 4 input functions                    ; 0        ;
-;     -- <=3 input functions                  ; 1        ;
-;                                             ;          ;
-; Dedicated logic registers                   ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 16       ;
-;                                             ;          ;
-; Total DSP Blocks                            ; 0        ;
-;                                             ;          ;
-; Maximum fan-out node                        ; memory~0 ;
-; Maximum fan-out                             ; 2        ;
-; Total fan-out                               ; 21       ;
-; Average fan-out                             ; 0.64     ;
-+---------------------------------------------+----------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimate of Logic utilization (ALMs needed) ; 39               ;
+;                                             ;                  ;
+; Combinational ALUT usage for logic          ; 69               ;
+;     -- 7 input functions                    ; 0                ;
+;     -- 6 input functions                    ; 8                ;
+;     -- 5 input functions                    ; 12               ;
+;     -- 4 input functions                    ; 13               ;
+;     -- <=3 input functions                  ; 36               ;
+;                                             ;                  ;
+; Dedicated logic registers                   ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 40               ;
+;                                             ;                  ;
+; Total DSP Blocks                            ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; address[0]~input ;
+; Maximum fan-out                             ; 25               ;
+; Total fan-out                               ; 309              ;
+; Average fan-out                             ; 2.07             ;
++---------------------------------------------+------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,7 +209,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name    ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+----------------+--------------+
-; |InstructionRom            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 16   ; 0            ; |InstructionRom     ; InstructionRom ; work         ;
+; |InstructionRom            ; 69 (69)             ; 0 (0)                     ; 0                 ; 0          ; 40   ; 0            ; |InstructionRom     ; InstructionRom ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -234,14 +234,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 2                           ;
-;     normal            ; 2                           ;
-;         0 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
-; boundary_port         ; 16                          ;
+; arriav_lcell_comb     ; 69                          ;
+;     arith             ; 23                          ;
+;         1 data inputs ; 23                          ;
+;     normal            ; 46                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 13                          ;
+;         5 data inputs ; 12                          ;
+;         6 data inputs ; 8                           ;
+; boundary_port         ; 40                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.80                        ;
+; Max LUT depth         ; 3.20                        ;
+; Average LUT depth     ; 2.51                        ;
 +-----------------------+-----------------------------+
 
 
@@ -260,7 +265,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Nov 07 10:46:05 2022
+    Info: Processing started: Mon Nov 07 17:27:11 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor -c Processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -321,40 +326,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file customi
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmanagertest.sv
     Info (12023): Found entity 1: instructionManagerTest File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManagerTest.sv Line: 2
 Info (12127): Elaborating entity "InstructionRom" for the top level hierarchy
-Warning (10850): Verilog HDL warning at InstructionRom.sv(3): number of words (1) in memory file does not match the number of elements in the address range [0:7] File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 3
-Warning (10230): Verilog HDL assignment warning at Processor.txt(1): truncated value with size 48 to match size of target (8) File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Processor.txt Line: 1
-Warning (10030): Net "memory.data_a" at InstructionRom.sv(2) has no driver or initial value, using a default initial value '0' File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 2
-Warning (10030): Net "memory.waddr_a" at InstructionRom.sv(2) has no driver or initial value, using a default initial value '0' File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 2
-Warning (10030): Net "memory.we_a" at InstructionRom.sv(2) has no driver or initial value, using a default initial value '0' File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 2
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "memory" is uninferred due to inappropriate RAM size File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 2
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/Processor.ram0_InstructionRom_c85ad9cd.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Q[0]" is stuck at GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 1
-    Warning (13410): Pin "Q[1]" is stuck at GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 1
-    Warning (13410): Pin "Q[3]" is stuck at GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 1
-    Warning (13410): Pin "Q[4]" is stuck at GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 1
-    Warning (13410): Pin "Q[6]" is stuck at GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 1
-    Warning (13410): Pin "Q[7]" is stuck at GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 1
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/output_files/Processor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 5 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "address[3]" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 1
-    Warning (15610): No output dependent on input pin "address[4]" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 1
-    Warning (15610): No output dependent on input pin "address[5]" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 1
-    Warning (15610): No output dependent on input pin "address[6]" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 1
-    Warning (15610): No output dependent on input pin "address[7]" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv Line: 1
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 109 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Mon Nov 07 10:46:12 2022
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:14
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 69 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4834 megabytes
+    Info: Processing ended: Mon Nov 07 17:27:17 2022
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:13
 
 
 +------------------------------------------+
