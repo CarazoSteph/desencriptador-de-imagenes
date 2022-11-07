@@ -1,0 +1,15 @@
+module instructionManagerTest();
+	logic clk,rst,parallelFlag,readyFlag;
+	logic [7:0] parallelAddress;
+	logic [31:0] instructionOutput;
+	instructionManager myManager(clk,rst,parallelFlag,parallelAddress,readyFlag,instructionOutput);
+	
+	
+	initial begin
+		clk=0;
+	end
+	always begin 
+		#10;
+		clk=!clk;
+	end
+endmodule 

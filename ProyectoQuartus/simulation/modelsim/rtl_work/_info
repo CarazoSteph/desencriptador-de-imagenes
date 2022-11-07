@@ -8,137 +8,58 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/simulation/modelsim
-vgenericCounter
+Z0 dC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/simulation/modelsim
+vcustomInstructionRomTest
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1667493836
+Z2 !s110 1667842460
 !i10b 1
-!s100 c6cKgZYeRPaknD`BiB^=i1
+!s100 [BA`ZYOLIPLNPn?de=a7`2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ICK:YNaQ434Fb>X3`^mWld1
+IW88cBdP=PjeGdj^[@:d>L3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1667019158
-8C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv
-FC:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv
-!i122 2
-L0 1 21
+w1667833418
+8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv
+FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv
+!i122 1
+L0 1 15
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1667493836.000000
-!s107 C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv|
+Z6 !s108 1667842460.000000
+!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv|
 !i113 1
 Z7 o-sv -work work
-Z8 !s92 -sv -work work {+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus}
+Z8 !s92 -sv -work work {+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus}
 Z9 tCvgOpt 0
-ngeneric@counter
-vinstructionGetter
+ncustom@instruction@rom@test
+vInstructionRom
 R1
 R2
 !i10b 1
-!s100 KQH`T<KzXVKa1gmRJP]K<1
+!s100 ImPMFSD3kbfKFKQk[1]Pb1
 R3
-IU?XaM=H`S6EXQY_5QfgkP2
+IzSzWSzlbnG:Fc_mX;cC9f0
 R4
 S1
 R0
-Z10 w1667413598
-8C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv
-FC:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv
-!i122 3
-L0 1 8
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv|
-!i113 1
-R7
-R8
-R9
-ninstruction@getter
-vinstructionMemory
-!s110 1667493835
-!i10b 1
-!s100 PQW]fKi[n0FAaBQ2dD_CG2
-R3
-Ik>M^SfKZ;DEeKLCN2`a2>3
-R4
-R0
-w1667357284
-8C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v
-FC:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v
+w1667842448
+8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv
+FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv
 !i122 0
-L0 40 61
-R5
-r1
-!s85 0
-31
-!s108 1667493835.000000
-!s107 C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v|
-!i113 1
-o-vlog01compat -work work
-!s92 -vlog01compat -work work {+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus}
-R9
-ninstruction@memory
-vinstructionMemoryProgramCounter
-R1
-R2
-!i10b 1
-!s100 [kcV@Q>@d<PGejZegZc<e1
-R3
-I6GE<3]9Q>Y[jnnzYjDGeO3
-R4
-S1
-R0
-w1667019461
-8C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv
-FC:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv
-!i122 1
-L0 1 14
+L0 1 10
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv|
+!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv|
 !i113 1
 R7
 R8
 R9
-ninstruction@memory@program@counter
-vmemoryGetterTest
-R1
-R2
-!i10b 1
-!s100 `MQ2<z7X8U4ZiK=ZNP;J@1
-R3
-IF^B8Gz@RERmTdo[^QkaVH2
-R4
-S1
-R0
-R10
-8C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv
-FC:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv
-!i122 4
-L0 2 28
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv|
-!i113 1
-R7
-R8
-R9
-nmemory@getter@test
+n@instruction@rom

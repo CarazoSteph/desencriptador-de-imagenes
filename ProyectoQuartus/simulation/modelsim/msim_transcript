@@ -1,5 +1,4 @@
 # Reading pref.tcl
-# ERROR: No extended dataflow license exists
 # do Processor_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -11,74 +10,34 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v}
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:43:55 on Nov 03,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v 
-# -- Compiling module instructionMemory
+# Start time: 11:34:20 on Nov 07,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv 
+# -- Compiling module InstructionRom
 # 
 # Top level modules:
-# 	instructionMemory
-# End time: 10:43:55 on Nov 03,2022, Elapsed time: 0:00:00
+# 	InstructionRom
+# End time: 11:34:20 on Nov 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv}
+# 
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:43:56 on Nov 03,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv 
-# -- Compiling module instructionMemoryProgramCounter
+# Start time: 11:34:20 on Nov 07,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv 
+# -- Compiling module customInstructionRomTest
 # 
 # Top level modules:
-# 	instructionMemoryProgramCounter
-# End time: 10:43:56 on Nov 03,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:43:56 on Nov 03,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv 
-# -- Compiling module genericCounter
-# 
-# Top level modules:
-# 	genericCounter
-# End time: 10:43:56 on Nov 03,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:43:56 on Nov 03,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv 
-# -- Compiling module instructionGetter
-# 
-# Top level modules:
-# 	instructionGetter
-# End time: 10:43:56 on Nov 03,2022, Elapsed time: 0:00:00
+# 	customInstructionRomTest
+# End time: 11:34:20 on Nov 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:43:56 on Nov 03,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv 
-# -- Compiling module memoryGetterTest
-# 
-# Top level modules:
-# 	memoryGetterTest
-# End time: 10:43:56 on Nov 03,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  memoryGetterTest
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" memoryGetterTest 
-# Start time: 10:43:56 on Nov 03,2022
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  customInstructionRomTest
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" customInstructionRomTest 
+# Start time: 11:34:20 on Nov 07,2022
 # Loading sv_std.std
-# Loading work.memoryGetterTest
-# Loading work.instructionGetter
-# Loading work.instructionMemoryProgramCounter
-# Loading work.genericCounter
-# Loading work.instructionMemory
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pcCounter'.  Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /memoryGetterTest/memoryGetter/PC/pcCounter File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv Line: 11
-# ** Warning: (vsim-3722) C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv(11): [TFMPC] - Missing connection for port 'flag'.
+# Loading work.customInstructionRomTest
+# Loading work.InstructionRom
 # 
 # add wave *
 # view structure
@@ -86,64 +45,7 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $finish    : C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv(25)
-#    Time: 210 ps  Iteration: 0  Instance: /memoryGetterTest
-# 1
-# Break in Module memoryGetterTest at C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv line 25
-add wave -position insertpoint  \
-sim:/memoryGetterTest/memoryGetter/PC/address
-run -all
 # Break key hit
-# Break in Module altsyncram_body at $MODEL_TECH/../altera/verilog/src/altera_mf.v line 50255
-# Error opening C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/simulation/modelsim/altera/verilog/src/altera_mf.v
-# Path name 'C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/simulation/modelsim/altera/verilog/src/altera_mf.v' doesn't exist.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pcCounter'.  Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /memoryGetterTest/memoryGetter/PC/pcCounter File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv Line: 11
-# ** Warning: (vsim-3722) C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv(11): [TFMPC] - Missing connection for port 'flag'.
-vsim -L altera_mf_ver -L lpm_ver romTest
-# End time: 10:48:50 on Nov 03,2022, Elapsed time: 0:04:54
-# Errors: 0, Warnings: 2
-# vsim -L altera_mf_ver -L lpm_ver romTest 
-# Start time: 10:48:50 on Nov 03,2022
-# ** Error: (vsim-3170) Could not find 'romTest'.
-#         Searched libraries:
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_mf
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/220model
-#             C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/simulation/modelsim/rtl_work
-# Error loading design
-# End time: 10:48:51 on Nov 03,2022, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vsim -L altera_mf_ver -L lpm_ver memoryGetterTest
-# vsim -L altera_mf_ver -L lpm_ver memoryGetterTest 
-# Start time: 10:49:22 on Nov 03,2022
-# Loading sv_std.std
-# Loading work.memoryGetterTest
-# Loading work.instructionGetter
-# Loading work.instructionMemoryProgramCounter
-# Loading work.genericCounter
-# Loading work.instructionMemory
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pcCounter'.  Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /memoryGetterTest/memoryGetter/PC/pcCounter File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv Line: 11
-# ** Warning: (vsim-3722) C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv(11): [TFMPC] - Missing connection for port 'flag'.
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint  \
-sim:/memoryGetterTest/rst \
-sim:/memoryGetterTest/parallelFlag \
-sim:/memoryGetterTest/parallelAddress \
-sim:/memoryGetterTest/instruction \
-sim:/memoryGetterTest/clk
-add wave -position insertpoint  \
-sim:/memoryGetterTest/memoryGetter/PC/address
-run -all
-# ** Note: $finish    : C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv(25)
-#    Time: 210 ps  Iteration: 0  Instance: /memoryGetterTest
-# 1
-# Break in Module memoryGetterTest at C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv line 25
-# End time: 20:35:54 on Nov 03,2022, Elapsed time: 9:46:32
-# Errors: 0, Warnings: 2
+# Simulation stop requested.
+# End time: 11:34:59 on Nov 07,2022, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 0

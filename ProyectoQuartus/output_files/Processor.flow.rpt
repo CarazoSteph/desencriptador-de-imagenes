@@ -1,5 +1,5 @@
 Flow report for Processor
-Wed Nov 02 12:19:52 2022
+Mon Nov 07 10:46:12 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Nov 02 12:19:52 2022       ;
+; Flow Status                     ; Successful - Mon Nov 07 10:46:12 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Processor                                   ;
-; Top-level Entity Name           ; instructionGetter                           ;
+; Top-level Entity Name           ; InstructionRom                              ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 8                                           ;
-; Total pins                      ; 19                                          ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 16                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 2,048                                       ;
+; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -68,51 +68,59 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/02/2022 12:19:41 ;
+; Start date & time ; 11/07/2022 10:46:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Processor           ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                      ;
-+--------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name       ; Section Id                        ;
-+--------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 92668497380646.166741318110124         ; --            ; --                ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                ; testMemoryRetrieve                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                ; Get Memory Info                   ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                ; romTest                           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Get Memory Info                        ; --            ; --                ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --                ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --                ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --                ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; testMemory.sv                          ; --            ; --                ; testMemoryRetrieve                ;
-; EDA_TEST_BENCH_FILE                  ; memoryGetterTest.sv                    ; --            ; --                ; Get Memory Info                   ;
-; EDA_TEST_BENCH_FILE                  ; romTest.sv                             ; --            ; --                ; romTest                           ;
-; EDA_TEST_BENCH_MODULE_NAME           ; testMemoryRetrieve                     ; --            ; --                ; testMemoryRetrieve                ;
-; EDA_TEST_BENCH_MODULE_NAME           ; memoryGetterTest                       ; --            ; --                ; Get Memory Info                   ;
-; EDA_TEST_BENCH_MODULE_NAME           ; romTest                                ; --            ; --                ; romTest                           ;
-; EDA_TEST_BENCH_NAME                  ; testMemoryRetrieve                     ; --            ; --                ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; Get Memory Info                        ; --            ; --                ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; romTest                                ; --            ; --                ; eda_simulation                    ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --                ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --                ; --                                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --                ; --                                ;
-; MISC_FILE                            ; instructionMemory_inst.v               ; --            ; --                ; --                                ;
-; MISC_FILE                            ; instructionMemory_bb.v                 ; --            ; --                ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; instructionGetter ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; instructionGetter ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; instructionGetter ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --                ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --                ; --                                ;
-; TOP_LEVEL_ENTITY                     ; instructionGetter                      ; Processor     ; --                ; --                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                   ;
++--------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name    ; Section Id                        ;
++--------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 237901787548027.166783956606464        ; --            ; --             ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; testMemoryRetrieve                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; Get Memory Info                   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; customInstructionRomTest          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; romTest                           ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; instructionManagerTest            ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; customInstructionRomTest               ; --            ; --             ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --             ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --             ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --             ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; testMemory.sv                          ; --            ; --             ; testMemoryRetrieve                ;
+; EDA_TEST_BENCH_FILE                  ; memoryGetterTest.sv                    ; --            ; --             ; Get Memory Info                   ;
+; EDA_TEST_BENCH_FILE                  ; customInstructionRomTest.sv            ; --            ; --             ; customInstructionRomTest          ;
+; EDA_TEST_BENCH_FILE                  ; romTest.sv                             ; --            ; --             ; romTest                           ;
+; EDA_TEST_BENCH_FILE                  ; instructionManagerTest.sv              ; --            ; --             ; instructionManagerTest            ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testMemoryRetrieve                     ; --            ; --             ; testMemoryRetrieve                ;
+; EDA_TEST_BENCH_MODULE_NAME           ; memoryGetterTest                       ; --            ; --             ; Get Memory Info                   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; customInstructionRomTest               ; --            ; --             ; customInstructionRomTest          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; romTest                                ; --            ; --             ; romTest                           ;
+; EDA_TEST_BENCH_MODULE_NAME           ; instructionManagerTest                 ; --            ; --             ; instructionManagerTest            ;
+; EDA_TEST_BENCH_NAME                  ; testMemoryRetrieve                     ; --            ; --             ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; Get Memory Info                        ; --            ; --             ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; romTest                                ; --            ; --             ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; instructionManagerTest                 ; --            ; --             ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; customInstructionRomTest               ; --            ; --             ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --             ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --             ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --             ; --                                ;
+; MISC_FILE                            ; instructionMemory_inst.v               ; --            ; --             ; --                                ;
+; MISC_FILE                            ; instructionMemory_bb.v                 ; --            ; --             ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; InstructionRom ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; InstructionRom ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; InstructionRom ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --             ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --             ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --             ; --                                ;
+; TOP_LEVEL_ENTITY                     ; InstructionRom                         ; Processor     ; --             ; --                                ;
++--------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -120,8 +128,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4827 MB             ; 00:00:29                           ;
-; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:29                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4836 MB             ; 00:00:14                           ;
+; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:14                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -130,7 +138,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-N7U5SP6  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-10GV6F8  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
