@@ -10,67 +10,34 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv}
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:16:57 on Nov 07,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv 
-# -- Compiling module instructionMemoryProgramCounter
+# Start time: 19:50:05 on Nov 07,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv 
+# -- Compiling module registerBank
 # 
 # Top level modules:
-# 	instructionMemoryProgramCounter
-# End time: 18:16:57 on Nov 07,2022, Elapsed time: 0:00:00
+# 	registerBank
+# End time: 19:50:05 on Nov 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv}
+# 
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBankTest.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:16:57 on Nov 07,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv 
-# -- Compiling module genericCounter
+# Start time: 19:50:05 on Nov 07,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBankTest.sv 
+# -- Compiling module registerBankTest
 # 
 # Top level modules:
-# 	genericCounter
-# End time: 18:16:57 on Nov 07,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:16:57 on Nov 07,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv 
-# -- Compiling module instructionGetter
-# 
-# Top level modules:
-# 	instructionGetter
-# End time: 18:16:57 on Nov 07,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:16:58 on Nov 07,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv 
-# -- Compiling module InstructionRom
-# 
-# Top level modules:
-# 	InstructionRom
-# End time: 18:16:58 on Nov 07,2022, Elapsed time: 0:00:00
+# 	registerBankTest
+# End time: 19:50:05 on Nov 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:16:58 on Nov 07,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv 
-# -- Compiling module memoryGetterTest
-# 
-# Top level modules:
-# 	memoryGetterTest
-# End time: 18:16:58 on Nov 07,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  memoryGetterTest
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" memoryGetterTest 
-# Start time: 18:16:58 on Nov 07,2022
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  registerBankTest
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" registerBankTest 
+# Start time: 19:50:05 on Nov 07,2022
 # Loading sv_std.std
-# Loading work.memoryGetterTest
-# Loading work.instructionGetter
-# Loading work.instructionMemoryProgramCounter
-# Loading work.genericCounter
-# Loading work.InstructionRom
+# Loading work.registerBankTest
+# Loading work.registerBank
 # 
 # add wave *
 # view structure
@@ -78,9 +45,7 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $finish    : C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv(26)
-#    Time: 210 ps  Iteration: 0  Instance: /memoryGetterTest
-# 1
-# Break in Module memoryGetterTest at C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv line 26
-# End time: 18:18:13 on Nov 07,2022, Elapsed time: 0:01:15
+# Break key hit
+# Simulation stop requested.
+# End time: 19:52:40 on Nov 07,2022, Elapsed time: 0:02:35
 # Errors: 0, Warnings: 0
