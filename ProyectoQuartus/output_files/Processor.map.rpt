@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Processor
-Fri Oct 28 23:46:26 2022
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Tue Nov  1 01:26:02 2022
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -35,7 +35,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -55,8 +55,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 28 23:46:26 2022       ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov  1 01:26:02 2022       ;
+; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                   ; Processor                                   ;
 ; Top-level Entity Name           ; instructionManager                          ;
 ; Family                          ; Cyclone V                                   ;
@@ -167,39 +167,39 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                         ;
-+------------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path   ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                                               ; Library ;
-+------------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; Processor.mif                      ; yes             ; User Memory Initialization File  ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Processor.mif                      ;         ;
-; instructionMemory.v                ; yes             ; User Wizard-Generated File       ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v                ;         ;
-; instructionMemoryProgramCounter.sv ; yes             ; User SystemVerilog HDL File      ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv ;         ;
-; genericCounter.sv                  ; yes             ; User SystemVerilog HDL File      ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv                  ;         ;
-; instructionManager.sv              ; yes             ; User SystemVerilog HDL File      ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv              ;         ;
-; altsyncram.tdf                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                      ;         ;
-; stratix_ram_block.inc              ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                               ;         ;
-; lpm_mux.inc                        ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                         ;         ;
-; lpm_decode.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                      ;         ;
-; aglobal201.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                      ;         ;
-; a_rdenreg.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                       ;         ;
-; altrom.inc                         ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                          ;         ;
-; altram.inc                         ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                          ;         ;
-; altdpram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                        ;         ;
-; db/altsyncram_gpf1.tdf             ; yes             ; Auto-Generated Megafunction      ; C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/altsyncram_gpf1.tdf             ;         ;
-+------------------------------------+-----------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++------------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                              ; Library ;
++------------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------------------------+---------+
+; Processor.mif                      ; yes             ; User Memory Initialization File  ; C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/Processor.mif                      ;         ;
+; instructionMemory.v                ; yes             ; User Wizard-Generated File       ; C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v                ;         ;
+; instructionMemoryProgramCounter.sv ; yes             ; User SystemVerilog HDL File      ; C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv ;         ;
+; genericCounter.sv                  ; yes             ; User SystemVerilog HDL File      ; C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv                  ;         ;
+; instructionManager.sv              ; yes             ; User SystemVerilog HDL File      ; C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv              ;         ;
+; altsyncram.tdf                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf                     ;         ;
+; stratix_ram_block.inc              ; yes             ; Megafunction                     ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratix_ram_block.inc              ;         ;
+; lpm_mux.inc                        ; yes             ; Megafunction                     ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc                        ;         ;
+; lpm_decode.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_decode.inc                     ;         ;
+; aglobal211.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/aglobal211.inc                     ;         ;
+; a_rdenreg.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/a_rdenreg.inc                      ;         ;
+; altrom.inc                         ; yes             ; Megafunction                     ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altrom.inc                         ;         ;
+; altram.inc                         ; yes             ; Megafunction                     ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altram.inc                         ;         ;
+; altdpram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altdpram.inc                       ;         ;
+; db/altsyncram_gpf1.tdf             ; yes             ; Auto-Generated Megafunction      ; C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/db/altsyncram_gpf1.tdf             ;         ;
++------------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -501,101 +501,101 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Oct 28 23:46:15 2022
+    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+    Info: Processing started: Tue Nov  1 01:25:47 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor -c Processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file subtracter.sv
-    Info (12023): Found entity 1: subtracter File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv Line: 1
+    Info (12023): Found entity 1: subtracter File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sign_magnitud_to_complement.sv
-    Info (12023): Found entity 1: sign_magnitud_to_complement File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv Line: 1
+    Info (12023): Found entity 1: sign_magnitud_to_complement File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shiftr.sv
-    Info (12023): Found entity 1: shifR File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv Line: 1
+    Info (12023): Found entity 1: shifR File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shiftl.sv
-    Info (12023): Found entity 1: shifL File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv Line: 1
+    Info (12023): Found entity 1: shifL File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file operations.sv
-    Info (12023): Found entity 1: Operations File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 1
+    Info (12023): Found entity 1: Operations File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_9_1.sv
-    Info (12023): Found entity 1: mux_9_1 File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv Line: 1
+    Info (12023): Found entity 1: mux_9_1 File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file multiplier.sv
-    Info (12023): Found entity 1: multiplier File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv Line: 1
+    Info (12023): Found entity 1: multiplier File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mod.sv
-    Info (12023): Found entity 1: mod File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv Line: 1
+    Info (12023): Found entity 1: mod File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/mod.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flagsm.sv
-    Info (12023): Found entity 1: FlagsM File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv Line: 1
+    Info (12023): Found entity 1: FlagsM File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file division.sv
-    Info (12023): Found entity 1: division File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv Line: 1
+    Info (12023): Found entity 1: division File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/division.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file complement_2.sv
-    Info (12023): Found entity 1: complement_2_to_sign_magnitud File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv Line: 1
+    Info (12023): Found entity 1: complement_2_to_sign_magnitud File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bitwise_xor.sv
-    Info (12023): Found entity 1: bitwise_xor File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv Line: 1
+    Info (12023): Found entity 1: bitwise_xor File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bitwise_or.sv
-    Info (12023): Found entity 1: bitwise_or File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv Line: 1
+    Info (12023): Found entity 1: bitwise_or File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bitwise_and.sv
-    Info (12023): Found entity 1: bitwise_and File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv Line: 1
+    Info (12023): Found entity 1: bitwise_and File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: adder File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/adder.sv Line: 1
+    Info (12023): Found entity 1: adder File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instructiondecoder.sv
-    Info (12023): Found entity 1: instructionDecoder File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv Line: 1
+    Info (12023): Found entity 1: instructionDecoder File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.v
-    Info (12023): Found entity 1: instructionMemory File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v Line: 40
+    Info (12023): Found entity 1: instructionMemory File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmemoryprogramcounter.sv
-    Info (12023): Found entity 1: instructionMemoryProgramCounter File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv Line: 1
+    Info (12023): Found entity 1: instructionMemoryProgramCounter File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file genericcounter.sv
-    Info (12023): Found entity 1: genericCounter File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv Line: 1
+    Info (12023): Found entity 1: genericCounter File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmanager.sv
-    Info (12023): Found entity 1: instructionManager File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 1
+    Info (12023): Found entity 1: instructionManager File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 1
 Info (12127): Elaborating entity "instructionManager" for the top level hierarchy
-Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(17): variable "currentInstruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 17
-Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(25): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 25
-Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(26): variable "currentInstruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 26
-Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(32): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 32
-Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(34): variable "currentInstruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 34
-Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(40): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 40
-Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(43): variable "currentInstruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 43
-Warning (10240): Verilog HDL Always Construct warning at instructionManager.sv(12): inferring latch(es) for variable "instruction", which holds its previous value in one or more paths through the always construct File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[0]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[1]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[2]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[3]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[4]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[5]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[6]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[7]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[8]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[9]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[10]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[11]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[12]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[13]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[14]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[15]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[16]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[17]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[18]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[19]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[20]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[21]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[22]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[23]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[24]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[25]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[26]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[27]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[28]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[29]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[30]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (10041): Inferred latch for "instruction[31]" at instructionManager.sv(12) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
-Info (12128): Elaborating entity "instructionMemoryProgramCounter" for hierarchy "instructionMemoryProgramCounter:PC" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 8
-Info (12128): Elaborating entity "genericCounter" for hierarchy "instructionMemoryProgramCounter:PC|genericCounter:pcCounter" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv Line: 11
-Warning (10230): Verilog HDL assignment warning at genericCounter.sv(13): truncated value with size 32 to match size of target (8) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv Line: 13
-Info (12128): Elaborating entity "instructionMemory" for hierarchy "instructionMemory:memory" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 9
-Info (12128): Elaborating entity "altsyncram" for hierarchy "instructionMemory:memory|altsyncram:altsyncram_component" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v Line: 82
-Info (12130): Elaborated megafunction instantiation "instructionMemory:memory|altsyncram:altsyncram_component" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v Line: 82
-Info (12133): Instantiated megafunction "instructionMemory:memory|altsyncram:altsyncram_component" with the following parameter: File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v Line: 82
+Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(17): variable "currentInstruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 17
+Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(25): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 25
+Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(26): variable "currentInstruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 26
+Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(32): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 32
+Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(34): variable "currentInstruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 34
+Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(40): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 40
+Warning (10235): Verilog HDL Always Construct warning at instructionManager.sv(43): variable "currentInstruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 43
+Warning (10240): Verilog HDL Always Construct warning at instructionManager.sv(12): inferring latch(es) for variable "instruction", which holds its previous value in one or more paths through the always construct File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[0]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[1]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[2]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[3]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[4]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[5]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[6]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[7]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[8]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[9]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[10]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[11]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[12]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[13]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[14]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[15]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[16]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[17]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[18]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[19]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[20]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[21]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[22]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[23]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[24]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[25]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[26]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[27]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[28]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[29]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[30]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (10041): Inferred latch for "instruction[31]" at instructionManager.sv(12) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 12
+Info (12128): Elaborating entity "instructionMemoryProgramCounter" for hierarchy "instructionMemoryProgramCounter:PC" File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 8
+Info (12128): Elaborating entity "genericCounter" for hierarchy "instructionMemoryProgramCounter:PC|genericCounter:pcCounter" File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv Line: 11
+Warning (10230): Verilog HDL assignment warning at genericCounter.sv(13): truncated value with size 32 to match size of target (8) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv Line: 13
+Info (12128): Elaborating entity "instructionMemory" for hierarchy "instructionMemory:memory" File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 9
+Info (12128): Elaborating entity "altsyncram" for hierarchy "instructionMemory:memory|altsyncram:altsyncram_component" File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v Line: 82
+Info (12130): Elaborated megafunction instantiation "instructionMemory:memory|altsyncram:altsyncram_component" File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v Line: 82
+Info (12133): Instantiated megafunction "instructionMemory:memory|altsyncram:altsyncram_component" with the following parameter: File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionMemory.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -611,13 +611,13 @@ Info (12133): Instantiated megafunction "instructionMemory:memory|altsyncram:alt
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gpf1.tdf
-    Info (12023): Found entity 1: altsyncram_gpf1 File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/altsyncram_gpf1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_gpf1" for hierarchy "instructionMemory:memory|altsyncram:altsyncram_component|altsyncram_gpf1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "genericCounter" for hierarchy "genericCounter:instCount" File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 10
-Warning (10230): Verilog HDL assignment warning at genericCounter.sv(13): truncated value with size 32 to match size of target (2) File: C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv Line: 13
+    Info (12023): Found entity 1: altsyncram_gpf1 File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/db/altsyncram_gpf1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_gpf1" for hierarchy "instructionMemory:memory|altsyncram:altsyncram_component|altsyncram_gpf1:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "genericCounter" for hierarchy "genericCounter:instCount" File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/instructionManager.sv Line: 10
+Warning (10230): Verilog HDL assignment warning at genericCounter.sv(13): truncated value with size 32 to match size of target (2) File: C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv Line: 13
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/output_files/Processor.map.smsg
+Info (144001): Generated suppressed messages file C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/output_files/Processor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 100 device resources after synthesis - the final resource count might be different
@@ -626,15 +626,15 @@ Info (21057): Implemented 100 device resources after synthesis - the final resou
     Info (21061): Implemented 48 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4830 megabytes
-    Info: Processing ended: Fri Oct 28 23:46:26 2022
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 4819 megabytes
+    Info: Processing ended: Tue Nov  1 01:26:02 2022
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:31
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/TEC/Segundo Semestre 2022/taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/output_files/Processor.map.smsg.
+The suppressed messages can be found in C:/tallerDD/desencriptador-de-imagenes/ProyectoQuartus/output_files/Processor.map.smsg.
 
 

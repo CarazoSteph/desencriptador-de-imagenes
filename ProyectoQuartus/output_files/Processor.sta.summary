@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'genericCounter:instCount|current[0]'
+Slack : -4.774
+TNS   : -134.010
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -2.617
+TNS   : -25.999
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'genericCounter:instCount|current[0]'
+Slack : 2.456
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -2.174
+TNS   : -61.072
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'genericCounter:instCount|current[0]'
+Slack : 0.278
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'genericCounter:instCount|current[0]'
+Slack : -4.905
+TNS   : -137.967
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -2.252
+TNS   : -24.649
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Slow 1100mV 0C Model Hold 'genericCounter:instCount|current[0]'
+Slack : 2.551
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -2.174
+TNS   : -61.478
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'genericCounter:instCount|current[0]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'genericCounter:instCount|current[0]'
+Slack : -2.487
+TNS   : -65.719
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.149
+TNS   : -7.971
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.224
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'genericCounter:instCount|current[0]'
+Slack : 1.360
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -2.174
+TNS   : -56.317
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'genericCounter:instCount|current[0]'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'genericCounter:instCount|current[0]'
+Slack : -2.423
+TNS   : -63.982
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.617
+TNS   : -6.122
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.213
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'genericCounter:instCount|current[0]'
+Slack : 1.389
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -2.174
+TNS   : -56.346
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'genericCounter:instCount|current[0]'
+Slack : 0.359
+TNS   : 0.000
+
+------------------------------------------------------------
