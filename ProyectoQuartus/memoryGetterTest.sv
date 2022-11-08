@@ -1,7 +1,8 @@
 `timescale 1 ps / 1 ps
 module memoryGetterTest();
 	logic clk,rst,parallelFlag;
-	logic [7:0] parallelAddress,instruction;
+	logic [7:0] parallelAddress;
+	logic [31:0] instruction;
 	
 	instructionGetter memoryGetter (.clk(clk),.rst(rst),.parallelFlag(parallelFlag),.parallelAddress(parallelAddress),.instruction(instruction));
 	

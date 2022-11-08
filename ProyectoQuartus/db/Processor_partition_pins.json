@@ -4,163 +4,175 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Q[0]",
+					"name" : "instruction[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[1]",
+					"name" : "instruction[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[2]",
+					"name" : "instruction[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[3]",
+					"name" : "instruction[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[4]",
+					"name" : "instruction[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[5]",
+					"name" : "instruction[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[6]",
+					"name" : "instruction[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[7]",
+					"name" : "instruction[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[8]",
+					"name" : "instruction[8]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[9]",
+					"name" : "instruction[9]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[10]",
+					"name" : "instruction[10]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[11]",
+					"name" : "instruction[11]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[12]",
+					"name" : "instruction[12]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[13]",
+					"name" : "instruction[13]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[14]",
+					"name" : "instruction[14]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[15]",
+					"name" : "instruction[15]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[16]",
+					"name" : "instruction[16]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[17]",
+					"name" : "instruction[17]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[18]",
+					"name" : "instruction[18]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[19]",
+					"name" : "instruction[19]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[20]",
+					"name" : "instruction[20]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[21]",
+					"name" : "instruction[21]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[22]",
+					"name" : "instruction[22]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[23]",
+					"name" : "instruction[23]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[24]",
+					"name" : "instruction[24]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[25]",
+					"name" : "instruction[25]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[26]",
+					"name" : "instruction[26]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[27]",
+					"name" : "instruction[27]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[28]",
+					"name" : "instruction[28]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[29]",
+					"name" : "instruction[29]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[30]",
+					"name" : "instruction[30]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[31]",
+					"name" : "instruction[31]",
 					"strict" : false
 				},
 				{
-					"name" : "address[6]",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "address[7]",
+					"name" : "parallelAddress[7]",
 					"strict" : false
 				},
 				{
-					"name" : "address[0]",
+					"name" : "rst",
 					"strict" : false
 				},
 				{
-					"name" : "address[1]",
+					"name" : "parallelFlag",
 					"strict" : false
 				},
 				{
-					"name" : "address[2]",
+					"name" : "parallelAddress[6]",
 					"strict" : false
 				},
 				{
-					"name" : "address[3]",
+					"name" : "parallelAddress[0]",
 					"strict" : false
 				},
 				{
-					"name" : "address[4]",
+					"name" : "parallelAddress[1]",
 					"strict" : false
 				},
 				{
-					"name" : "address[5]",
+					"name" : "parallelAddress[3]",
+					"strict" : false
+				},
+				{
+					"name" : "parallelAddress[2]",
+					"strict" : false
+				},
+				{
+					"name" : "parallelAddress[5]",
+					"strict" : false
+				},
+				{
+					"name" : "parallelAddress[4]",
 					"strict" : false
 				}
 			]

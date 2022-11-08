@@ -8,7 +8,7 @@ module instructionMemoryProgramCounter(
 );
 
 
-	genericCounter #(.N(8),.Stop(255)) pcCounter(.clk(clk),.rst(rst), .parallel(parallelAddress),.parallelFlag(parallelFlag), .count(address));
+	genericCounter #(.N(8),.M(3)) pcCounter(.clk(clk),.rst(rst), .parallel(parallelAddress),.parallelFlag(parallelFlag),.step(3'b100),.count(address));
 
 
 endmodule 

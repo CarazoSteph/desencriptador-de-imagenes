@@ -9,36 +9,90 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/simulation/modelsim
-vcustomInstructionRomTest
+vgenericCounter
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1667863646
+Z2 !s110 1667866617
 !i10b 1
-!s100 _2`T^??febazb_n1HcW^]0
+!s100 >mYHZI?;?mRGKfABc=f`K2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IUJe>LELzj0Y4A52Q8B3l`2
+IHomli9@kX[7T6abDS==eW1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1667863378
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv
+w1667866545
+8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv
+FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv
 !i122 1
-L0 1 16
+L0 1 19
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1667863646.000000
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/customInstructionRomTest.sv|
+Z6 !s108 1667866617.000000
+!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/genericCounter.sv|
 !i113 1
 Z7 o-sv -work work
 Z8 !s92 -sv -work work {+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus}
 Z9 tCvgOpt 0
-ncustom@instruction@rom@test
-vInstructionRom
+ngeneric@counter
+vinstructionGetter
 R1
 R2
+!i10b 1
+!s100 zNO:_7g?nT0K9B:jGNNiS2
+R3
+IoTdGDIh^UWI>::3j9`Ee73
+R4
+S1
+R0
+w1667866163
+8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv
+FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv
+!i122 2
+L0 1 9
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionGetter.sv|
+!i113 1
+R7
+R8
+R9
+ninstruction@getter
+vinstructionMemoryProgramCounter
+R1
+R2
+!i10b 1
+!s100 Hm`^5f`8eV75Pz]NJGjO02
+R3
+IPeNAOT9k8J0b8Gmk<;MUV3
+R4
+S1
+R0
+w1667865807
+8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv
+FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv
+!i122 0
+L0 1 14
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionMemoryProgramCounter.sv|
+!i113 1
+R7
+R8
+R9
+ninstruction@memory@program@counter
+vInstructionRom
+R1
+Z10 !s110 1667866618
 !i10b 1
 !s100 mSakC]8gKL9ofKK?PDGn90
 R3
@@ -49,13 +103,13 @@ R0
 w1667863328
 8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv
 FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv
-!i122 0
+!i122 3
 L0 1 10
 R5
 r1
 !s85 0
 31
-R6
+Z11 !s108 1667866618.000000
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv|
 !i113 1
@@ -63,3 +117,30 @@ R7
 R8
 R9
 n@instruction@rom
+vmemoryGetterTest
+R1
+R10
+!i10b 1
+!s100 `MW4=YZPNN3<S>@`i:5dB2
+R3
+IkQi8X0SUN;2j<fT4TA9Zo2
+R4
+S1
+R0
+w1667866379
+8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv
+FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv
+!i122 4
+L0 2 29
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/memoryGetterTest.sv|
+!i113 1
+R7
+R8
+R9
+nmemory@getter@test

@@ -1,4 +1,4 @@
-module genericCounter #(parameter N=8, parameter [N-1:0] Stop=255)(input clk,rst, input [N-1:0] parallel,input parallelFlag, output [N-1:0] count,output flag);
+module genericCounter #(parameter N=8,parameter M=3)(input clk,rst, input [N-1:0] parallel,input parallelFlag,input [M-1:0] step, output [N-1:0] count);
 		
 		logic [N-1:0] current,next;
 		always_ff @(posedge clk or posedge rst) begin
@@ -9,13 +9,11 @@ module genericCounter #(parameter N=8, parameter [N-1:0] Stop=255)(input clk,rst
 		always_comb begin
 			if(parallelFlag)next=parallel;
 			else begin
-				if(current==Stop) next=0;
-				else next=current+1;
+				next=current+step;
 			
 			end
 		
 		end
-		assign flag= (current==Stop);
 		assign count=current;
 
 endmodule 
