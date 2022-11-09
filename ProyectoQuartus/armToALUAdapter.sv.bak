@@ -1,0 +1,15 @@
+module armToALUAdapter(input [3:0] In,output logic [3:0] Out);
+	
+	always_comb begin
+	
+		case
+		
+			0:
+		
+		
+		endcase
+	
+	end
+
+
+endmodule 
