@@ -1,0 +1,3 @@
+module controlUnit(input [3:0] cond);
+
+endmodule 
