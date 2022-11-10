@@ -36,6 +36,7 @@ module registerBankTest();
 		WE3=0;
 		
 		#100;
+		$finish();
 		
 	end
 

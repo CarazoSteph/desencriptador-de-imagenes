@@ -6,7 +6,7 @@ module controlUnit(input [1:0] op,input [5:0] funct, input [3:0] cond,input [3:0
 	
 	armToALUAdapter myAdapter(.In(funct[4:1]), .Out(adapterOutput));
 	always_comb begin
-		PCSrc=(op==2) &(cond==Flags);
+		PCSrc=(op==2) &(cond[3]==Flags[3]);
 	end
 	
 	always_comb begin
@@ -28,7 +28,8 @@ module controlUnit(input [1:0] op,input [5:0] funct, input [3:0] cond,input [3:0
 	end
 	
 	always_comb begin
-		ALUSrc= ((op==0) & (funct[5])) |((op==1)&(!funct[5])) | (op==2);  
+		ALUSrc= ((op==0) & (funct[5])) |((op==1)&(!funct[5])) | (op==2); 
+	end	
 	
 	always_comb begin
 		ImmSrc= ((op==0) & (funct[5])) |((op==1)&(!funct[5])) | (op==2);  
@@ -42,7 +43,7 @@ module controlUnit(input [1:0] op,input [5:0] funct, input [3:0] cond,input [3:0
 		if(op==2)RegSrc[0]=1;
 		else RegSrc[0]=0;
 		if((op==1) &(!funct[0]))RegSrc[1]=1;
-		else RegSrc[1]=1;
+		else RegSrc[1]=0;
 		
 	end
 

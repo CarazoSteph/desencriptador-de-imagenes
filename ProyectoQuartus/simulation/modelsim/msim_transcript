@@ -10,34 +10,310 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:47 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv 
+# -- Compiling module subtracter
+# 
+# Top level modules:
+# 	subtracter
+# End time: 02:12:47 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:47 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv 
+# -- Compiling module sign_magnitud_to_complement
+# 
+# Top level modules:
+# 	sign_magnitud_to_complement
+# End time: 02:12:47 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:47 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv 
+# -- Compiling module shifR
+# 
+# Top level modules:
+# 	shifR
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:48 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv 
+# -- Compiling module shifL
+# 
+# Top level modules:
+# 	shifL
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:48 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv 
+# -- Compiling module Operations
+# 
+# Top level modules:
+# 	Operations
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:48 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv 
+# -- Compiling module mux_9_1
+# 
+# Top level modules:
+# 	mux_9_1
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:48 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv 
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:48 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv 
+# -- Compiling module mod
+# 
+# Top level modules:
+# 	mod
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:48 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv 
+# -- Compiling module FlagsM
+# 
+# Top level modules:
+# 	FlagsM
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:48 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv 
+# -- Compiling module division
+# 
+# Top level modules:
+# 	division
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:48 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv 
+# -- Compiling module complement_2_to_sign_magnitud
+# 
+# Top level modules:
+# 	complement_2_to_sign_magnitud
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:48 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv 
+# -- Compiling module bitwise_xor
+# 
+# Top level modules:
+# 	bitwise_xor
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:48 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv 
+# -- Compiling module bitwise_or
+# 
+# Top level modules:
+# 	bitwise_or
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:48 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv 
+# -- Compiling module bitwise_and
+# 
+# Top level modules:
+# 	bitwise_and
+# End time: 02:12:48 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:49 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 02:12:49 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:49 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 02:12:49 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:49 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv 
+# -- Compiling module instructionDecoder
+# 
+# Top level modules:
+# 	instructionDecoder
+# End time: 02:12:49 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:50:05 on Nov 07,2022
+# Start time: 02:12:49 on Nov 10,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv 
 # -- Compiling module registerBank
 # 
 # Top level modules:
 # 	registerBank
-# End time: 19:50:05 on Nov 07,2022, Elapsed time: 0:00:00
+# End time: 02:12:49 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBankTest.sv}
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:50:05 on Nov 07,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBankTest.sv 
-# -- Compiling module registerBankTest
+# Start time: 02:12:49 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv 
+# -- Compiling module controlUnit
 # 
 # Top level modules:
-# 	registerBankTest
-# End time: 19:50:05 on Nov 07,2022, Elapsed time: 0:00:00
+# 	controlUnit
+# End time: 02:12:49 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:49 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv 
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# End time: 02:12:49 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:49 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv 
+# -- Compiling module mux2_1
+# 
+# Top level modules:
+# 	mux2_1
+# End time: 02:12:49 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:49 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv 
+# -- Compiling module armToALUAdapter
+# 
+# Top level modules:
+# 	armToALUAdapter
+# End time: 02:12:49 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:49 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv 
+# -- Compiling module flipFlopD
+# 
+# Top level modules:
+# 	flipFlopD
+# End time: 02:12:49 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  registerBankTest
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" registerBankTest 
-# Start time: 19:50:05 on Nov 07,2022
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processorTest.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:12:49 on Nov 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processorTest.sv 
+# -- Compiling module processorTest
+# 
+# Top level modules:
+# 	processorTest
+# End time: 02:12:49 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  processorTest
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" processorTest 
+# Start time: 02:12:49 on Nov 10,2022
 # Loading sv_std.std
-# Loading work.registerBankTest
+# Loading work.processorTest
+# Loading work.processor
+# Loading work.instructionDecoder
+# Loading work.controlUnit
+# Loading work.armToALUAdapter
 # Loading work.registerBank
+# Loading work.ALU
+# Loading work.Operations
+# Loading work.sign_magnitud_to_complement
+# Loading work.adder
+# Loading work.subtracter
+# Loading work.multiplier
+# Loading work.division
+# Loading work.mod
+# Loading work.shifL
+# Loading work.shifR
+# Loading work.bitwise_and
+# Loading work.bitwise_or
+# Loading work.bitwise_xor
+# Loading work.complement_2_to_sign_magnitud
+# Loading work.mux_9_1
+# Loading work.FlagsM
+# Loading work.mux2_1
+# Loading work.flipFlopD
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'R15'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myRegisterBank File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'out'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (32) for port 'multOutComp'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftL File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftR File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myand File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myxor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'f'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'g'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'h'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'j'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/PCselector File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'A'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'C'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
 # 
 # add wave *
 # view structure
@@ -45,7 +321,253 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+add wave -position insertpoint  \
+sim:/processorTest/myProcessor/SrcA \
+sim:/processorTest/myProcessor/SrcB
+# Break key hit
+# Break in Module processorTest at C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processorTest.sv line 11
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'R15'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myRegisterBank File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'out'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (32) for port 'multOutComp'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftL File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftR File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myand File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myxor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'f'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'g'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'h'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'j'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/PCselector File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'A'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'C'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'R15'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myRegisterBank File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'out'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (32) for port 'multOutComp'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftL File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftR File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myand File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myxor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'f'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'g'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'h'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'j'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/PCselector File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'A'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'C'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+run -all
+add wave -position insertpoint  \
+sim:/processorTest/myProcessor/RD1 \
+sim:/processorTest/myProcessor/RD2
+# Break key hit
+# Break in Module processorTest at C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processorTest.sv line 11
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'R15'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myRegisterBank File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'out'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (32) for port 'multOutComp'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftL File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftR File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myand File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myxor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'f'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'g'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'h'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'j'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/PCselector File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'A'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'C'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+run -all
+add wave -position insertpoint  \
+sim:/processorTest/myProcessor/myRegisterBank/register
 # Break key hit
 # Simulation stop requested.
-# End time: 19:52:40 on Nov 07,2022, Elapsed time: 0:02:35
-# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'R15'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myRegisterBank File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'out'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (32) for port 'multOutComp'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftL File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftR File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myand File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myxor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'f'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'g'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'h'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'j'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/PCselector File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'A'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'C'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+run -all
+add wave -position insertpoint  \
+sim:/processorTest/myProcessor/RA1 \
+sim:/processorTest/myProcessor/RA2
+# Break key hit
+# Break in Module registerBank at C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv line 14
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'R15'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myRegisterBank File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'out'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (32) for port 'multOutComp'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftL File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftR File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myand File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myxor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'f'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'g'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'h'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'j'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/PCselector File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'A'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'C'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+run -all
+add wave -position insertpoint  \
+sim:/processorTest/myProcessor/Rn \
+sim:/processorTest/myProcessor/Rm \
+sim:/processorTest/myProcessor/Rd
+# Break key hit
+# Break in Module processorTest at C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processorTest.sv line 11
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'R15'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myRegisterBank File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'out'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (32) for port 'multOutComp'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftL File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myshiftR File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myand File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myOperations/myxor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'f'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'g'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'h'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'j'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/PCselector File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'A'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'C'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processorTest/myProcessor/myALUSelect File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 33
+run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 02:26:12 on Nov 10,2022, Elapsed time: 0:13:23
+# Errors: 0, Warnings: 17

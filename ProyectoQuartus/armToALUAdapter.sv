@@ -2,7 +2,7 @@ module armToALUAdapter(input [3:0] In,output logic [3:0] Out);
 	
 	always_comb begin
 	
-		case
+		case(In)
 		
 			0: Out=4'b0111; //And
 			1: Out=4'b1001; //XOR
@@ -13,7 +13,8 @@ module armToALUAdapter(input [3:0] In,output logic [3:0] Out);
 			6: Out=4'b0001;
 			7: Out=4'b0001;
 			10: Out=4'b0001;
-			default: 4'b0000;
+			13:Out=4'b0000;
+			default: Out=4'b0000;
 		
 		
 		endcase

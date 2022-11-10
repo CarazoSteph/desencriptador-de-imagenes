@@ -4,275 +4,251 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "RD1[0]",
+					"name" : "WR",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[1]",
+					"name" : "address[0]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[2]",
+					"name" : "address[1]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[3]",
+					"name" : "address[2]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[4]",
+					"name" : "address[3]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[5]",
+					"name" : "address[4]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[6]",
+					"name" : "address[5]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[7]",
+					"name" : "address[6]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[8]",
+					"name" : "address[7]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[9]",
+					"name" : "writeData[0]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[10]",
+					"name" : "writeData[1]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[11]",
+					"name" : "writeData[2]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[12]",
+					"name" : "writeData[3]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[13]",
+					"name" : "writeData[4]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[14]",
+					"name" : "writeData[5]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[15]",
+					"name" : "writeData[6]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[16]",
+					"name" : "writeData[7]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[17]",
+					"name" : "writeData[8]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[18]",
+					"name" : "writeData[9]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[19]",
+					"name" : "writeData[10]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[20]",
+					"name" : "writeData[11]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[21]",
+					"name" : "writeData[12]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[22]",
+					"name" : "writeData[13]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[23]",
+					"name" : "writeData[14]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[24]",
+					"name" : "writeData[15]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[25]",
+					"name" : "writeData[16]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[26]",
+					"name" : "writeData[17]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[27]",
+					"name" : "writeData[18]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[28]",
+					"name" : "writeData[19]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[29]",
+					"name" : "writeData[20]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[30]",
+					"name" : "writeData[21]",
 					"strict" : false
 				},
 				{
-					"name" : "RD1[31]",
+					"name" : "writeData[22]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[0]",
+					"name" : "writeData[23]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[1]",
+					"name" : "writeData[24]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[2]",
+					"name" : "writeData[25]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[3]",
+					"name" : "writeData[26]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[4]",
+					"name" : "writeData[27]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[5]",
+					"name" : "writeData[28]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[6]",
+					"name" : "writeData[29]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[7]",
+					"name" : "writeData[30]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[8]",
+					"name" : "writeData[31]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[9]",
+					"name" : "MemtoRegOut",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[10]",
+					"name" : "instruction[20]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[11]",
+					"name" : "instruction[26]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[12]",
+					"name" : "instruction[27]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[13]",
+					"name" : "instruction[25]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[14]",
+					"name" : "instruction[0]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[15]",
+					"name" : "instruction[21]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[16]",
+					"name" : "instruction[22]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[17]",
+					"name" : "instruction[23]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[18]",
+					"name" : "instruction[24]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[19]",
+					"name" : "instruction[1]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[20]",
+					"name" : "instruction[3]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[21]",
+					"name" : "instruction[2]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[22]",
+					"name" : "instruction[4]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[23]",
+					"name" : "instruction[7]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[24]",
+					"name" : "instruction[6]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[25]",
+					"name" : "instruction[5]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[26]",
+					"name" : "instruction[15]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[27]",
+					"name" : "instruction[14]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[28]",
+					"name" : "instruction[12]",
 					"strict" : false
 				},
 				{
-					"name" : "RD2[29]",
-					"strict" : false
-				},
-				{
-					"name" : "RD2[30]",
-					"strict" : false
-				},
-				{
-					"name" : "RD2[31]",
-					"strict" : false
-				},
-				{
-					"name" : "A1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "A1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "A1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "A1[3]",
+					"name" : "instruction[13]",
 					"strict" : false
 				},
 				{
@@ -284,295 +260,151 @@
 					"strict" : false
 				},
 				{
-					"name" : "A2[0]",
+					"name" : "instruction[19]",
 					"strict" : false
 				},
 				{
-					"name" : "A2[1]",
+					"name" : "instruction[18]",
 					"strict" : false
 				},
 				{
-					"name" : "A2[2]",
+					"name" : "instruction[16]",
 					"strict" : false
 				},
 				{
-					"name" : "A2[3]",
+					"name" : "instruction[17]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[0]",
+					"name" : "readData[0]",
 					"strict" : false
 				},
 				{
-					"name" : "A3[2]",
+					"name" : "readData[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A3[1]",
+					"name" : "readData[1]",
 					"strict" : false
 				},
 				{
-					"name" : "WE3",
+					"name" : "readData[3]",
 					"strict" : false
 				},
 				{
-					"name" : "A3[0]",
+					"name" : "readData[8]",
 					"strict" : false
 				},
 				{
-					"name" : "A3[3]",
+					"name" : "readData[10]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[0]",
+					"name" : "readData[9]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[1]",
+					"name" : "readData[11]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[1]",
+					"name" : "readData[4]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[2]",
+					"name" : "readData[6]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[2]",
+					"name" : "readData[5]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[3]",
+					"name" : "readData[7]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[3]",
+					"name" : "readData[12]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[4]",
+					"name" : "readData[14]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[4]",
+					"name" : "readData[13]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[5]",
+					"name" : "readData[15]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[5]",
+					"name" : "readData[16]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[6]",
+					"name" : "readData[18]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[6]",
+					"name" : "readData[17]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[7]",
+					"name" : "readData[19]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[7]",
+					"name" : "readData[24]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[8]",
+					"name" : "readData[26]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[8]",
+					"name" : "readData[25]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[9]",
+					"name" : "readData[27]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[9]",
+					"name" : "readData[20]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[10]",
+					"name" : "readData[22]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[10]",
+					"name" : "readData[21]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[11]",
+					"name" : "readData[23]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[11]",
+					"name" : "readData[28]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[12]",
+					"name" : "readData[30]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[12]",
+					"name" : "readData[29]",
 					"strict" : false
 				},
 				{
-					"name" : "WD3[13]",
+					"name" : "readData[31]",
 					"strict" : false
 				},
 				{
-					"name" : "R15[13]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[14]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[14]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[15]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[15]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[16]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[16]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[17]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[17]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[18]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[18]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[19]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[19]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[20]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[20]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[21]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[21]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[22]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[22]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[23]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[23]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[24]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[24]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[25]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[25]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[26]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[26]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[27]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[27]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[28]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[28]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[29]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[29]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[30]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[30]",
-					"strict" : false
-				},
-				{
-					"name" : "WD3[31]",
-					"strict" : false
-				},
-				{
-					"name" : "R15[31]",
+					"name" : "instruction[31]",
 					"strict" : false
 				}
 			]

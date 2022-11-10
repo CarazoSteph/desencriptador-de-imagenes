@@ -1,0 +1,11 @@
+module flipFlopD #(parameter N)(input clk,rst,input [N-1:0] In,output logic[N-1:0] Out);
+
+	always_ff @(posedge clk or posedge rst)begin
+		if(rst)Out=0;
+		else Out=In;
+	end
+
+	
+	
+
+endmodule 
