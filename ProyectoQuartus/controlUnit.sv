@@ -35,7 +35,7 @@ module controlUnit(input [1:0] op,input [5:0] funct, input [3:0] cond,input [3:0
 		ImmSrc= ((op==0) & (funct[5])) |((op==1)&(!funct[5])) | (op==2);  
 	end
 	always_comb begin
-		RegWrite=(op==0)|(op==1 & funct[0]);
+		RegWrite=(op==0 & op!=4'b1010)|(op==1 & funct[0]);
 	
 	end
 	

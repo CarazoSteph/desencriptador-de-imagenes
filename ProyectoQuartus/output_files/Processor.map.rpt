@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processor
-Thu Nov 10 02:12:35 2022
+Thu Nov 10 10:40:51 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,53 +13,58 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: ALU:myALU
- 12. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations
- 13. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_1
- 14. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_2
- 15. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|adder:myadder
- 16. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|subtracter:mysubstracter
- 17. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|multiplier:mymultiplier
- 18. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|division:mydiv
- 19. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|mod:mymod
- 20. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|shifL:myshiftL
- 21. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|shifR:myshiftR
- 22. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|bitwise_and:myand
- 23. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|bitwise_or:myor
- 24. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|bitwise_xor:myxor
- 25. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1
- 26. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_2
- 27. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_3
- 28. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_4
- 29. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_5
- 30. Parameter Settings for User Entity Instance: ALU:myALU|mux_9_1:myMux
- 31. Parameter Settings for User Entity Instance: ALU:myALU|FlagsM:myFlags
- 32. Parameter Settings for User Entity Instance: mux2_1:A1Selector
- 33. Parameter Settings for User Entity Instance: mux2_1:A2Selector
- 34. Parameter Settings for User Entity Instance: mux2_1:PCselector
- 35. Parameter Settings for User Entity Instance: flipFlopD:myClockFlop
- 36. Parameter Settings for User Entity Instance: mux2_1:myALUSelect
- 37. Port Connectivity Checks: "mux2_1:myALUSelect"
- 38. Port Connectivity Checks: "mux2_1:PCselector"
- 39. Port Connectivity Checks: "mux2_1:A1Selector"
- 40. Port Connectivity Checks: "ALU:myALU|mux_9_1:myMux"
- 41. Port Connectivity Checks: "ALU:myALU|Operations:myOperations|bitwise_xor:myxor"
- 42. Port Connectivity Checks: "ALU:myALU|Operations:myOperations|bitwise_or:myor"
- 43. Port Connectivity Checks: "ALU:myALU|Operations:myOperations|bitwise_and:myand"
- 44. Port Connectivity Checks: "ALU:myALU|Operations:myOperations|shifR:myshiftR"
- 45. Port Connectivity Checks: "ALU:myALU|Operations:myOperations|shifL:myshiftL"
- 46. Port Connectivity Checks: "ALU:myALU|Operations:myOperations"
- 47. Port Connectivity Checks: "ALU:myALU"
- 48. Port Connectivity Checks: "registerBank:myRegisterBank"
- 49. Port Connectivity Checks: "controlUnit:myControlUnit"
- 50. Port Connectivity Checks: "instructionDecoder:myDecoder"
- 51. Post-Synthesis Netlist Statistics for Top Partition
- 52. Elapsed Time Per Partition
- 53. Analysis & Synthesis Messages
- 54. Analysis & Synthesis Suppressed Messages
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: ALU:myALU
+ 13. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations
+ 14. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_1
+ 15. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_2
+ 16. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|adder:myadder
+ 17. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|subtracter:mysubstracter
+ 18. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|multiplier:mymultiplier
+ 19. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|division:mydiv
+ 20. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|mod:mymod
+ 21. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|shifL:myshiftL
+ 22. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|shifR:myshiftR
+ 23. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|bitwise_and:myand
+ 24. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|bitwise_or:myor
+ 25. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|bitwise_xor:myxor
+ 26. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|bitwise_or:mymov
+ 27. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1
+ 28. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_2
+ 29. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_3
+ 30. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_4
+ 31. Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_5
+ 32. Parameter Settings for User Entity Instance: ALU:myALU|mux_9_1:myMux
+ 33. Parameter Settings for User Entity Instance: ALU:myALU|FlagsM:myFlags
+ 34. Parameter Settings for User Entity Instance: mux2_1:A1Selector
+ 35. Parameter Settings for User Entity Instance: mux2_1:A2Selector
+ 36. Parameter Settings for User Entity Instance: mux2_1:PCselector
+ 37. Parameter Settings for User Entity Instance: flipFlopD:myClockFlop
+ 38. Parameter Settings for User Entity Instance: mux2_1:myALUSelect
+ 39. Parameter Settings for Inferred Entity Instance: ALU:myALU|Operations:myOperations|division:mydiv|lpm_divide:Div0
+ 40. Parameter Settings for Inferred Entity Instance: ALU:myALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0
+ 41. Port Connectivity Checks: "mux2_1:myALUSelect"
+ 42. Port Connectivity Checks: "mux2_1:PCselector"
+ 43. Port Connectivity Checks: "mux2_1:A1Selector"
+ 44. Port Connectivity Checks: "ALU:myALU|mux_9_1:myMux"
+ 45. Port Connectivity Checks: "ALU:myALU|Operations:myOperations|bitwise_or:mymov"
+ 46. Port Connectivity Checks: "ALU:myALU|Operations:myOperations|bitwise_xor:myxor"
+ 47. Port Connectivity Checks: "ALU:myALU|Operations:myOperations|bitwise_or:myor"
+ 48. Port Connectivity Checks: "ALU:myALU|Operations:myOperations|bitwise_and:myand"
+ 49. Port Connectivity Checks: "ALU:myALU|Operations:myOperations|shifR:myshiftR"
+ 50. Port Connectivity Checks: "ALU:myALU|Operations:myOperations|shifL:myshiftL"
+ 51. Port Connectivity Checks: "ALU:myALU|Operations:myOperations"
+ 52. Port Connectivity Checks: "ALU:myALU"
+ 53. Port Connectivity Checks: "registerBank:myRegisterBank"
+ 54. Port Connectivity Checks: "controlUnit:myControlUnit"
+ 55. Port Connectivity Checks: "instructionDecoder:myDecoder"
+ 56. Post-Synthesis Netlist Statistics for Top Partition
+ 57. Elapsed Time Per Partition
+ 58. Analysis & Synthesis Messages
+ 59. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -86,17 +91,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 10 02:12:35 2022       ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 10 10:40:51 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Processor                                   ;
 ; Top-level Entity Name           ; processor                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 547                                         ;
+; Total registers                 ; 483                                         ;
 ; Total pins                      ; 108                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
+; Total DSP Blocks                ; 2                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -211,7 +216,9 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
-;     Processors 7-12        ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -243,6 +250,16 @@ https://fpgasoftware.intel.com/eula.
 ; mux21.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv                       ;         ;
 ; armToALUAdapter.sv               ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv             ;         ;
 ; flipFlopD.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv                   ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                             ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                            ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                        ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                             ;         ;
+; db/lpm_divide_rqo.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/lpm_divide_rqo.tdf          ;         ;
+; db/abs_divider_4dg.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/abs_divider_4dg.tdf         ;         ;
+; db/alt_u_div_o2f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/alt_u_div_o2f.tdf           ;         ;
+; db/lpm_abs_4p9.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/lpm_abs_4p9.tdf             ;         ;
+; db/lpm_divide_65m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/lpm_divide_65m.tdf          ;         ;
+; db/sign_div_unsign_9nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/sign_div_unsign_9nh.tdf     ;         ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -251,52 +268,82 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 477       ;
+; Estimate of Logic utilization (ALMs needed) ; 1863      ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 566       ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 331       ;
-;     -- 5 input functions                    ; 78        ;
-;     -- 4 input functions                    ; 32        ;
-;     -- <=3 input functions                  ; 125       ;
+; Combinational ALUT usage for logic          ; 3322      ;
+;     -- 7 input functions                    ; 5         ;
+;     -- 6 input functions                    ; 345       ;
+;     -- 5 input functions                    ; 278       ;
+;     -- 4 input functions                    ; 1087      ;
+;     -- <=3 input functions                  ; 1607      ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 547       ;
+; Dedicated logic registers                   ; 483       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 108       ;
 ;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
+; Total DSP Blocks                            ; 2         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 547       ;
-; Total fan-out                               ; 5150      ;
-; Average fan-out                             ; 3.88      ;
+; Maximum fan-out                             ; 483       ;
+; Total fan-out                               ; 14579     ;
+; Average fan-out                             ; 3.62      ;
 +---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                             ;
-+---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------+-------------------------------+--------------+
-; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                 ; Entity Name                   ; Library Name ;
-+---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------+-------------------------------+--------------+
-; |processor                                        ; 566 (0)             ; 547 (0)                   ; 0                 ; 0          ; 108  ; 0            ; |processor                                                                          ; processor                     ; work         ;
-;    |ALU:myALU|                                    ; 193 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU                                                                ; ALU                           ; work         ;
-;       |Operations:myOperations|                   ; 142 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations                                        ; Operations                    ; work         ;
-;          |adder:myadder|                          ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|adder:myadder                          ; adder                         ; work         ;
-;          |complement_2_to_sign_magnitud:to_mag_1| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1 ; complement_2_to_sign_magnitud ; work         ;
-;          |complement_2_to_sign_magnitud:to_mag_2| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_2 ; complement_2_to_sign_magnitud ; work         ;
-;          |shifR:myshiftR|                         ; 28 (28)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|shifR:myshiftR                         ; shifR                         ; work         ;
-;          |sign_magnitud_to_complement:to_comp_1|  ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_1  ; sign_magnitud_to_complement   ; work         ;
-;          |subtracter:mysubstracter|               ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|subtracter:mysubstracter               ; subtracter                    ; work         ;
-;       |mux_9_1:myMux|                             ; 51 (51)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|mux_9_1:myMux                                                  ; mux_9_1                       ; work         ;
-;    |controlUnit:myControlUnit|                    ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|controlUnit:myControlUnit                                                ; controlUnit                   ; work         ;
-;    |flipFlopD:myClockFlop|                        ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|flipFlopD:myClockFlop                                                    ; flipFlopD                     ; work         ;
-;    |instructionDecoder:myDecoder|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|instructionDecoder:myDecoder                                             ; instructionDecoder            ; work         ;
-;    |mux2_1:A1Selector|                            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2_1:A1Selector                                                        ; mux2_1                        ; work         ;
-;    |mux2_1:A2Selector|                            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2_1:A2Selector                                                        ; mux2_1                        ; work         ;
-;    |mux2_1:myALUSelect|                           ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2_1:myALUSelect                                                       ; mux2_1                        ; work         ;
-;    |registerBank:myRegisterBank|                  ; 344 (344)           ; 546 (546)                 ; 0                 ; 0          ; 0    ; 0            ; |processor|registerBank:myRegisterBank                                              ; registerBank                  ; work         ;
-+---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------+-------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                  ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------+
+; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                      ; Entity Name                   ; Library Name ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------+
+; |processor                                        ; 3322 (0)            ; 483 (0)                   ; 0                 ; 2          ; 108  ; 0            ; |processor                                                                                                                                               ; processor                     ; work         ;
+;    |ALU:myALU|                                    ; 2943 (0)            ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |processor|ALU:myALU                                                                                                                                     ; ALU                           ; work         ;
+;       |Operations:myOperations|                   ; 2848 (0)            ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations                                                                                                             ; Operations                    ; work         ;
+;          |adder:myadder|                          ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|adder:myadder                                                                                               ; adder                         ; work         ;
+;          |complement_2_to_sign_magnitud:to_mag_1| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1                                                                      ; complement_2_to_sign_magnitud ; work         ;
+;          |complement_2_to_sign_magnitud:to_mag_2| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_2                                                                      ; complement_2_to_sign_magnitud ; work         ;
+;          |complement_2_to_sign_magnitud:to_mag_3| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_3                                                                      ; complement_2_to_sign_magnitud ; work         ;
+;          |complement_2_to_sign_magnitud:to_mag_4| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_4                                                                      ; complement_2_to_sign_magnitud ; work         ;
+;          |complement_2_to_sign_magnitud:to_mag_5| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_5                                                                      ; complement_2_to_sign_magnitud ; work         ;
+;          |division:mydiv|                         ; 1378 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|division:mydiv                                                                                              ; division                      ; work         ;
+;             |lpm_divide:Div0|                     ; 1378 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|division:mydiv|lpm_divide:Div0                                                                              ; lpm_divide                    ; work         ;
+;                |lpm_divide_rqo:auto_generated|    ; 1378 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|division:mydiv|lpm_divide:Div0|lpm_divide_rqo:auto_generated                                                ; lpm_divide_rqo                ; work         ;
+;                   |abs_divider_4dg:divider|       ; 1378 (40)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|division:mydiv|lpm_divide:Div0|lpm_divide_rqo:auto_generated|abs_divider_4dg:divider                        ; abs_divider_4dg               ; work         ;
+;                      |alt_u_div_o2f:divider|      ; 1306 (1306)         ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|division:mydiv|lpm_divide:Div0|lpm_divide_rqo:auto_generated|abs_divider_4dg:divider|alt_u_div_o2f:divider  ; alt_u_div_o2f                 ; work         ;
+;                      |lpm_abs_4p9:my_abs_num|     ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|division:mydiv|lpm_divide:Div0|lpm_divide_rqo:auto_generated|abs_divider_4dg:divider|lpm_abs_4p9:my_abs_num ; lpm_abs_4p9                   ; work         ;
+;          |mod:mymod|                              ; 1287 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|mod:mymod                                                                                                   ; mod                           ; work         ;
+;             |lpm_divide:Mod0|                     ; 1287 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0                                                                                   ; lpm_divide                    ; work         ;
+;                |lpm_divide_65m:auto_generated|    ; 1287 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0|lpm_divide_65m:auto_generated                                                     ; lpm_divide_65m                ; work         ;
+;                   |sign_div_unsign_9nh:divider|   ; 1287 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider                         ; sign_div_unsign_9nh           ; work         ;
+;                      |alt_u_div_o2f:divider|      ; 1287 (1287)         ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_o2f:divider   ; alt_u_div_o2f                 ; work         ;
+;          |multiplier:mymultiplier|                ; 14 (14)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|multiplier:mymultiplier                                                                                     ; multiplier                    ; work         ;
+;          |shifL:myshiftL|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|shifL:myshiftL                                                                                              ; shifL                         ; work         ;
+;          |shifR:myshiftR|                         ; 28 (28)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|shifR:myshiftR                                                                                              ; shifR                         ; work         ;
+;          |sign_magnitud_to_complement:to_comp_1|  ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_1                                                                       ; sign_magnitud_to_complement   ; work         ;
+;          |subtracter:mysubstracter|               ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|Operations:myOperations|subtracter:mysubstracter                                                                                    ; subtracter                    ; work         ;
+;       |mux_9_1:myMux|                             ; 95 (95)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|ALU:myALU|mux_9_1:myMux                                                                                                                       ; mux_9_1                       ; work         ;
+;    |controlUnit:myControlUnit|                    ; 9 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|controlUnit:myControlUnit                                                                                                                     ; controlUnit                   ; work         ;
+;       |armToALUAdapter:myAdapter|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|controlUnit:myControlUnit|armToALUAdapter:myAdapter                                                                                           ; armToALUAdapter               ; work         ;
+;    |flipFlopD:myClockFlop|                        ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|flipFlopD:myClockFlop                                                                                                                         ; flipFlopD                     ; work         ;
+;    |instructionDecoder:myDecoder|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|instructionDecoder:myDecoder                                                                                                                  ; instructionDecoder            ; work         ;
+;    |mux2_1:A1Selector|                            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2_1:A1Selector                                                                                                                             ; mux2_1                        ; work         ;
+;    |mux2_1:A2Selector|                            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2_1:A2Selector                                                                                                                             ; mux2_1                        ; work         ;
+;    |mux2_1:myALUSelect|                           ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2_1:myALUSelect                                                                                                                            ; mux2_1                        ; work         ;
+;    |registerBank:myRegisterBank|                  ; 344 (344)           ; 482 (482)                 ; 0                 ; 0          ; 0    ; 0            ; |processor|registerBank:myRegisterBank                                                                                                                   ; registerBank                  ; work         ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Two Independent 18x18           ; 1           ;
+; Sum of two 18x18                ; 1           ;
+; Total number of DSP blocks      ; 2           ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 3           ;
++---------------------------------+-------------+
 
 
 +---------------------------------------------------------------------------------------+
@@ -343,10 +390,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 547   ;
-; Number of registers using Synchronous Clear  ; 60    ;
+; Total registers                              ; 483   ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 547   ;
+; Number of registers using Asynchronous Clear ; 483   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 480   ;
 ; Number of registers using Preset             ; 0     ;
@@ -358,18 +405,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
-; 16:1               ; 30 bits   ; 300 LEs       ; 300 LEs              ; 0 LEs                  ; Yes        ; |processor|registerBank:myRegisterBank|RD1[17]                          ;
-; 16:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |processor|registerBank:myRegisterBank|RD1[0]                           ;
-; 16:1               ; 30 bits   ; 300 LEs       ; 300 LEs              ; 0 LEs                  ; Yes        ; |processor|registerBank:myRegisterBank|RD2[14]                          ;
-; 16:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |processor|registerBank:myRegisterBank|RD2[0]                           ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processor|mux2_1:A1Selector|C[1]                                       ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |processor|instructionDecoder:myDecoder|Mux4                            ;
-; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |processor|ALU:myALU|Operations:myOperations|shifR:myshiftR|ShiftRight0 ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |processor|mux2_1:A2Selector|C[2]                                       ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |processor|mux2_1:myALUSelect|C[0]                                      ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |processor|mux2_1:myALUSelect|C[7]                                      ;
-; 18:1               ; 4 bits    ; 48 LEs        ; 40 LEs               ; 8 LEs                  ; No         ; |processor|ALU:myALU|mux_9_1:myMux|Mux25                                ;
-; 21:1               ; 4 bits    ; 56 LEs        ; 48 LEs               ; 8 LEs                  ; No         ; |processor|ALU:myALU|mux_9_1:myMux|Mux30                                ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |processor|ALU:myALU|Operations:myOperations|shifL:myshiftL|ShiftLeft0  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |processor|ALU:myALU|Operations:myOperations|shifL:myshiftL|ShiftLeft0  ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; No         ; |processor|ALU:myALU|Operations:myOperations|shifR:myshiftR|ShiftRight0 ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |processor|mux2_1:A2Selector|C[0]                                       ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |processor|mux2_1:myALUSelect|C[2]                                      ;
+; 16:1               ; 30 bits   ; 300 LEs       ; 300 LEs              ; 0 LEs                  ; No         ; |processor|registerBank:myRegisterBank|Mux3                             ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |processor|registerBank:myRegisterBank|Mux28                            ;
+; 16:1               ; 30 bits   ; 300 LEs       ; 300 LEs              ; 0 LEs                  ; No         ; |processor|registerBank:myRegisterBank|Mux33                            ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |processor|registerBank:myRegisterBank|Mux63                            ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |processor|mux2_1:myALUSelect|C[4]                                      ;
+; 35:1               ; 4 bits    ; 92 LEs        ; 80 LEs               ; 12 LEs                 ; No         ; |processor|ALU:myALU|mux_9_1:myMux|Mux30                                ;
+; 37:1               ; 4 bits    ; 96 LEs        ; 80 LEs               ; 16 LEs                 ; No         ; |processor|ALU:myALU|mux_9_1:myMux|Mux24                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 
 
@@ -513,6 +562,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|bitwise_or:mymov ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1 ;
 +----------------+-------+----------------------------------------------------------------------------------------------+
@@ -633,6 +692,52 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ALU:myALU|Operations:myOperations|division:mydiv|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                                    ;
++------------------------+----------------+-------------------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                                 ;
+; LPM_WIDTHD             ; 32             ; Untyped                                                                 ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                                 ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                                 ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                 ;
+; CBXI_PARAMETER         ; lpm_divide_rqo ; Untyped                                                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                          ;
++------------------------+----------------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ALU:myALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0 ;
++------------------------+----------------+--------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                               ;
++------------------------+----------------+--------------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                            ;
+; LPM_WIDTHD             ; 32             ; Untyped                                                            ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                            ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                            ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                            ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                            ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                            ;
+; CBXI_PARAMETER         ; lpm_divide_65m ; Untyped                                                            ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                            ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                            ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                       ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                     ;
++------------------------+----------------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "mux2_1:myALUSelect"                                                                                                                                                                ;
 +------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -672,7 +777,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; h    ; Input ; Warning  ; Input port expression (33 bits) is wider than the input port (32 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; i    ; Input ; Warning  ; Input port expression (33 bits) is wider than the input port (32 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; j    ; Input ; Warning  ; Input port expression (33 bits) is wider than the input port (32 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; k    ; Input ; Warning  ; Input port expression (33 bits) is wider than the input port (32 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:myALU|Operations:myOperations|bitwise_or:mymov"                                                                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; a    ; Input  ; Info     ; Stuck at GND                                                                                                                                                            ;
+; c    ; Output ; Warning  ; Output or bidir port (32 bits) is smaller than the port expression (33 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -720,13 +836,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:myALU|Operations:myOperations"                                                                                                        ;
-+-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                                                                            ;
-+-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------+
-; multOutComp ; Output ; Warning  ; Output or bidir port (64 bits) is wider than the port expression (32 bits) it drives; bit(s) "multOutComp[63..32]" have no fanouts ;
-+-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:myALU|Operations:myOperations"                                                                                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                                 ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; multOutComp ; Output ; Warning  ; Output or bidir port (64 bits) is wider than the port expression (32 bits) it drives; bit(s) "multOutComp[63..32]" have no fanouts                                      ;
+; movOut      ; Output ; Warning  ; Output or bidir port (32 bits) is smaller than the port expression (33 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -770,27 +887,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 547                         ;
-;     CLR               ; 7                           ;
-;     CLR SCLR          ; 60                          ;
+; arriav_ff             ; 483                         ;
+;     CLR               ; 3                           ;
 ;     ENA CLR           ; 480                         ;
-; arriav_lcell_comb     ; 567                         ;
-;     arith             ; 114                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 66                          ;
-;         2 data inputs ; 31                          ;
-;         4 data inputs ; 16                          ;
-;     normal            ; 453                         ;
+; arriav_lcell_comb     ; 3323                        ;
+;     arith             ; 1386                        ;
+;         0 data inputs ; 122                         ;
+;         1 data inputs ; 115                         ;
+;         2 data inputs ; 76                          ;
+;         3 data inputs ; 268                         ;
+;         4 data inputs ; 631                         ;
+;         5 data inputs ; 174                         ;
+;     extend            ; 5                           ;
+;         7 data inputs ; 5                           ;
+;     normal            ; 1922                        ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 25                          ;
-;         4 data inputs ; 16                          ;
-;         5 data inputs ; 78                          ;
-;         6 data inputs ; 331                         ;
+;         2 data inputs ; 862                         ;
+;         3 data inputs ; 156                         ;
+;         4 data inputs ; 454                         ;
+;         5 data inputs ; 104                         ;
+;         6 data inputs ; 345                         ;
+;     shared            ; 10                          ;
+;         0 data inputs ; 4                           ;
+;         2 data inputs ; 4                           ;
+;         4 data inputs ; 2                           ;
+; arriav_mac            ; 2                           ;
 ; boundary_port         ; 108                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.10                        ;
-; Average LUT depth     ; 3.76                        ;
+; Max LUT depth         ; 102.80                      ;
+; Average LUT depth     ; 88.54                       ;
 +-----------------------+-----------------------------+
 
 
@@ -799,7 +924,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:14     ;
 +----------------+--------------+
 
 
@@ -809,7 +934,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 10 02:12:28 2022
+    Info: Processing started: Thu Nov 10 10:40:30 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor -c Processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -889,7 +1014,8 @@ Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:myCont
 Info (12128): Elaborating entity "armToALUAdapter" for hierarchy "controlUnit:myControlUnit|armToALUAdapter:myAdapter" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv Line: 7
 Info (12128): Elaborating entity "registerBank" for hierarchy "registerBank:myRegisterBank" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 19
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:myALU" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 20
-Info (12128): Elaborating entity "Operations" for hierarchy "ALU:myALU|Operations:myOperations" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 17
+Info (12128): Elaborating entity "Operations" for hierarchy "ALU:myALU|Operations:myOperations" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at Operations.sv(42): truncated value with size 33 to match size of target (32) File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 42
 Info (12128): Elaborating entity "sign_magnitud_to_complement" for hierarchy "ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_1" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 8
 Info (12128): Elaborating entity "adder" for hierarchy "ALU:myALU|Operations:myOperations|adder:myadder" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 14
 Info (12128): Elaborating entity "subtracter" for hierarchy "ALU:myALU|Operations:myOperations|subtracter:mysubstracter" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 15
@@ -901,9 +1027,9 @@ Info (12128): Elaborating entity "shifR" for hierarchy "ALU:myALU|Operations:myO
 Info (12128): Elaborating entity "bitwise_and" for hierarchy "ALU:myALU|Operations:myOperations|bitwise_and:myand" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 21
 Info (12128): Elaborating entity "bitwise_or" for hierarchy "ALU:myALU|Operations:myOperations|bitwise_or:myor" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 22
 Info (12128): Elaborating entity "bitwise_xor" for hierarchy "ALU:myALU|Operations:myOperations|bitwise_xor:myxor" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 23
-Info (12128): Elaborating entity "complement_2_to_sign_magnitud" for hierarchy "ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 25
-Info (12128): Elaborating entity "mux_9_1" for hierarchy "ALU:myALU|mux_9_1:myMux" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 18
-Info (12128): Elaborating entity "FlagsM" for hierarchy "ALU:myALU|FlagsM:myFlags" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 19
+Info (12128): Elaborating entity "complement_2_to_sign_magnitud" for hierarchy "ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 26
+Info (12128): Elaborating entity "mux_9_1" for hierarchy "ALU:myALU|mux_9_1:myMux" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 19
+Info (12128): Elaborating entity "FlagsM" for hierarchy "ALU:myALU|FlagsM:myFlags" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
 Warning (10230): Verilog HDL assignment warning at FlagsM.sv(7): truncated value with size 33 to match size of target (32) File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv Line: 7
 Warning (10230): Verilog HDL assignment warning at FlagsM.sv(13): truncated value with size 33 to match size of target (32) File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv Line: 13
 Warning (10230): Verilog HDL assignment warning at FlagsM.sv(20): truncated value with size 64 to match size of target (32) File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv Line: 20
@@ -915,35 +1041,13 @@ Warning (10230): Verilog HDL assignment warning at FlagsM.sv(56): truncated valu
 Warning (10230): Verilog HDL assignment warning at FlagsM.sv(63): truncated value with size 33 to match size of target (32) File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv Line: 63
 Warning (10230): Verilog HDL assignment warning at FlagsM.sv(70): truncated value with size 33 to match size of target (32) File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv Line: 70
 Warning (10230): Verilog HDL assignment warning at FlagsM.sv(78): truncated value with size 33 to match size of target (32) File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv Line: 78
+Warning (10230): Verilog HDL assignment warning at FlagsM.sv(85): truncated value with size 33 to match size of target (32) File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv Line: 85
 Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:A1Selector" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 23
 Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:PCselector" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 27
 Info (12128): Elaborating entity "flipFlopD" for hierarchy "flipFlopD:myClockFlop" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 29
 Warning (10230): Verilog HDL assignment warning at flipFlopD.sv(8): truncated value with size 8 to match size of target (1) File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv Line: 8
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "SrcB[31]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[30]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[29]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[28]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[27]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[26]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[25]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[24]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[23]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[22]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[21]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[20]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[19]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[18]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[17]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[16]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[15]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[14]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[13]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[12]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[11]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[10]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[9]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-    Warning (12110): Net "SrcB[8]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "ALU:myALU|k[32]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 3
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "SrcB[31]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
     Warning (12110): Net "SrcB[30]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
@@ -1019,7 +1123,60 @@ Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "SrcB[10]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
     Warning (12110): Net "SrcB[9]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
     Warning (12110): Net "SrcB[8]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
-Warning (12241): 11 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "SrcB[31]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[30]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[29]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[28]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[27]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[26]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[25]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[24]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[23]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[22]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[21]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[20]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[19]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[18]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[17]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[16]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[15]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[14]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[13]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[12]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[11]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[10]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[9]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+    Warning (12110): Net "SrcB[8]" is missing source, defaulting to GND File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 13
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ALU:myALU|Operations:myOperations|division:mydiv|Div0" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv Line: 3
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ALU:myALU|Operations:myOperations|mod:mymod|Mod0" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv Line: 3
+Info (12130): Elaborated megafunction instantiation "ALU:myALU|Operations:myOperations|division:mydiv|lpm_divide:Div0" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv Line: 3
+Info (12133): Instantiated megafunction "ALU:myALU|Operations:myOperations|division:mydiv|lpm_divide:Div0" with the following parameter: File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv Line: 3
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "32"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_rqo.tdf
+    Info (12023): Found entity 1: lpm_divide_rqo File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/lpm_divide_rqo.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_4dg.tdf
+    Info (12023): Found entity 1: abs_divider_4dg File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/abs_divider_4dg.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_o2f.tdf
+    Info (12023): Found entity 1: alt_u_div_o2f File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/alt_u_div_o2f.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_4p9.tdf
+    Info (12023): Found entity 1: lpm_abs_4p9 File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/lpm_abs_4p9.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "ALU:myALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv Line: 3
+Info (12133): Instantiated megafunction "ALU:myALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0" with the following parameter: File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv Line: 3
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "32"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_65m.tdf
+    Info (12023): Found entity 1: lpm_divide_65m File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/lpm_divide_65m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/db/sign_div_unsign_9nh.tdf Line: 25
+Warning (12241): 12 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/output_files/Processor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -1032,15 +1189,16 @@ Warning (21074): Design contains 7 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "instruction[28]" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 1
     Warning (15610): No output dependent on input pin "instruction[29]" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 1
     Warning (15610): No output dependent on input pin "instruction[30]" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 1
-Info (21057): Implemented 1156 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3914 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 66 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 1048 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 124 warnings
-    Info: Peak virtual memory: 4888 megabytes
-    Info: Processing ended: Thu Nov 10 02:12:35 2022
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:14
+    Info (21061): Implemented 3804 logic cells
+    Info (21062): Implemented 2 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 128 warnings
+    Info: Peak virtual memory: 4911 megabytes
+    Info: Processing ended: Thu Nov 10 10:40:51 2022
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +------------------------------------------+

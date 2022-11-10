@@ -21,21 +21,32 @@ module processorTest();
 		
 		
 		#10; //posedge
-		instruction=32'he3a01002;
+		instruction=32'he3a00007;  //mov r0,#7
+		
+
+		
+		#10; //negedge
+		
+		
+		
+		
+		
+		#10; //posedge
+		instruction=32'he3a01002;  //mov r1,#2
 		
 
 		
 		#10; //negedge
 		
 		#10; //posedge
-		instruction=32'he3a02003;
+		instruction=32'he3a02003; //mov r2,#3
 		
 		
 		#10; //negedge
 		
 		
 		#10; //posedge
-		instruction=32'he0813002;
+		instruction=32'he0813002; //add r3,r1,r2
 
 		
 		
@@ -44,7 +55,10 @@ module processorTest();
 		
 		
 		#10; //posedge
-		instruction=0;
+		instruction=32'he1500003;
+		
+		
+		#10;//negedge
 		
 		
 		#100;

@@ -1,5 +1,5 @@
-module Operations #(parameter N=6)(input [N-1:0] A,B, output [N:0] andOut, orOut, xorOut, shiftLOut, shiftROut, modOut, divOut, subOut, sumOut, output [N-1:0] sumOutComp, subOutComp,divOutComp, modOutComp , output[2*N-1:0] multOut, multOutComp);
-	logic [N:0] a,b,d,e,f,g,h,i,j;
+module Operations #(parameter N=6)(input [N-1:0] A,B, output [N:0] andOut, orOut, xorOut, shiftLOut, shiftROut, modOut, divOut, subOut, sumOut, output [N-1:0] sumOutComp, subOutComp,divOutComp, modOutComp,movOut , output[2*N-1:0] multOut, multOutComp);
+	logic [N:0] a,b,d,e,f,g,h,i,j,k;
 	logic [2*N-1:0] c;
 	logic [N-1:0] A_c,B_c;
 	logic [N-1:0] add_comb,subs_comb,mult_comb,div_comb,mod_comb;
@@ -21,6 +21,7 @@ module Operations #(parameter N=6)(input [N-1:0] A,B, output [N:0] andOut, orOut
 	bitwise_and #(.N(N)) myand(.a(A),.b(B),.c(h));
 	bitwise_or #(.N(N)) myor(.a(A),.b(B),.c(i));
 	bitwise_xor #(.N(N)) myxor(.a(A),.b(B),.c(j));
+	bitwise_or #(.N(N)) mymov(.a(0),.b(B),.c(k));
 	
 	complement_2_to_sign_magnitud #(.N(N)) to_mag_1 (.A(a[N-1:0]),.B(add_comb));
 	complement_2_to_sign_magnitud #(.N(N)) to_mag_2(.A(b[N-1:0]),.B(subs_comb));
@@ -37,7 +38,8 @@ module Operations #(parameter N=6)(input [N-1:0] A,B, output [N:0] andOut, orOut
 	assign shiftROut = g;
 	assign andOut = h;
 	assign orOut = i; 
-	assign xorOut = j; 
+	assign xorOut = j;
+	assign movOut=k;
 	
 	assign sumOutComp = add_comb; 
 	assign subOutComp = subs_comb;
