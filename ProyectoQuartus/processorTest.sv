@@ -3,7 +3,7 @@ module processorTest();
 
 	logic rst,clk,WR,MemtoReg;
 	logic [7:0] address;
-	logic [31:0] writeData,instruction,readData;
+	logic [31:0] writeData,instruction;
 	processor myProcessor(.rst(rst),.clk(clk),.readData({24'b0,address}),.instruction(instruction),.WR(WR),.address(address),.writeData(writeData),.MemtoRegOut(MemtoReg));
 	
 	always begin
@@ -21,7 +21,7 @@ module processorTest();
 		
 		
 		#10; //posedge
-		instruction=32'he3a00007;  //mov r0,#7
+		instruction=32'he3a00004;  //mov r0,#4
 		
 
 		
@@ -55,11 +55,47 @@ module processorTest();
 		
 		
 		#10; //posedge
-		instruction=32'he1500003;
+		instruction=32'he1530000; //cmp r3,r0;
 		
 		
 		#10;//negedge
 		
+		#10; //posedge
+		instruction=32'hca00002c;  //  bgt a direccion 0x2c (deberia ser exitoso)
+		
+		#10; //negedge
+		
+		#10;//posedge
+		instruction=32'hba00003c; //blt a direccion 0x3c (debe fallar)
+		
+		#10; //negedge
+		
+		#10; //posedge
+		instruction=32'he1520000; //cmp r2,r0;
+		
+		
+		#10;//negedge
+		
+		  
+		  
+		  
+		#10; //posedge
+		instruction=32'hca00004c;  //  bgt a direccion 0x4c (debe fallar)
+		
+		#10; //negedge
+		
+		#10;//posedge
+		instruction=32'hba00005c; //blt a direccion 0x5c (debe ser exitoso)
+		
+		#10; //negedge
+		
+		#10;//posedge 
+		instruction=32'hea00006c;  // b a direccion 6c (debe ser exitoso)
+		
+		#10; //negedge
+		
+		#10; //posedge
+		instruction=0;
 		
 		#100;
 

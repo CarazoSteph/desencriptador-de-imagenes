@@ -11,10 +11,12 @@ module processor(input rst,clk,input [31:0] readData,instruction,output WR,outpu
 	logic [7:0] pc,pc4,pc8,pcIn;
 	logic [3:0] RA1,RA2;
 	logic [31:0] RD1,RD2,SrcA,SrcB;
-	logic [3:0] Flags;
+	logic [3:0] Flags,flagsRetained;
 	instructionDecoder myDecoder(.instruction(instruction),.op(op),.funct(funct),.cond(cond),.Rn(Rn),.Rm(Rm),.Rd(Rd),.imm(imm));
-	controlUnit myControlUnit(.op(op),.funct(funct), .cond(cond),.Rd(Rd), .Flags(Flags),
+	controlUnit myControlUnit(.op(op),.funct(funct), .cond(cond),.Rd(Rd), .Flags(flagsRetained),
 	.PCSrc(PCSrc),.MemtoReg(MemtoReg),.MemWrite(MemWrite),.ALUSrc(ALUSrc),.ImmSrc(ImmSrc),.RegWrite(RegWrite),.ALUControl(ALUControl),.RegSrc(RegSrc));
+	
+	FlagHolder myFlagHolder(.rst(rst),.op(op),.FlagsInput(Flags),.FlagsOut(flagsRetained));
 	
 	registerBank myRegisterBank(.clk(clk),.rst(rst), .A1(RA1),.A2(RA2),.A3(Rd),.WE3(RegWrite),.WD3(readData),.R15(pc8),.RD1(RD1),.RD2(RD2));
 	ALU #(.N(32)) myALU(.A(SrcA),.B(SrcB), .sel(ALUControl), .out(address),.Neg(Flags[3]),.Z(Flags[2]),.Ca(Flags[1]),.O(Flags[0]));
@@ -26,7 +28,7 @@ module processor(input rst,clk,input [31:0] readData,instruction,output WR,outpu
 	
 	mux2_1 #(8) PCselector (.A(pc4),.B(readData),.C(pcIn), .sel(PCSrc));
 	
-	flipFlopD #(.N(8)) myClockFlop(.clk(clk),.rst(rst),.In(pcIn),.Out(pc));
+	flipFlopD #(.N(8)) myClockFlop(.clk(!clk),.rst(rst),.In(pcIn),.Out(pc));
 	
 	//flipFlopD #(.N(24)) myImmFP(.clk(clk),.rst(rst),.In(imm),.Out(immFp));
 	

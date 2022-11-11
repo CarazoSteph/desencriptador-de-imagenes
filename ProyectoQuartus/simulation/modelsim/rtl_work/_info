@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1668098461
+Z2 !s110 1668137269
 !i10b 1
 !s100 [gM8J3BeehcC=`V9hC@NT0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1668098461.000000
+Z8 !s108 1668137269.000000
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/adder.sv|
 !i113 1
@@ -37,7 +37,7 @@ Z10 !s92 -sv -work work {+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencr
 Z11 tCvgOpt 0
 vALU
 R1
-R2
+Z12 !s110 1668137268
 !i10b 1
 !s100 <G?oNo8Y2CiCm[4XUH?Xz0
 R3
@@ -54,7 +54,7 @@ R7
 r1
 !s85 0
 31
-R8
+Z13 !s108 1668137268.000000
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv|
 !i113 1
@@ -64,7 +64,7 @@ R11
 n@a@l@u
 varmToALUAdapter
 R1
-Z12 !s110 1668098462
+R2
 !i10b 1
 !s100 DHY1SCN@0@g;F5cg1L4hW1
 R3
@@ -81,7 +81,7 @@ R7
 r1
 !s85 0
 31
-Z13 !s108 1668098462.000000
+R8
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv|
 !i113 1
@@ -91,7 +91,7 @@ R11
 narm@to@a@l@u@adapter
 vbitwise_and
 R1
-R2
+R12
 !i10b 1
 !s100 LP]857X>`[Y<FH:hzX?FK3
 R3
@@ -108,7 +108,7 @@ R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv|
 !i113 1
@@ -117,7 +117,7 @@ R10
 R11
 vbitwise_or
 R1
-R2
+R12
 !i10b 1
 !s100 EjA@[KFFmOJb6G:Q_EXf01
 R3
@@ -134,7 +134,7 @@ R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv|
 !i113 1
@@ -143,7 +143,7 @@ R10
 R11
 vbitwise_xor
 R1
-R2
+R12
 !i10b 1
 !s100 kARHfz`YX]oC:HaDd7SM82
 R3
@@ -160,16 +160,43 @@ R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv|
 !i113 1
 R9
 R10
 R11
-vcomplement_2_to_sign_magnitud
+vbranchingCondition
 R1
 R2
+!i10b 1
+!s100 E81PFalgDV0X1>Ozz>OaQ2
+R3
+I7kSLPAKKeT>32ASV4_]dc2
+R4
+S1
+R0
+w1668135288
+8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv
+FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv
+!i122 23
+L0 1 19
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv|
+!i113 1
+R9
+R10
+R11
+nbranching@condition
+vcomplement_2_to_sign_magnitud
+R1
+R12
 !i10b 1
 !s100 <aB8f_?]>>P<UWZGkTFo_3
 R3
@@ -186,7 +213,7 @@ R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv|
 !i113 1
@@ -195,24 +222,24 @@ R10
 R11
 vcontrolUnit
 R1
-R12
+R2
 !i10b 1
-!s100 mL>c_>n^VmLYFAddRQ7mJ1
+!s100 ^0fShEIP:nMAU3E^km_XR1
 R3
-IXEHVQ@Sj0[OEWjz;OiVOi0
+I6cP<SnlR=TggCVclzR<Bg2
 R4
 S1
 R0
-w1668098404
+w1668134666
 8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv
 FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv
 !i122 18
-L0 1 51
+L0 1 55
 R7
 r1
 !s85 0
 31
-R13
+R8
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv|
 !i113 1
@@ -222,7 +249,7 @@ R11
 ncontrol@unit
 vdivision
 R1
-R2
+R12
 !i10b 1
 !s100 hA]Se@XK0>7YnaTOdgRR90
 R3
@@ -239,16 +266,43 @@ R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv|
 !i113 1
 R9
 R10
 R11
-vFlagsM
+vFlagHolder
 R1
 R2
+!i10b 1
+!s100 AEXCeZ;=8<Wb5X<4]=[IU2
+R3
+I4F;zTP>TnBAZ3[:i[FnX72
+R4
+S1
+R0
+w1668136155
+8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv
+FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv
+!i122 24
+L0 1 17
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv|
+!i113 1
+R9
+R10
+R11
+n@flag@holder
+vFlagsM
+R1
+R12
 !i10b 1
 !s100 z3V_QL;UaBD1Xl6meN[LK2
 R3
@@ -265,7 +319,7 @@ R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv|
 !i113 1
@@ -275,15 +329,15 @@ R11
 n@flags@m
 vflipFlopD
 R1
-R12
+R2
 !i10b 1
-!s100 7IUI^S[ZdW:CmQ9kX[3Zb1
+!s100 <o_e7JKl`kk4jTWZ1iUOX1
 R3
-I<HRb3hT6>QgV[MI6`;jVc2
+IH6hDRd^ZTEEIY?JO6bjLf1
 R4
 S1
 R0
-w1668059642
+w1668120362
 8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv
 FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv
 !i122 22
@@ -292,7 +346,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv|
 !i113 1
@@ -329,7 +383,7 @@ R11
 ninstruction@decoder
 vmod
 R1
-R2
+R12
 !i10b 1
 !s100 U6BU>SJP5?_zTDma=WNZl3
 R3
@@ -346,7 +400,7 @@ R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv|
 !i113 1
@@ -355,7 +409,7 @@ R10
 R11
 vmultiplier
 R1
-R2
+R12
 !i10b 1
 !s100 gn@CbR5J6[_NLUjJU6P]G3
 R3
@@ -372,7 +426,7 @@ R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv|
 !i113 1
@@ -381,7 +435,7 @@ R10
 R11
 vmux2_1
 R1
-R12
+R2
 !i10b 1
 !s100 I6DehUNKT8aQf9Oo3f6WS3
 R3
@@ -398,7 +452,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv|
 !i113 1
@@ -407,7 +461,7 @@ R10
 R11
 vmux_9_1
 R1
-R2
+R12
 !i10b 1
 !s100 dC^RR3bRF]SVm9;^:o=F52
 R3
@@ -424,7 +478,7 @@ R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv|
 !i113 1
@@ -433,7 +487,7 @@ R10
 R11
 vOperations
 R1
-R2
+R12
 !i10b 1
 !s100 @>^0AhPHEWWeSozoKUEYo0
 R3
@@ -450,7 +504,7 @@ R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv|
 !i113 1
@@ -460,24 +514,24 @@ R11
 n@operations
 vprocessor
 R1
-R12
+R2
 !i10b 1
-!s100 [c<RACK=I:Rg:61Z`?UZf2
+!s100 AcecX`2BHkP8aO<mz@3iO3
 R3
-InFA5M>ZKh5BC_L<0TUHKK3
+IEl8n3aaJ@7fIG^PQjQ5Pl3
 R4
 S1
 R0
-w1668097989
+w1668134714
 8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv
 FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv
 !i122 19
-L0 1 42
+L0 1 44
 R7
 r1
 !s85 0
 31
-R13
+R8
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv|
 !i113 1
@@ -486,24 +540,24 @@ R10
 R11
 vprocessorTest
 R1
-R12
+R2
 !i10b 1
-!s100 ]CjeKJoPkja72CaK9oI`?1
+!s100 H^8?fZD2c7cg8K6]INO^^3
 R3
-I]d<0Z03N@afZiBUOKOiHh2
+I:O=FRj3Zj;aoPKM_O2:0Q1
 R4
 S1
 R0
-w1668096958
+w1668137200
 8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processorTest.sv
 FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processorTest.sv
-!i122 23
-L0 2 65
+!i122 25
+L0 2 104
 R7
 r1
 !s85 0
 31
-R13
+R8
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processorTest.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processorTest.sv|
 !i113 1
@@ -540,7 +594,7 @@ R11
 nregister@bank
 vshifL
 R1
-R2
+R12
 !i10b 1
 !s100 elnLjYMF]IfD1PI3IP@4k1
 R3
@@ -557,7 +611,7 @@ R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv|
 !i113 1
@@ -567,7 +621,7 @@ R11
 nshif@l
 vshifR
 R1
-Z17 !s110 1668098460
+Z17 !s110 1668137267
 !i10b 1
 !s100 ZA<PXLUgnL7Y<P_Pbi6d60
 R3
@@ -584,7 +638,7 @@ R7
 r1
 !s85 0
 31
-Z18 !s108 1668098460.000000
+Z18 !s108 1668137267.000000
 !s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv|
 !i113 1

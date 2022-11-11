@@ -1,0 +1,4 @@
+module FlagHolder(input op,input [3:0] FlagsInput,output [3:0] FlagsOut);
+
+
+endmodule 

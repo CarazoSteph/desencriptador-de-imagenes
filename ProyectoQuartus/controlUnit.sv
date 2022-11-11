@@ -3,10 +3,14 @@ module controlUnit(input [1:0] op,input [5:0] funct, input [3:0] cond,input [3:0
 );
 
 	logic [3:0] adapterOutput;
+	logic branchCondition;
+	
 	
 	armToALUAdapter myAdapter(.In(funct[4:1]), .Out(adapterOutput));
+	branchingCondition myBranchCondition(.Cond(cond),.Flags(Flags),.bCon(branchCondition));
+	
 	always_comb begin
-		PCSrc=(op==2) &(cond[3]==Flags[3]);
+		PCSrc=(op==2) & branchCondition;
 	end
 	
 	always_comb begin
@@ -35,7 +39,7 @@ module controlUnit(input [1:0] op,input [5:0] funct, input [3:0] cond,input [3:0
 		ImmSrc= ((op==0) & (funct[5])) |((op==1)&(!funct[5])) | (op==2);  
 	end
 	always_comb begin
-		RegWrite=(op==0 & op!=4'b1010)|(op==1 & funct[0]);
+		RegWrite=(op==0 & funct[4:1]!=4'b1010)|(op==1 & funct[0]);
 	
 	end
 	

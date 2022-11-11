@@ -1,6 +1,6 @@
 |processor
-rst => rst.IN2
-clk => clk.IN2
+rst => rst.IN3
+clk => clk.IN1
 readData[0] => readData[0].IN2
 readData[1] => readData[1].IN2
 readData[2] => readData[2].IN2
@@ -313,18 +313,18 @@ funct[3] => funct[3].IN1
 funct[4] => funct[4].IN1
 funct[5] => ALUSrc.IN1
 funct[5] => ALUSrc.IN1
-cond[0] => ~NO_FANOUT~
-cond[1] => ~NO_FANOUT~
-cond[2] => ~NO_FANOUT~
-cond[3] => PCSrc.IN0
+cond[0] => cond[0].IN1
+cond[1] => cond[1].IN1
+cond[2] => cond[2].IN1
+cond[3] => cond[3].IN1
 Rd[0] => ~NO_FANOUT~
 Rd[1] => ~NO_FANOUT~
 Rd[2] => ~NO_FANOUT~
 Rd[3] => ~NO_FANOUT~
-Flags[0] => ~NO_FANOUT~
-Flags[1] => ~NO_FANOUT~
-Flags[2] => ~NO_FANOUT~
-Flags[3] => PCSrc.IN1
+Flags[0] => Flags[0].IN1
+Flags[1] => Flags[1].IN1
+Flags[2] => Flags[2].IN1
+Flags[3] => Flags[3].IN1
 PCSrc <= PCSrc.DB_MAX_OUTPUT_PORT_TYPE
 MemtoReg <= MemtoReg.DB_MAX_OUTPUT_PORT_TYPE
 MemWrite <= MemWrite.DB_MAX_OUTPUT_PORT_TYPE
@@ -348,6 +348,40 @@ Out[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 Out[1] <= Out.DB_MAX_OUTPUT_PORT_TYPE
 Out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 Out[3] <= Out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|processor|controlUnit:myControlUnit|branchingCondition:myBranchCondition
+Cond[0] => Mux0.IN18
+Cond[1] => Mux0.IN17
+Cond[2] => Mux0.IN16
+Cond[3] => Mux0.IN15
+Flags[0] => bCon.IN0
+Flags[1] => ~NO_FANOUT~
+Flags[2] => bCon.IN1
+Flags[2] => Mux0.IN19
+Flags[2] => bCon.IN1
+Flags[2] => Mux0.IN10
+Flags[3] => bCon.IN1
+bCon <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|processor|FlagHolder:myFlagHolder
+rst => state[3].ACLR
+rst => state[2].ACLR
+rst => state[1].ACLR
+rst => state[0].ACLR
+op[0] => Equal0.IN31
+op[0] => Equal1.IN0
+op[1] => Equal0.IN30
+op[1] => Equal1.IN31
+FlagsInput[0] => state[0].DATAIN
+FlagsInput[1] => state[1].DATAIN
+FlagsInput[2] => state[2].DATAIN
+FlagsInput[3] => state[3].DATAIN
+FlagsOut[0] <= state[0].DB_MAX_OUTPUT_PORT_TYPE
+FlagsOut[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
+FlagsOut[2] <= state[2].DB_MAX_OUTPUT_PORT_TYPE
+FlagsOut[3] <= state[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processor|registerBank:myRegisterBank
@@ -7010,24 +7044,38 @@ C[7] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processor|flipFlopD:myClockFlop
-clk => state.CLK
-rst => state.ACLR
-In[0] => state.DATAIN
-In[1] => ~NO_FANOUT~
-In[2] => ~NO_FANOUT~
-In[3] => ~NO_FANOUT~
-In[4] => ~NO_FANOUT~
-In[5] => ~NO_FANOUT~
-In[6] => ~NO_FANOUT~
-In[7] => ~NO_FANOUT~
-Out[0] <= state.DB_MAX_OUTPUT_PORT_TYPE
-Out[1] <= <GND>
-Out[2] <= <GND>
-Out[3] <= <GND>
-Out[4] <= <GND>
-Out[5] <= <GND>
-Out[6] <= <GND>
-Out[7] <= <GND>
+clk => state[0].CLK
+clk => state[1].CLK
+clk => state[2].CLK
+clk => state[3].CLK
+clk => state[4].CLK
+clk => state[5].CLK
+clk => state[6].CLK
+clk => state[7].CLK
+rst => state[0].ACLR
+rst => state[1].ACLR
+rst => state[2].ACLR
+rst => state[3].ACLR
+rst => state[4].ACLR
+rst => state[5].ACLR
+rst => state[6].ACLR
+rst => state[7].ACLR
+In[0] => state[0].DATAIN
+In[1] => state[1].DATAIN
+In[2] => state[2].DATAIN
+In[3] => state[3].DATAIN
+In[4] => state[4].DATAIN
+In[5] => state[5].DATAIN
+In[6] => state[6].DATAIN
+In[7] => state[7].DATAIN
+Out[0] <= state[0].DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= state[2].DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= state[3].DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= state[4].DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= state[5].DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= state[6].DB_MAX_OUTPUT_PORT_TYPE
+Out[7] <= state[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processor|mux2_1:myALUSelect
