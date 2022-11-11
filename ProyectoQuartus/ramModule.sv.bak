@@ -1,0 +1,6 @@
+module ramModule(input rst,clk,input [10:0] address,output [31:0] Out);
+
+	logic [255:0] [31:0] memory;
+	
+
+endmodule 

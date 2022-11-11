@@ -1,4 +1,4 @@
-module processor(input rst,clk,input [31:0] readData,instruction,output WR,output [7:0] address,output [31:0] writeData,output MemtoRegOut );
+module processor(input rst,clk,input [31:0] readData,instruction,output WR,output [31:0] address,output [31:0] writeData,output MemtoRegOut,output [7:0] pc );
 
 	logic [1:0] op;
 	logic [5:0] funct;
@@ -8,7 +8,7 @@ module processor(input rst,clk,input [31:0] readData,instruction,output WR,outpu
 	logic  PCSrc,MemtoReg,MemWrite,ALUSrc,ImmSrc,RegWrite;
 	logic [3:0]  ALUControl;
 	logic [1:0] RegSrc;
-	logic [7:0] pc,pc4,pc8,pcIn;
+	logic [7:0] pc4,pc8,pcIn;
 	logic [3:0] RA1,RA2;
 	logic [31:0] RD1,RD2,SrcA,SrcB;
 	logic [3:0] Flags,flagsRetained;

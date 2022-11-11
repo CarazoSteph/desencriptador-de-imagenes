@@ -1,0 +1,3 @@
+module periModule(input rst,clk,switch,en, output [31:0] data);
+
+endmodule 

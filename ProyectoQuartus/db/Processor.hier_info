@@ -74,6 +74,30 @@ address[4] << ALU:myALU.out
 address[5] << ALU:myALU.out
 address[6] << ALU:myALU.out
 address[7] << ALU:myALU.out
+address[8] << ALU:myALU.out
+address[9] << ALU:myALU.out
+address[10] << ALU:myALU.out
+address[11] << ALU:myALU.out
+address[12] << ALU:myALU.out
+address[13] << ALU:myALU.out
+address[14] << ALU:myALU.out
+address[15] << ALU:myALU.out
+address[16] << ALU:myALU.out
+address[17] << ALU:myALU.out
+address[18] << ALU:myALU.out
+address[19] << ALU:myALU.out
+address[20] << ALU:myALU.out
+address[21] << ALU:myALU.out
+address[22] << ALU:myALU.out
+address[23] << ALU:myALU.out
+address[24] << ALU:myALU.out
+address[25] << ALU:myALU.out
+address[26] << ALU:myALU.out
+address[27] << ALU:myALU.out
+address[28] << ALU:myALU.out
+address[29] << ALU:myALU.out
+address[30] << ALU:myALU.out
+address[31] << ALU:myALU.out
 writeData[0] << RD2[0].DB_MAX_OUTPUT_PORT_TYPE
 writeData[1] << RD2[1].DB_MAX_OUTPUT_PORT_TYPE
 writeData[2] << RD2[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -107,6 +131,14 @@ writeData[29] << RD2[29].DB_MAX_OUTPUT_PORT_TYPE
 writeData[30] << RD2[30].DB_MAX_OUTPUT_PORT_TYPE
 writeData[31] << RD2[31].DB_MAX_OUTPUT_PORT_TYPE
 MemtoRegOut << controlUnit:myControlUnit.MemtoReg
+pc[0] << pc4[0].DB_MAX_OUTPUT_PORT_TYPE
+pc[1] << pc4[1].DB_MAX_OUTPUT_PORT_TYPE
+pc[2] << flipFlopD:myClockFlop.Out
+pc[3] << flipFlopD:myClockFlop.Out
+pc[4] << flipFlopD:myClockFlop.Out
+pc[5] << flipFlopD:myClockFlop.Out
+pc[6] << flipFlopD:myClockFlop.Out
+pc[7] << flipFlopD:myClockFlop.Out
 
 
 |processor|instructionDecoder:myDecoder
