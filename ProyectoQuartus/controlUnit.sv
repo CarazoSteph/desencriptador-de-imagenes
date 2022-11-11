@@ -25,7 +25,7 @@ module controlUnit(input [1:0] op,input [5:0] funct, input [3:0] cond,input [3:0
 		case(op)
 			0: ALUControl=adapterOutput;
 			1: ALUControl=0; //esta esta mal probablemente, falta definir correctamente con lo de preindex y postindex
-			2: ALUControl=1; //aqui hay que poner el de la resta;
+			2: ALUControl=0; //aqui hay que poner el de la resta;
 			default ALUControl=0;
 		
 		endcase

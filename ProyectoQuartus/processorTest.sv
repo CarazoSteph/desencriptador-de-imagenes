@@ -108,7 +108,7 @@ module processorTest();
 		#10; //negedge
 		
 		#10; //posedge
-		instruction=32'he2800002;  //add r0,r0,#2
+		instruction=32'he2400002;  //sub r0,r0,#2
 		
 
 		
