@@ -1,5 +1,5 @@
-module imageRom (input [7:0] address,output [31:0] Q);
-	logic [31:0] memory [255:0];
+module imageRom (input [31:0] address,output [31:0] Q);
+	logic [31:0] memory [16383:0];
 	initial $readmemh("image.mem",memory); //aqui hay que cambiar el archivo para el de la imagen que mando el profe de imagen
 	
 	

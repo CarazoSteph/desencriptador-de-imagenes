@@ -9,7 +9,7 @@ module cpu(input clk,rst,input [8:0] switch,input [31:0] GPUAddress,output [31:0
 	logic [31:0] memoryOut;
 	logic [31:0] readData,writeData;
 	
-	logic [7:0] romAddress,imageAddress,periAddress;
+	logic [31:0] romAddress,imageAddress,periAddress;
 	
 	InstructionRom myinstructionrom(.address(pc),.Q(instruction));
 	
@@ -34,8 +34,8 @@ module cpu(input clk,rst,input [8:0] switch,input [31:0] GPUAddress,output [31:0
 	mux2_1 #(.N(32)) MemRegSelector(.A(address),.B(memoryOut),.sel(MemtoReg),.C(readData));
 	
 	assign romAddress=address;
-	assign imageAddress=address-256;
-	assign periAddress=address-512;
+	assign imageAddress=address-16384;
+	assign periAddress=address-32768;
 	
 	
 endmodule 
