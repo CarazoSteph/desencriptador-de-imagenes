@@ -13,11 +13,11 @@ bgt a 0x4c (debe fallar)
 blt a 0x5c (debe ser exitoso)
 b a 0x6c (debe ser exitoso)
 mov r4,#128
-add r4, r4, r4
+adc r4, r4, r4  //adc se mapea a multiplicacion
 mov r5, #0
 ldr r6, [r4]
 mvn r6, r6
 str r6, [r5]
-add r4, r4, r4
+adc r4, r4, #2 //adc se mapea a multiplicacion
 mov r9,#15
 ldr r9,[r4]
