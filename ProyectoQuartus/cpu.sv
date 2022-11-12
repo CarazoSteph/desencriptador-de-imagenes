@@ -1,7 +1,7 @@
 module cpu(input clk,rst,switch,input [31:0] GPUAddress,output [31:0] GPUData);
 	logic [31:0] instruction;
 	logic [7:0] pc;
-	logic [31:0] ramOut,imageOut;
+	logic [31:0] ramOut,imageOut,periOut;
 	logic [31:0] address;
 	logic [1:0] selectMemory;
 	logic WR,MemtoReg;
@@ -13,15 +13,15 @@ module cpu(input clk,rst,switch,input [31:0] GPUAddress,output [31:0] GPUData);
 	
 	InstructionRom myinstructionrom(.address(pc),.Q(instruction));
 	
-	processor(.rst(rst),.clk(clk),.readData(readData),.instruction(instruction),.WR(WR),.address(address),.writeData(writeData),.MemtoRegOut(MemtoReg), .pc(pc) );
+	processor myprocessor(.rst(rst),.clk(clk),.readData(readData),.instruction(instruction),.WR(WR),.address(address),.writeData(writeData),.MemtoRegOut(MemtoReg), .pc(pc) );
 	
 	
 	
-	ramModule myRamModule(.rst(rst),.clk(clk),.en(en1),.address(romAddress),.data(writeData),.Out(ramOut),.addressGPU(GPUAddress),.OutGPU(GPUData)); //addressGPU,input [31:0] data,output [31:0] Out,OutGPU
+	ramModule myRamModule(.rst(rst),.clk(clk),.en(en1),.address(romAddress),.data(writeData),.Out(ramOut),.addressGPU(GPUAddress),.OutGPU(GPUData)); 
 	
 	imageRom myImageRom(.address(imageAddress),.Q(imageOut));
 	
-	periModule myperiModule(.rst(rst),.clk(clk),.switch(switch),.en(en1),.data(writeData));
+	periModule myperiModule(.rst(rst),.clk(clk),.switch(switch),.en(en1),.address(periAddress),.out(periOut));
 	
 	
 	
@@ -35,6 +35,7 @@ module cpu(input clk,rst,switch,input [31:0] GPUAddress,output [31:0] GPUData);
 	
 	assign romAddress=address;
 	assign imageAddress=address-256;
+	assign periAddress=address-512;
 	
 	
 endmodule 

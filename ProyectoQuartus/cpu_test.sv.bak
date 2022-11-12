@@ -1,0 +1,5 @@
+module cpu_test();
+	logic clk,rst,switch;
+	logic [31:0] GPUAddress,GPUData;
+	cpu mycpuModule(input clk,rst,switch,input [31:0] GPUAddress,output [31:0] GPUData)
+endmodule 
