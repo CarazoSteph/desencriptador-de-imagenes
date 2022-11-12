@@ -1,4 +1,4 @@
-module cpu(input clk,rst,switch,input [31:0] GPUAddress,output [31:0] GPUData);
+module cpu(input clk,rst,input [8:0] switch,input [31:0] GPUAddress,output [31:0] GPUData);
 	logic [31:0] instruction;
 	logic [7:0] pc;
 	logic [31:0] ramOut,imageOut,periOut;

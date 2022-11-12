@@ -28,11 +28,11 @@ module processor(input rst,clk,input [31:0] readData,instruction,output WR,outpu
 	
 	mux2_1 #(8) PCselector (.A(pc4),.B(readData),.C(pcIn), .sel(PCSrc));
 	
-	flipFlopD #(.N(8)) myClockFlop(.clk(!clk),.rst(rst),.In(pcIn),.Out(pc));
+	flipFlopD #(.N(32)) myClockFlop(.clk(!clk),.rst(rst),.In(pcIn),.Out(pc));
 	
 	//flipFlopD #(.N(24)) myImmFP(.clk(clk),.rst(rst),.In(imm),.Out(immFp));
 	
-	mux2_1 #(8) myALUSelect (.A(RD2),.B(imm),.sel(ALUSrc),.C(SrcB));
+	mux2_1 #(32) myALUSelect (.A(RD2),.B({8'b0,imm}),.sel(ALUSrc),.C(SrcB));
 	
 	
 	assign pc4=pc+4;
