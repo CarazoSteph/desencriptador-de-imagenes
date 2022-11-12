@@ -1,7 +1,8 @@
 
 `timescale 1ps/1ps
 module cpu_test();
-	logic clk,rst,switch;
+	logic clk,rst;
+	logic [8:0] switch;
 	logic [31:0] GPUAddress,GPUData;
 	cpu mycpuModule(.clk(clk),.rst(rst),.switch(switch),.GPUAddress(GPUAddress),.GPUData(GPUData));
 	
@@ -13,7 +14,7 @@ module cpu_test();
 	initial begin 
 		clk=1;
 		GPUAddress=0;
-		switch=0;
+		switch=9'b101010101;
 		rst=1;
 		#10;
 		rst=0;
