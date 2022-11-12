@@ -137,9 +137,14 @@ module processorTest();
 	
 		
 		#10;//posedge
+		instruction=32'he0a44004; // adc r4,r4,r4 // nota se decidio que adc realizara una multiplicacion
+		
+		
+		#10; //negedge
+		
+		
+		#10;//posedge
 		instruction=0;
-		
-		
 		
 		
 		#100;

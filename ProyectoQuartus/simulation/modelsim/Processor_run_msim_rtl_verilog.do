@@ -30,18 +30,11 @@ vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencripta
 vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv}
 vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv}
 vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv}
-vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ramModule.sv}
-vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv}
-vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv}
-vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv}
-vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv}
 vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv}
-vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv}
-vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv}
 
-vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv}
+vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processorTest.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  cpu_test
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  processorTest
 
 add wave *
 view structure
