@@ -1,4 +1,4 @@
-module FlagsM #(parameter N=5) (input [3:0] sel, input[N-1:0] A,B, input[N:0] a,b,d,e,f,g,h,i,j,k, output logic  Neg,Z,O,Ca, input [2*N-1:0] c);
+module FlagsM #(parameter N=5) (input [3:0] sel, input[N-1:0] A,B, input[N:0] a,b,d,e,f,g,h,i,j,k,l, output logic  Neg,Z,O,Ca, input [2*N-1:0] c);
 	logic [N-1:0] out;
 	always_comb begin
 		case(sel)
@@ -76,6 +76,13 @@ module FlagsM #(parameter N=5) (input [3:0] sel, input[N-1:0] A,B, input[N:0] a,
 			end
 			4'b1010: begin
 				out=k;
+				Ca=1'b0;
+				O = 1'b0;
+				Neg=1'b0;
+			
+			end
+			4'b1011: begin
+				out=l;
 				Ca=1'b0;
 				O = 1'b0;
 				Neg=1'b0;

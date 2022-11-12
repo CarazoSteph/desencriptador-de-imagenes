@@ -1,4 +1,4 @@
-module mux4_1 #(parameter N=32)(input [N-1:0] A,B,C,D,input [1:0] sel,output [N-1:0] Out);
+module mux4_1 #(parameter N=32)(input [N-1:0] A,B,C,D,input [1:0] sel,output logic [N-1:0] Out);
 	
 	always_comb begin
 		case(sel)

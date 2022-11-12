@@ -108,18 +108,50 @@ module processorTest();
 		#10; //negedge
 		
 		#10; //posedge
-		instruction=32'he2800002;  //add r0,r0,#2
+		instruction=32'he2400002;  //sub r0,r0,#2
 		
 
+		
+		#10; //negedge
+		
+		/*
+		
+		#10; //posedge
+		instruction=32'he1e00001; // mvn r0,r1
 		
 		#10; //negedge
 		
 		
 		
 		#10; //posedge
+		instruction=32'he0210002; //eor r0,r1,r2
+		
+		#10; //negedge
+		
+		*/
+		#10; //posedge 
+		instruction=32'he3a04080;  //mov r4,#128
+		
+		#10; //negedge
+		
+		#10;//posedge
+		instruction=32'he5946000; //ldr r6,[r4]
+		
+		#10;//negedge
+		
+		#10;//posedge
+		instruction=32'he0844004; //add r4,r4,r4
+		
+		#10;//negedge
+		
+		#10;//posedge
 		instruction=0;
 		
+		
+		
+		
 		#100;
+		$finish();
 
 	
 	end
