@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processor
-Sat Nov 12 16:41:32 2022
+Sat Nov 12 18:14:07 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -98,13 +98,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Nov 12 16:41:28 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sat Nov 12 18:14:04 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Processor                                   ;
 ; Top-level Entity Name           ; cpu                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 131568                                      ;
+; Total registers                 ; 131577                                      ;
 ; Total pins                      ; 75                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -213,22 +213,22 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 6.42        ;
+; Average used               ; 7.09        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  60.6%      ;
-;     Processor 3            ;  60.6%      ;
-;     Processor 4            ;  60.6%      ;
-;     Processor 5            ;  60.5%      ;
-;     Processor 6            ;  60.5%      ;
-;     Processor 7            ;  60.5%      ;
-;     Processor 8            ;  60.5%      ;
-;     Processor 9            ;  29.6%      ;
-;     Processor 10           ;  29.6%      ;
-;     Processor 11           ;  29.6%      ;
-;     Processor 12           ;  29.6%      ;
+;     Processor 2            ;  64.2%      ;
+;     Processor 3            ;  64.1%      ;
+;     Processor 4            ;  64.1%      ;
+;     Processor 5            ;  64.1%      ;
+;     Processor 6            ;  64.1%      ;
+;     Processor 7            ;  64.1%      ;
+;     Processor 8            ;  64.1%      ;
+;     Processor 9            ;  64.0%      ;
+;     Processor 10           ;  33.2%      ;
+;     Processor 11           ;  31.5%      ;
+;     Processor 12           ;  31.5%      ;
 +----------------------------+-------------+
 
 
@@ -290,24 +290,24 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 121503    ;
+; Estimate of Logic utilization (ALMs needed) ; 121508    ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 108018    ;
+; Combinational ALUT usage for logic          ; 108022    ;
 ;     -- 7 input functions                    ; 1254      ;
-;     -- 6 input functions                    ; 91158     ;
-;     -- 5 input functions                    ; 13680     ;
-;     -- 4 input functions                    ; 841       ;
-;     -- <=3 input functions                  ; 1085      ;
+;     -- 6 input functions                    ; 91161     ;
+;     -- 5 input functions                    ; 13678     ;
+;     -- 4 input functions                    ; 846       ;
+;     -- <=3 input functions                  ; 1083      ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 131568    ;
+; Dedicated logic registers                   ; 131577    ;
 ;                                             ;           ;
 ; I/O pins                                    ; 75        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 3         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; rst~input ;
-; Maximum fan-out                             ; 131571    ;
-; Total fan-out                               ; 1157740   ;
+; Maximum fan-out                             ; 131580    ;
+; Total fan-out                               ; 1157784   ;
 ; Average fan-out                             ; 4.83      ;
 +---------------------------------------------+-----------+
 
@@ -317,16 +317,16 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------+
 ; Compilation Hierarchy Node                           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                      ; Entity Name                   ; Library Name ;
 +------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+--------------+
-; |cpu                                                 ; 108018 (0)          ; 131568 (0)                ; 0                 ; 3          ; 75   ; 0            ; |cpu                                                                                                                                                                     ; cpu                           ; work         ;
+; |cpu                                                 ; 108022 (0)          ; 131577 (0)                ; 0                 ; 3          ; 75   ; 0            ; |cpu                                                                                                                                                                     ; cpu                           ; work         ;
 ;    |InstructionRom:myinstructionrom|                 ; 134 (134)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|InstructionRom:myinstructionrom                                                                                                                                     ; InstructionRom                ; work         ;
-;    |chipSet:mychipset|                               ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|chipSet:mychipset                                                                                                                                                   ; chipSet                       ; work         ;
-;    |imageRom:myImageRom|                             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|imageRom:myImageRom                                                                                                                                                 ; imageRom                      ; work         ;
-;    |mux2_1:MemRegSelector|                           ; 32742 (32742)       ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|mux2_1:MemRegSelector                                                                                                                                               ; mux2_1                        ; work         ;
-;    |periModule:myperiModule|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|periModule:myperiModule                                                                                                                                             ; periModule                    ; work         ;
-;    |processor:myprocessor|                           ; 4121 (8)            ; 496 (0)                   ; 0                 ; 3          ; 0    ; 0            ; |cpu|processor:myprocessor                                                                                                                                               ; processor                     ; work         ;
-;       |ALU:myALU|                                    ; 3346 (0)            ; 0 (0)                     ; 0                 ; 3          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU                                                                                                                                     ; ALU                           ; work         ;
+;    |chipSet:mychipset|                               ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|chipSet:mychipset                                                                                                                                                   ; chipSet                       ; work         ;
+;    |imageRom:myImageRom|                             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|imageRom:myImageRom                                                                                                                                                 ; imageRom                      ; work         ;
+;    |mux2_1:MemRegSelector|                           ; 32749 (32749)       ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|mux2_1:MemRegSelector                                                                                                                                               ; mux2_1                        ; work         ;
+;    |periModule:myperiModule|                         ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|periModule:myperiModule                                                                                                                                             ; periModule                    ; work         ;
+;    |processor:myprocessor|                           ; 4120 (8)            ; 496 (0)                   ; 0                 ; 3          ; 0    ; 0            ; |cpu|processor:myprocessor                                                                                                                                               ; processor                     ; work         ;
+;       |ALU:myALU|                                    ; 3345 (0)            ; 0 (0)                     ; 0                 ; 3          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU                                                                                                                                     ; ALU                           ; work         ;
 ;          |FlagsM:myFlags|                            ; 116 (116)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|FlagsM:myFlags                                                                                                                      ; FlagsM                        ; work         ;
-;          |Operations:myOperations|                   ; 3109 (0)            ; 0 (0)                     ; 0                 ; 3          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations                                                                                                             ; Operations                    ; work         ;
+;          |Operations:myOperations|                   ; 3110 (0)            ; 0 (0)                     ; 0                 ; 3          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations                                                                                                             ; Operations                    ; work         ;
 ;             |adder:myadder|                          ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|adder:myadder                                                                                               ; adder                         ; work         ;
 ;             |bitwise_and:myand|                      ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_and:myand                                                                                           ; bitwise_and                   ; work         ;
 ;             |bitwise_xor:myxor|                      ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_xor:myxor                                                                                           ; bitwise_xor                   ; work         ;
@@ -345,12 +345,12 @@ https://fpgasoftware.intel.com/eula.
 ;                      |sign_div_unsign_9nh:divider|   ; 1147 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider                         ; sign_div_unsign_9nh           ; work         ;
 ;                         |alt_u_div_o2f:divider|      ; 1147 (1147)         ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|mod:mymod|lpm_divide:Mod0|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_o2f:divider   ; alt_u_div_o2f                 ; work         ;
 ;             |multiplier:mymultiplier|                ; 46 (46)             ; 0 (0)                     ; 0                 ; 3          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|multiplier:mymultiplier                                                                                     ; multiplier                    ; work         ;
-;             |shifL:myshiftL|                         ; 195 (195)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|shifL:myshiftL                                                                                              ; shifL                         ; work         ;
+;             |shifL:myshiftL|                         ; 196 (196)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|shifL:myshiftL                                                                                              ; shifL                         ; work         ;
 ;             |shifR:myshiftR|                         ; 176 (176)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|shifR:myshiftR                                                                                              ; shifR                         ; work         ;
 ;             |sign_magnitud_to_complement:to_comp_1|  ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_1                                                                       ; sign_magnitud_to_complement   ; work         ;
 ;             |sign_magnitud_to_complement:to_comp_2|  ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_2                                                                       ; sign_magnitud_to_complement   ; work         ;
 ;             |subtracter:mysubstracter|               ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|subtracter:mysubstracter                                                                                    ; subtracter                    ; work         ;
-;          |mux_9_1:myMux|                             ; 121 (121)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|mux_9_1:myMux                                                                                                                       ; mux_9_1                       ; work         ;
+;          |mux_9_1:myMux|                             ; 119 (119)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|ALU:myALU|mux_9_1:myMux                                                                                                                       ; mux_9_1                       ; work         ;
 ;       |FlagHolder:myFlagHolder|                      ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|FlagHolder:myFlagHolder                                                                                                                       ; FlagHolder                    ; work         ;
 ;       |controlUnit:myControlUnit|                    ; 22 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|controlUnit:myControlUnit                                                                                                                     ; controlUnit                   ; work         ;
 ;          |armToALUAdapter:myAdapter|                 ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |cpu|processor:myprocessor|controlUnit:myControlUnit|armToALUAdapter:myAdapter                                                                                           ; armToALUAdapter               ; work         ;
@@ -398,6 +398,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------------------------------------+----------------------------------------+
 ; Register name                                                      ; Reason for Removal                     ;
 +--------------------------------------------------------------------+----------------------------------------+
+; periModule:myperiModule|switchState[1][7]                          ; Stuck at GND due to stuck port data_in ;
+; periModule:myperiModule|switchState[1][6]                          ; Stuck at GND due to stuck port data_in ;
+; periModule:myperiModule|switchState[1][5]                          ; Stuck at GND due to stuck port data_in ;
+; periModule:myperiModule|switchState[1][4]                          ; Stuck at GND due to stuck port data_in ;
+; periModule:myperiModule|switchState[1][3]                          ; Stuck at GND due to stuck port data_in ;
+; periModule:myperiModule|switchState[1][2]                          ; Stuck at GND due to stuck port data_in ;
+; periModule:myperiModule|switchState[1][1]                          ; Stuck at GND due to stuck port data_in ;
 ; processor:myprocessor|registerBank:myRegisterBank|register[14][31] ; Stuck at GND due to stuck port data_in ;
 ; processor:myprocessor|registerBank:myRegisterBank|register[14][30] ; Stuck at GND due to stuck port data_in ;
 ; processor:myprocessor|registerBank:myRegisterBank|register[14][29] ; Stuck at GND due to stuck port data_in ;
@@ -422,7 +429,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; processor:myprocessor|registerBank:myRegisterBank|register[14][10] ; Stuck at GND due to stuck port data_in ;
 ; processor:myprocessor|registerBank:myRegisterBank|register[14][9]  ; Stuck at GND due to stuck port data_in ;
 ; processor:myprocessor|registerBank:myRegisterBank|register[14][8]  ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 24                             ;                                        ;
+; Total Number of Removed Registers = 31                             ;                                        ;
 +--------------------------------------------------------------------+----------------------------------------+
 
 
@@ -431,10 +438,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+--------+
 ; Statistic                                    ; Value  ;
 +----------------------------------------------+--------+
-; Total registers                              ; 131568 ;
+; Total registers                              ; 131577 ;
 ; Number of registers using Synchronous Clear  ; 0      ;
 ; Number of registers using Synchronous Load   ; 0      ;
-; Number of registers using Asynchronous Clear ; 131568 ;
+; Number of registers using Asynchronous Clear ; 131577 ;
 ; Number of registers using Asynchronous Load  ; 0      ;
 ; Number of registers using Clock Enable       ; 131554 ;
 ; Number of registers using Preset             ; 0      ;
@@ -471,7 +478,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 10:1               ; 31 bits   ; 186 LEs       ; 186 LEs              ; 0 LEs                  ; No         ; |cpu|processor:myprocessor|ALU:myALU|FlagsM:myFlags|Mux11                                                ;
 ; 21:1               ; 4 bits    ; 56 LEs        ; 52 LEs               ; 4 LEs                  ; No         ; |cpu|processor:myprocessor|mux2_1:myALUSelect|C[10]                                                      ;
 ; 16384:1            ; 8 bits    ; 87376 LEs     ; 87376 LEs            ; 0 LEs                  ; No         ; |cpu|ramModule:myRamModule|Mux8                                                                          ;
-; 16387:1            ; 6 bits    ; 65544 LEs     ; 65544 LEs            ; 0 LEs                  ; No         ; |cpu|mux2_1:MemRegSelector|C[1]                                                                          ;
+; 16389:1            ; 6 bits    ; 65556 LEs     ; 65556 LEs            ; 0 LEs                  ; No         ; |cpu|mux2_1:MemRegSelector|C[1]                                                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------+
 
 
@@ -845,7 +852,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; address ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; address ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -999,10 +1006,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 131568                      ;
-;     CLR               ; 14                          ;
+; arriav_ff             ; 131577                      ;
+;     CLR               ; 23                          ;
 ;     ENA CLR           ; 131554                      ;
-; arriav_lcell_comb     ; 108019                      ;
+; arriav_lcell_comb     ; 108023                      ;
 ;     arith             ; 1463                        ;
 ;         0 data inputs ; 119                         ;
 ;         1 data inputs ; 16                          ;
@@ -1012,14 +1019,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         5 data inputs ; 986                         ;
 ;     extend            ; 1254                        ;
 ;         7 data inputs ; 1254                        ;
-;     normal            ; 105284                      ;
+;     normal            ; 105288                      ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 218                         ;
-;         3 data inputs ; 438                         ;
-;         4 data inputs ; 774                         ;
-;         5 data inputs ; 12694                       ;
-;         6 data inputs ; 91158                       ;
+;         2 data inputs ; 223                         ;
+;         3 data inputs ; 431                         ;
+;         4 data inputs ; 779                         ;
+;         5 data inputs ; 12692                       ;
+;         6 data inputs ; 91161                       ;
 ;     shared            ; 18                          ;
 ;         0 data inputs ; 6                           ;
 ;         2 data inputs ; 6                           ;
@@ -1027,8 +1034,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_mac            ; 3                           ;
 ; boundary_port         ; 75                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 122.40                      ;
-; Average LUT depth     ; 38.17                       ;
+; Max LUT depth         ; 122.90                      ;
+; Average LUT depth     ; 38.23                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1037,7 +1044,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:06:49     ;
+; Top            ; 00:06:38     ;
 +----------------+--------------+
 
 
@@ -1047,7 +1054,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Nov 12 16:33:51 2022
+    Info: Processing started: Sat Nov 12 18:06:54 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor -c Processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -1200,7 +1207,6 @@ Warning (10030): Net "memory.data_a" at imageRom.sv(2) has no driver or initial 
 Warning (10030): Net "memory.waddr_a" at imageRom.sv(2) has no driver or initial value, using a default initial value '0' File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv Line: 2
 Warning (10030): Net "memory.we_a" at imageRom.sv(2) has no driver or initial value, using a default initial value '0' File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv Line: 2
 Info (12128): Elaborating entity "periModule" for hierarchy "periModule:myperiModule" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 24
-Warning (10036): Verilog HDL or VHDL warning at periModule.sv(2): object "switchState" assigned a value but never read File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv Line: 2
 Info (12128): Elaborating entity "chipSet" for hierarchy "chipSet:mychipset" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 28
 Info (12128): Elaborating entity "mux4_1" for hierarchy "mux4_1:myMemorySelector" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 31
 Warning (12011): Net is missing source, defaulting to GND
@@ -1291,16 +1297,16 @@ Warning (21074): Design contains 18 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "GPUAddress[29]" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 1
     Warning (15610): No output dependent on input pin "GPUAddress[30]" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 1
     Warning (15610): No output dependent on input pin "GPUAddress[31]" File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 1
-Info (21057): Implemented 239653 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 239666 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 43 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 239575 logic cells
+    Info (21061): Implemented 239588 logic cells
     Info (21062): Implemented 3 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 80 warnings
-    Info: Peak virtual memory: 6787 megabytes
-    Info: Processing ended: Sat Nov 12 16:41:32 2022
-    Info: Elapsed time: 00:07:41
-    Info: Total CPU time (on all processors): 00:09:50
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 79 warnings
+    Info: Peak virtual memory: 6391 megabytes
+    Info: Processing ended: Sat Nov 12 18:14:07 2022
+    Info: Elapsed time: 00:07:13
+    Info: Total CPU time (on all processors): 00:09:19
 
 
 +------------------------------------------+
