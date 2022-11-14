@@ -36,7 +36,7 @@ notDes:
 xorDes:
 			ldr		R6,[R9]
 			eor		R6,R6,R8
-			str		R6,[R9]
+			str		R6,[R10]
 			add		R9,R9,#1
 			add 	R10,R10,#1
 			b		columnIterator
