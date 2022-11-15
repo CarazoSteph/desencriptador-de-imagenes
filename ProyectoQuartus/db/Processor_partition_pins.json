@@ -36,99 +36,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "GPUData[8]",
+					"name" : "GPUAddress[12]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUData[9]",
+					"name" : "GPUAddress[13]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUData[10]",
+					"name" : "GPUAddress[11]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUData[11]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[12]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[13]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[14]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[15]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[16]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[17]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[18]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[19]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[20]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[21]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[22]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[23]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[24]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[25]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[26]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[27]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[28]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[29]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[30]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUData[31]",
+					"name" : "GPUAddress[10]",
 					"strict" : false
 				},
 				{
@@ -156,11 +76,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[6]",
+					"name" : "GPUAddress[8]",
 					"strict" : false
 				},
 				{
 					"name" : "GPUAddress[7]",
+					"strict" : false
+				},
+				{
+					"name" : "GPUAddress[9]",
 					"strict" : false
 				},
 				{
@@ -172,7 +96,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "GPUAddress[6]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[0]",
+					"strict" : false
+				},
+				{
 					"name" : "switch[8]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[2]",
 					"strict" : false
 				},
 				{
@@ -184,27 +124,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "switch[4]",
-					"strict" : false
-				},
-				{
 					"name" : "switch[6]",
 					"strict" : false
 				},
 				{
-					"name" : "switch[1]",
+					"name" : "switch[4]",
 					"strict" : false
 				},
 				{
 					"name" : "switch[3]",
-					"strict" : false
-				},
-				{
-					"name" : "switch[0]",
-					"strict" : false
-				},
-				{
-					"name" : "switch[2]",
 					"strict" : false
 				}
 			]
