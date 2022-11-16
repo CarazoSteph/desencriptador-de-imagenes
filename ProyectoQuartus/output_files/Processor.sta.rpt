@@ -1,6 +1,6 @@
 Timing Analyzer report for Processor
-Wed Nov 16 15:46:24 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Wed Nov 16 17:10:24 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -44,11 +44,17 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  36. Signal Integrity Metrics (Slow 1100mv 85c Model)
  37. Signal Integrity Metrics (Fast 1100mv 0c Model)
  38. Signal Integrity Metrics (Fast 1100mv 85c Model)
- 39. Clock Transfers
- 40. Report TCCS
- 41. Report RSKM
- 42. Unconstrained Paths Summary
- 43. Timing Analyzer Messages
+ 39. Setup Transfers
+ 40. Hold Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths Summary
+ 44. Clock Status Summary
+ 45. Unconstrained Input Ports
+ 46. Unconstrained Output Ports
+ 47. Unconstrained Input Ports
+ 48. Unconstrained Output Ports
+ 49. Timing Analyzer Messages
 
 
 
@@ -75,7 +81,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Timing Analyzer Summary                                                     ;
 +-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Quartus Prime Version ; Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Timing Analyzer       ; Legacy Timing Analyzer                              ;
 ; Revision Name         ; Processor                                           ;
 ; Device Family         ; Cyclone V                                           ;
@@ -94,26 +100,46 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 3.61        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.1%      ;
-;     Processors 3-12        ;   0.1%      ;
+;     Processor 2            ;  55.9%      ;
+;     Processor 3            ;  55.6%      ;
+;     Processor 4            ;  55.3%      ;
+;     Processor 5            ;  11.8%      ;
+;     Processor 6            ;  11.8%      ;
+;     Processor 7            ;  11.8%      ;
+;     Processor 8            ;  11.8%      ;
+;     Processor 9            ;  11.8%      ;
+;     Processor 10           ;  11.8%      ;
+;     Processor 11           ;  11.8%      ;
+;     Processor 12           ;  11.8%      ;
 +----------------------------+-------------+
 
 
-----------
-; Clocks ;
-----------
-No clocks to report.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                                                         ;
++----------------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------------------------------------------------------------+
+; Clock Name                                                     ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                                            ;
++----------------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------------------------------------------------------------+
+; clk                                                            ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                                                            ;
+; clock_divider:myClk|clock_out                                  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_divider:myClk|clock_out }                                  ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] } ;
++----------------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------------------------------------------------------------+
 
 
---------------------------------------
-; Slow 1100mV 85C Model Fmax Summary ;
---------------------------------------
-No paths to report.
++------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary                                                                   ;
++------------+-----------------+----------------------------------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                                                     ; Note ;
++------------+-----------------+----------------------------------------------------------------+------+
+; 5.62 MHz   ; 5.62 MHz        ; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ;      ;
+; 9.99 MHz   ; 9.99 MHz        ; clock_divider:myClk|clock_out                                  ;      ;
+; 275.25 MHz ; 275.25 MHz      ; clk                                                            ;      ;
++------------+-----------------+----------------------------------------------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
 ----------------------------------
@@ -122,16 +148,26 @@ No paths to report.
 HTML report is unavailable in plain text report export.
 
 
----------------------------------------
-; Slow 1100mV 85C Model Setup Summary ;
----------------------------------------
-No paths to report.
++------------------------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Setup Summary                                                      ;
++----------------------------------------------------------------+---------+---------------+
+; Clock                                                          ; Slack   ; End Point TNS ;
++----------------------------------------------------------------+---------+---------------+
+; clock_divider:myClk|clock_out                                  ; -99.057 ; -72938.496    ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; -91.470 ; -213.945      ;
+; clk                                                            ; -2.633  ; -96.893       ;
++----------------------------------------------------------------+---------+---------------+
 
 
---------------------------------------
-; Slow 1100mV 85C Model Hold Summary ;
---------------------------------------
-No paths to report.
++-----------------------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Hold Summary                                                      ;
++----------------------------------------------------------------+--------+---------------+
+; Clock                                                          ; Slack  ; End Point TNS ;
++----------------------------------------------------------------+--------+---------------+
+; clock_divider:myClk|clock_out                                  ; -0.215 ; -0.429        ;
+; clk                                                            ; 0.390  ; 0.000         ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; 2.581  ; 0.000         ;
++----------------------------------------------------------------+--------+---------------+
 
 
 ------------------------------------------
@@ -146,34 +182,56 @@ No paths to report.
 No paths to report.
 
 
------------------------------------------------------
-; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
------------------------------------------------------
-No paths to report.
++-----------------------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Minimum Pulse Width Summary                                       ;
++----------------------------------------------------------------+--------+---------------+
+; Clock                                                          ; Slack  ; End Point TNS ;
++----------------------------------------------------------------+--------+---------------+
+; clock_divider:myClk|clock_out                                  ; -2.174 ; -3746.752     ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; -0.782 ; -5.707        ;
+; clk                                                            ; -0.622 ; -20.780       ;
++----------------------------------------------------------------+--------+---------------+
 
 
 -----------------------------------------------
 ; Slow 1100mV 85C Model Metastability Summary ;
 -----------------------------------------------
-No synchronizer chains to report.
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
 
 
--------------------------------------
-; Slow 1100mV 0C Model Fmax Summary ;
--------------------------------------
-No paths to report.
+
++-----------------------------------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                                                                   ;
++-----------+-----------------+----------------------------------------------------------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name                                                     ; Note ;
++-----------+-----------------+----------------------------------------------------------------+------+
+; 5.51 MHz  ; 5.51 MHz        ; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ;      ;
+; 9.85 MHz  ; 9.85 MHz        ; clock_divider:myClk|clock_out                                  ;      ;
+; 261.1 MHz ; 261.1 MHz       ; clk                                                            ;      ;
++-----------+-----------------+----------------------------------------------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
---------------------------------------
-; Slow 1100mV 0C Model Setup Summary ;
---------------------------------------
-No paths to report.
++-------------------------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Setup Summary                                                        ;
++----------------------------------------------------------------+----------+---------------+
+; Clock                                                          ; Slack    ; End Point TNS ;
++----------------------------------------------------------------+----------+---------------+
+; clock_divider:myClk|clock_out                                  ; -100.477 ; -73899.357    ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; -93.128  ; -216.155      ;
+; clk                                                            ; -2.830   ; -95.974       ;
++----------------------------------------------------------------+----------+---------------+
 
 
--------------------------------------
-; Slow 1100mV 0C Model Hold Summary ;
--------------------------------------
-No paths to report.
++-----------------------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Hold Summary                                                       ;
++----------------------------------------------------------------+--------+---------------+
+; Clock                                                          ; Slack  ; End Point TNS ;
++----------------------------------------------------------------+--------+---------------+
+; clock_divider:myClk|clock_out                                  ; -0.139 ; -0.277        ;
+; clk                                                            ; 0.387  ; 0.000         ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; 2.387  ; 0.000         ;
++----------------------------------------------------------------+--------+---------------+
 
 
 -----------------------------------------
@@ -188,28 +246,44 @@ No paths to report.
 No paths to report.
 
 
-----------------------------------------------------
-; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
-----------------------------------------------------
-No paths to report.
++-----------------------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Minimum Pulse Width Summary                                        ;
++----------------------------------------------------------------+--------+---------------+
+; Clock                                                          ; Slack  ; End Point TNS ;
++----------------------------------------------------------------+--------+---------------+
+; clock_divider:myClk|clock_out                                  ; -2.174 ; -3683.587     ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; -0.686 ; -5.065        ;
+; clk                                                            ; -0.632 ; -22.315       ;
++----------------------------------------------------------------+--------+---------------+
 
 
 ----------------------------------------------
 ; Slow 1100mV 0C Model Metastability Summary ;
 ----------------------------------------------
-No synchronizer chains to report.
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
 
 
----------------------------------------
-; Fast 1100mV 85C Model Setup Summary ;
----------------------------------------
-No paths to report.
+
++------------------------------------------------------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary                                                      ;
++----------------------------------------------------------------+---------+---------------+
+; Clock                                                          ; Slack   ; End Point TNS ;
++----------------------------------------------------------------+---------+---------------+
+; clock_divider:myClk|clock_out                                  ; -56.183 ; -41338.390    ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; -51.544 ; -123.469      ;
+; clk                                                            ; -1.327  ; -43.027       ;
++----------------------------------------------------------------+---------+---------------+
 
 
---------------------------------------
-; Fast 1100mV 85C Model Hold Summary ;
---------------------------------------
-No paths to report.
++-----------------------------------------------------------------------------------------+
+; Fast 1100mV 85C Model Hold Summary                                                      ;
++----------------------------------------------------------------+--------+---------------+
+; Clock                                                          ; Slack  ; End Point TNS ;
++----------------------------------------------------------------+--------+---------------+
+; clock_divider:myClk|clock_out                                  ; -0.107 ; -0.229        ;
+; clk                                                            ; 0.209  ; 0.000         ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; 1.443  ; 0.000         ;
++----------------------------------------------------------------+--------+---------------+
 
 
 ------------------------------------------
@@ -224,28 +298,44 @@ No paths to report.
 No paths to report.
 
 
------------------------------------------------------
-; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
------------------------------------------------------
-No paths to report.
++-----------------------------------------------------------------------------------------+
+; Fast 1100mV 85C Model Minimum Pulse Width Summary                                       ;
++----------------------------------------------------------------+--------+---------------+
+; Clock                                                          ; Slack  ; End Point TNS ;
++----------------------------------------------------------------+--------+---------------+
+; clock_divider:myClk|clock_out                                  ; -2.174 ; -3331.510     ;
+; clk                                                            ; -0.597 ; -4.221        ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; -0.522 ; -2.772        ;
++----------------------------------------------------------------+--------+---------------+
 
 
 -----------------------------------------------
 ; Fast 1100mV 85C Model Metastability Summary ;
 -----------------------------------------------
-No synchronizer chains to report.
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
 
 
---------------------------------------
-; Fast 1100mV 0C Model Setup Summary ;
---------------------------------------
-No paths to report.
+
++------------------------------------------------------------------------------------------+
+; Fast 1100mV 0C Model Setup Summary                                                       ;
++----------------------------------------------------------------+---------+---------------+
+; Clock                                                          ; Slack   ; End Point TNS ;
++----------------------------------------------------------------+---------+---------------+
+; clock_divider:myClk|clock_out                                  ; -52.440 ; -38533.802    ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; -48.353 ; -114.623      ;
+; clk                                                            ; -1.255  ; -36.255       ;
++----------------------------------------------------------------+---------+---------------+
 
 
--------------------------------------
-; Fast 1100mV 0C Model Hold Summary ;
--------------------------------------
-No paths to report.
++-----------------------------------------------------------------------------------------+
+; Fast 1100mV 0C Model Hold Summary                                                       ;
++----------------------------------------------------------------+--------+---------------+
+; Clock                                                          ; Slack  ; End Point TNS ;
++----------------------------------------------------------------+--------+---------------+
+; clock_divider:myClk|clock_out                                  ; -0.053 ; -0.105        ;
+; clk                                                            ; 0.196  ; 0.000         ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; 1.386  ; 0.000         ;
++----------------------------------------------------------------+--------+---------------+
 
 
 -----------------------------------------
@@ -260,26 +350,38 @@ No paths to report.
 No paths to report.
 
 
-----------------------------------------------------
-; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
-----------------------------------------------------
-No paths to report.
++-----------------------------------------------------------------------------------------+
+; Fast 1100mV 0C Model Minimum Pulse Width Summary                                        ;
++----------------------------------------------------------------+--------+---------------+
+; Clock                                                          ; Slack  ; End Point TNS ;
++----------------------------------------------------------------+--------+---------------+
+; clock_divider:myClk|clock_out                                  ; -2.174 ; -3288.834     ;
+; clk                                                            ; -0.577 ; -4.158        ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; -0.343 ; -1.671        ;
++----------------------------------------------------------------+--------+---------------+
 
 
 ----------------------------------------------
 ; Fast 1100mV 0C Model Metastability Summary ;
 ----------------------------------------------
-No synchronizer chains to report.
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
 
 
-+----------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                        ;
-+------------------+-------+------+----------+---------+---------------------+
-; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+-------+------+----------+---------+---------------------+
-; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
-; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
-+------------------+-------+------+----------+---------+---------------------+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                              ;
++-----------------------------------------------------------------+------------+--------+----------+---------+---------------------+
+; Clock                                                           ; Setup      ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++-----------------------------------------------------------------+------------+--------+----------+---------+---------------------+
+; Worst-case Slack                                                ; -100.477   ; -0.215 ; N/A      ; N/A     ; -2.174              ;
+;  clk                                                            ; -2.830     ; 0.196  ; N/A      ; N/A     ; -0.632              ;
+;  clock_divider:myClk|clock_out                                  ; -100.477   ; -0.215 ; N/A      ; N/A     ; -2.174              ;
+;  cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; -93.128    ; 1.386  ; N/A      ; N/A     ; -0.782              ;
+; Design-wide TNS                                                 ; -74211.486 ; -0.429 ; 0.0      ; 0.0     ; -3773.239           ;
+;  clk                                                            ; -96.893    ; 0.000  ; N/A      ; N/A     ; -22.315             ;
+;  clock_divider:myClk|clock_out                                  ; -73899.357 ; -0.429 ; N/A      ; N/A     ; -3746.752           ;
+;  cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; -216.155   ; 0.000  ; N/A      ; N/A     ; -5.707              ;
++-----------------------------------------------------------------+------------+--------+----------+---------+---------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -322,14 +424,14 @@ No synchronizer chains to report.
 +-----------+--------------+-----------------+-----------------+
 ; Pin       ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +-----------+--------------+-----------------+-----------------+
-; clk       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; switch[0] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; switch[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; switch[2] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; switch[3] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; switch[4] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; switch[5] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; switch[6] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; switch[4] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; switch[3] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; switch[2] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; switch[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; switch[0] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; switch[7] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 +-----------+--------------+-----------------+-----------------+
 
@@ -474,10 +576,32 @@ No synchronizer chains to report.
 +----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
--------------------
-; Clock Transfers ;
--------------------
-Nothing to report.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                                                                             ;
++----------------------------------------------------------------+----------------------------------------------------------------+--------------+--------------+--------------+--------------+
+; From Clock                                                     ; To Clock                                                       ; RR Paths     ; FR Paths     ; RF Paths     ; FF Paths     ;
++----------------------------------------------------------------+----------------------------------------------------------------+--------------+--------------+--------------+--------------+
+; clk                                                            ; clk                                                            ; 1628         ; 0            ; 0            ; 0            ;
+; clock_divider:myClk|clock_out                                  ; clock_divider:myClk|clock_out                                  ; 25540        ; 34           ; 1489         ; > 2147483647 ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; clock_divider:myClk|clock_out                                  ; 0            ; 0            ; > 2147483647 ; > 2147483647 ;
+; clock_divider:myClk|clock_out                                  ; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; 0            ; > 2147483647 ; 0            ; 0            ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; > 2147483647 ; > 2147483647 ; 0            ; 0            ;
++----------------------------------------------------------------+----------------------------------------------------------------+--------------+--------------+--------------+--------------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                                                                              ;
++----------------------------------------------------------------+----------------------------------------------------------------+--------------+--------------+--------------+--------------+
+; From Clock                                                     ; To Clock                                                       ; RR Paths     ; FR Paths     ; RF Paths     ; FF Paths     ;
++----------------------------------------------------------------+----------------------------------------------------------------+--------------+--------------+--------------+--------------+
+; clk                                                            ; clk                                                            ; 1628         ; 0            ; 0            ; 0            ;
+; clock_divider:myClk|clock_out                                  ; clock_divider:myClk|clock_out                                  ; 25540        ; 34           ; 1489         ; > 2147483647 ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; clock_divider:myClk|clock_out                                  ; 0            ; 0            ; > 2147483647 ; > 2147483647 ;
+; clock_divider:myClk|clock_out                                  ; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; 0            ; > 2147483647 ; 0            ; 0            ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; > 2147483647 ; > 2147483647 ; 0            ; 0            ;
++----------------------------------------------------------------+----------------------------------------------------------------+--------------+--------------+--------------+--------------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
 ---------------
@@ -499,11 +623,124 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 0     ; 0    ;
-; Unconstrained Input Port Paths  ; 0     ; 0    ;
-; Unconstrained Output Ports      ; 0     ; 0    ;
-; Unconstrained Output Port Paths ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 625   ; 625  ;
+; Unconstrained Output Ports      ; 27    ; 27   ;
+; Unconstrained Output Port Paths ; 51    ; 51   ;
 +---------------------------------+-------+------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                                                                                 ;
++----------------------------------------------------------------+----------------------------------------------------------------+------+-------------+
+; Target                                                         ; Clock                                                          ; Type ; Status      ;
++----------------------------------------------------------------+----------------------------------------------------------------+------+-------------+
+; clk                                                            ; clk                                                            ; Base ; Constrained ;
+; clock_divider:myClk|clock_out                                  ; clock_divider:myClk|clock_out                                  ; Base ; Constrained ;
+; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] ; Base ; Constrained ;
++----------------------------------------------------------------+----------------------------------------------------------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; switch[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[4]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[5]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[6]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[7]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; Blue[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Hsync       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[2]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[3]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[4]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[7]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; VGA_clk     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Vsync       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; switch[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[4]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[5]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[6]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch[7]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; Blue[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Blue[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Green[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Hsync       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[2]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[3]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[4]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Red[7]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; VGA_clk     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Vsync       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
 
 
 +--------------------------+
@@ -511,70 +748,149 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Nov 16 15:46:20 2022
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Wed Nov 16 17:09:59 2022
 Info: Command: quartus_sta Processor -c Processor
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
+Warning (335093): The Timing Analyzer is analyzing 3 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Processor.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clock_divider:myClk|clock_out clock_divider:myClk|clock_out
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]
+Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: myCPU|myinstructionrom|Mux4~0  from: datad  to: combout
+    Info (332098): Cell: myCPU|myinstructionrom|Mux4~1  from: datae  to: combout
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
-Info (332159): No clocks to report
 Info: Analyzing Slow 1100mV 85C Model
-Info (332140): No fmax paths to report
-Info (332140): No Setup paths to report
-Info (332140): No Hold paths to report
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -99.057
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -99.057          -72938.496 clock_divider:myClk|clock_out 
+    Info (332119):   -91.470            -213.945 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
+    Info (332119):    -2.633             -96.893 clk 
+Info (332146): Worst-case hold slack is -0.215
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.215              -0.429 clock_divider:myClk|clock_out 
+    Info (332119):     0.390               0.000 clk 
+    Info (332119):     2.581               0.000 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332140): No Minimum Pulse Width paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.174
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.174           -3746.752 clock_divider:myClk|clock_out 
+    Info (332119):    -0.782              -5.707 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
+    Info (332119):    -0.622             -20.780 clk 
+Info (332114): Report Metastability: Found 17 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
-Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
-Info (332140): No fmax paths to report
-Info (332140): No Setup paths to report
-Info (332140): No Hold paths to report
+Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: myCPU|myinstructionrom|Mux4~0  from: datad  to: combout
+    Info (332098): Cell: myCPU|myinstructionrom|Mux4~1  from: datae  to: combout
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -100.477
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):  -100.477          -73899.357 clock_divider:myClk|clock_out 
+    Info (332119):   -93.128            -216.155 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
+    Info (332119):    -2.830             -95.974 clk 
+Info (332146): Worst-case hold slack is -0.139
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.139              -0.277 clock_divider:myClk|clock_out 
+    Info (332119):     0.387               0.000 clk 
+    Info (332119):     2.387               0.000 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332140): No Minimum Pulse Width paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.174
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.174           -3683.587 clock_divider:myClk|clock_out 
+    Info (332119):    -0.686              -5.065 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
+    Info (332119):    -0.632             -22.315 clk 
+Info (332114): Report Metastability: Found 17 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
-Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
-Info (332140): No Setup paths to report
-Info (332140): No Hold paths to report
+Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: myCPU|myinstructionrom|Mux4~0  from: datad  to: combout
+    Info (332098): Cell: myCPU|myinstructionrom|Mux4~1  from: datae  to: combout
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -56.183
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -56.183          -41338.390 clock_divider:myClk|clock_out 
+    Info (332119):   -51.544            -123.469 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
+    Info (332119):    -1.327             -43.027 clk 
+Info (332146): Worst-case hold slack is -0.107
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.107              -0.229 clock_divider:myClk|clock_out 
+    Info (332119):     0.209               0.000 clk 
+    Info (332119):     1.443               0.000 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332140): No Minimum Pulse Width paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.174
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.174           -3331.510 clock_divider:myClk|clock_out 
+    Info (332119):    -0.597              -4.221 clk 
+    Info (332119):    -0.522              -2.772 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
+Info (332114): Report Metastability: Found 17 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 0C Model
-Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
-Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
-Info (332140): No Setup paths to report
-Info (332140): No Hold paths to report
+Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: myCPU|myinstructionrom|Mux4~0  from: datad  to: combout
+    Info (332098): Cell: myCPU|myinstructionrom|Mux4~1  from: datae  to: combout
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -52.440
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -52.440          -38533.802 clock_divider:myClk|clock_out 
+    Info (332119):   -48.353            -114.623 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
+    Info (332119):    -1.255             -36.255 clk 
+Info (332146): Worst-case hold slack is -0.053
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.053              -0.105 clock_divider:myClk|clock_out 
+    Info (332119):     0.196               0.000 clk 
+    Info (332119):     1.386               0.000 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332140): No Minimum Pulse Width paths to report
-Info (332101): Design is fully constrained for setup requirements
-Info (332101): Design is fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5206 megabytes
-    Info: Processing ended: Wed Nov 16 15:46:24 2022
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+Info (332146): Worst-case minimum pulse width slack is -2.174
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.174           -3288.834 clock_divider:myClk|clock_out 
+    Info (332119):    -0.577              -4.158 clk 
+    Info (332119):    -0.343              -1.671 cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0] 
+Info (332114): Report Metastability: Found 17 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 5428 megabytes
+    Info: Processing ended: Wed Nov 16 17:10:24 2022
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:01:12
 
 

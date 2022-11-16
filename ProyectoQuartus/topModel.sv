@@ -9,7 +9,7 @@ module topModel(
 	output logic VGA_clk
 	);
 	logic [15:0] imageAddress; 
-	logic [31:0] imageOut, dataRom, dataRam;
+	logic [7:0] imageOut, dataRom, dataRam;
 	logic clk_25M;
 	
 	clock_divider myClk(clk,clk_25M);
@@ -18,6 +18,6 @@ module topModel(
 	
 	cpu myCPU(clk_25M,switch[5],{switch[7], 3'b0,switch[4:0]},imageAddress,dataRam,dataRom);
 	
-	//VGA_Controller myVGA(clk_25M,switch[5],imageOut[7:0],imageAddress,Hsync,Vsync,Red,Green,Blue,VGA_clk);
+	VGA_Controller myVGA(clk_25M,switch[5],imageOut,imageAddress,Hsync,Vsync,Red,Green,Blue,VGA_clk);
 
 endmodule 
