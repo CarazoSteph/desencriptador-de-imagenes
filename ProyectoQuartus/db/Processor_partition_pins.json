@@ -36,7 +36,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[12]",
+					"name" : "GPUDataRom[0]",
+					"strict" : false
+				},
+				{
+					"name" : "GPUDataRom[1]",
+					"strict" : false
+				},
+				{
+					"name" : "GPUDataRom[2]",
+					"strict" : false
+				},
+				{
+					"name" : "GPUDataRom[3]",
+					"strict" : false
+				},
+				{
+					"name" : "GPUDataRom[4]",
+					"strict" : false
+				},
+				{
+					"name" : "GPUDataRom[5]",
+					"strict" : false
+				},
+				{
+					"name" : "GPUDataRom[6]",
+					"strict" : false
+				},
+				{
+					"name" : "GPUDataRom[7]",
 					"strict" : false
 				},
 				{
@@ -44,19 +72,31 @@
 					"strict" : false
 				},
 				{
+					"name" : "GPUAddress[12]",
+					"strict" : false
+				},
+				{
 					"name" : "GPUAddress[11]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[10]",
+					"name" : "GPUAddress[4]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[2]",
+					"name" : "GPUAddress[8]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[3]",
+					"name" : "GPUAddress[5]",
+					"strict" : false
+				},
+				{
+					"name" : "GPUAddress[7]",
+					"strict" : false
+				},
+				{
+					"name" : "GPUAddress[6]",
 					"strict" : false
 				},
 				{
@@ -68,19 +108,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[4]",
+					"name" : "GPUAddress[2]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[5]",
+					"name" : "GPUAddress[3]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[8]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUAddress[7]",
+					"name" : "GPUAddress[10]",
 					"strict" : false
 				},
 				{
@@ -96,7 +132,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[6]",
+					"name" : "switch[8]",
 					"strict" : false
 				},
 				{
@@ -104,15 +140,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "switch[8]",
-					"strict" : false
-				},
-				{
-					"name" : "switch[1]",
+					"name" : "switch[4]",
 					"strict" : false
 				},
 				{
 					"name" : "switch[2]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[3]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[6]",
 					"strict" : false
 				},
 				{
@@ -124,15 +164,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "switch[6]",
-					"strict" : false
-				},
-				{
-					"name" : "switch[4]",
-					"strict" : false
-				},
-				{
-					"name" : "switch[3]",
+					"name" : "switch[1]",
 					"strict" : false
 				}
 			]
