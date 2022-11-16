@@ -2,7 +2,7 @@ module VGA_Controller(
 	input clk_25Mhz,
 	input rst,
 	input[7:0] colorInput,
-	output [31:0] nextAddress,
+	output [15:0] nextAddress,
 	output logic Hsync,
 	output logic Vsync,
 	output logic[7:0] Red,
@@ -17,7 +17,7 @@ logic[7:0] r_red,r_blue,r_green;
 
 //Pixel Logic
 logic[2:0] WaitingPixels = 0;
-logic[13:0] nextPixel = 0;
+logic[15:0] nextPixel = 0;
 
 
 reg [15:0] H_count_value = 0; 
@@ -55,9 +55,9 @@ always_ff @(posedge clk_25Mhz or posedge rst)
 // Assign Colors to Output
 always_ff @(posedge clk_25Mhz)
 	begin
-		assign Red = colorInput;
-		assign Blue =  colorInput;
-		assign Green = colorInput;
+		Red = colorInput;
+		Blue =  colorInput;
+		Green = colorInput;
 	end
 
 //Next address counter 

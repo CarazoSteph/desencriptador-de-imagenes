@@ -1,4 +1,4 @@
-module ramModule(input rst,clk,en,input [31:0] address,addressGPU,input [31:0] data,output [31:0] Out,OutGPU);
+module ramModule(input rst,clk,en,input [15:0] address,addressGPU,input [31:0] data,output [31:0] Out,OutGPU);
 
 	logic [16383:0] [7:0] memory;
 	
