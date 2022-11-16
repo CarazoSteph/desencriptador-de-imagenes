@@ -1,4 +1,4 @@
-module imageRom (input [31:0] address,output [31:0] Q);
+module imageRom (input [31:0] address,addressGPU,output [31:0] Q,outputGPU);
 	logic [7:0] memory [16383:0];
 	initial $readmemh("image.mem",memory); //aqui hay que cambiar el archivo para el de la imagen que mando el profe de imagen
 	
@@ -6,5 +6,6 @@ module imageRom (input [31:0] address,output [31:0] Q);
 
 	
 	assign Q={24'b0,memory[address]};
+	assign outputGPU={24'b0,memory[addressGPU]};
 
 endmodule 

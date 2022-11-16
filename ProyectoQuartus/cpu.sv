@@ -1,4 +1,4 @@
-module cpu(input clk,rst,input [8:0] switch,input [31:0] GPUAddress,output [31:0] GPUData);
+module cpu(input clk,rst,input [8:0] switch,input [31:0] GPUAddress,output [31:0] GPUData,GPUDataRom);
 	logic [31:0] instruction;
 	logic [7:0] pc;
 	logic [31:0] ramOut,imageOut,periOut;
@@ -19,7 +19,7 @@ module cpu(input clk,rst,input [8:0] switch,input [31:0] GPUAddress,output [31:0
 	
 	ramModule myRamModule(.rst(rst),.clk(clk),.en(en1),.address(romAddress),.data(writeData),.Out(ramOut),.addressGPU(GPUAddress),.OutGPU(GPUData)); 
 	
-	imageRom myImageRom(.address(imageAddress),.Q(imageOut));
+	imageRom myImageRom(.address(imageAddress),.Q(imageOut),.addressGPU(GPUAddress),.outputGPU(GPUDataRom));
 	
 	periModule myperiModule(.rst(rst),.clk(clk),.switch(switch),.en(en1),.address(periAddress),.out(periOut));
 	
