@@ -2,7 +2,7 @@ module VGA_Controller(
 	input clk_25Mhz,
 	input rst,
 	input[7:0] colorInput,
-	output nextAddress,
+	output [31:0] nextAddress,
 	output logic Hsync,
 	output logic Vsync,
 	output logic[7:0] Red,
@@ -78,7 +78,6 @@ always_ff @(posedge clk_25Mhz or posedge rst)
 				else
 					begin
 						WaitingPixels = WaitingPixels + 1;
-						nextPixel = 0;
 					end
 			end
 	end
