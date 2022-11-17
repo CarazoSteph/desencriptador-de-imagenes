@@ -16,7 +16,6 @@ logic[7:0] r_red,r_blue,r_green;
 
 
 //Pixel Logic
-logic[2:0] WaitingPixels = 0;
 logic[15:0] nextPixel = 0;
 
 
@@ -55,7 +54,7 @@ always_ff @(posedge clk_25Mhz or posedge rst)
 // Assign Colors to Output
 always_ff @(posedge clk_25Mhz)
 	begin
-		if((H_count_value > 144 && H_count_value < 784) && (V_count_value > 35 && V_count_value < 515))
+		if((H_count_value > 144 && H_count_value < 246) && (V_count_value > 35 && V_count_value < 137))
 			begin
 				Red = colorInput;
 				Blue =  colorInput;
@@ -75,21 +74,18 @@ always_ff @(posedge clk_25Mhz or posedge rst)
 		if(rst)
 			begin
 				nextPixel = 0;
-				WaitingPixels = 0;
 			end
 		else
 			begin
-				if((H_count_value > 144 && H_count_value < 784) && (V_count_value > 35 && V_count_value < 515))
+				if((H_count_value > 144 && H_count_value < 245) && (V_count_value > 35 && V_count_value < 136))
 					begin
-						if (nextPixel <= 9999 && WaitingPixels == 3'b111)
+						if (nextPixel <= 9999)
 							begin
 								nextPixel = nextPixel + 1;
-								WaitingPixels = 0;
 							end
-						if (nextPixel > 9999) nextPixel = 0;
-						else
+						if (nextPixel > 9999)
 							begin
-								WaitingPixels = WaitingPixels + 1;
+								nextPixel = 0;
 							end
 					end
 			end
