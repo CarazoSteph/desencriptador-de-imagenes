@@ -43,10 +43,9 @@ vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D
 vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv}
 vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv}
 
-vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Controller.sv}
-vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Rom_test.sv}
+vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  VGA_Rom_test
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  cpu_test
 
 add wave *
 view structure
