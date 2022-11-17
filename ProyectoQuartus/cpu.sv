@@ -9,7 +9,7 @@ module cpu(input clk,rst,input [8:0] switch,input [15:0] GPUAddress,output [7:0]
 	logic [31:0] memoryOut;
 	logic [31:0] readData,writeData;
 	
-	logic [31:0] romAddress,imageAddress,periAddress;
+	logic [31:0] ramAddress,imageAddress,periAddress;
 	
 	InstructionRom myinstructionrom(.address(pc),.Q(instruction));
 	
@@ -20,7 +20,7 @@ module cpu(input clk,rst,input [8:0] switch,input [15:0] GPUAddress,output [7:0]
 	//ramModule myRamModule(.rst(rst),.clk(clk),.en(en1),.address(romAddress[15:0]),.data(writeData),.Out(ramOut),.addressGPU(GPUAddress),.OutGPU(GPUData)); 
 	
 	
-	ipRam myramModule(.address_a(romAddress),.address_b(GPUAddress),.byteena_a(en1),.data_a(writeData),.data_b(GPUData),.inclock(!clk),.outclock(clk),.wren_a(en1),.wren_b(1'b0),.q_a(ramOut),.q_b(GPUData));
+	ipRam myramModule(.address_a(ramAddress[13:0]),.address_b(GPUAddress),.data_a(writeData),.data_b(GPUData),.inclock(!clk),.outclock(clk),.wren_a(en1),.wren_b(1'b0),.q_a(ramOut[7:0]),.q_b(GPUData));
 
 	
 	
@@ -38,7 +38,7 @@ module cpu(input clk,rst,input [8:0] switch,input [15:0] GPUAddress,output [7:0]
 	
 	mux2_1 #(.N(32)) MemRegSelector(.A(address),.B(memoryOut),.sel(MemtoReg),.C(readData));
 	
-	assign romAddress=address;
+	assign ramAddress=address;
 	assign imageAddress=address-16384;
 	assign periAddress=address-32768;
 	assign ramOut[31:8]=24'b0;
