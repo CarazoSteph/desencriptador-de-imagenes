@@ -55,9 +55,18 @@ always_ff @(posedge clk_25Mhz or posedge rst)
 // Assign Colors to Output
 always_ff @(posedge clk_25Mhz)
 	begin
-		Red = colorInput;
-		Blue =  colorInput;
-		Green = colorInput;
+		if((H_count_value > 144 && H_count_value < 784) && (V_count_value > 35 && V_count_value < 515))
+			begin
+				Red = colorInput;
+				Blue =  colorInput;
+				Green = colorInput;
+			end
+		else
+			begin
+				Red   = 8'h00;
+				Green = 8'h00;
+				Blue  = 8'h00;
+			end
 	end
 
 //Next address counter 
@@ -70,14 +79,18 @@ always_ff @(posedge clk_25Mhz or posedge rst)
 			end
 		else
 			begin
-				if (nextPixel <= 9999 && WaitingPixels == 3'b111)
+				if((H_count_value > 144 && H_count_value < 784) && (V_count_value > 35 && V_count_value < 515))
 					begin
-						nextPixel = nextPixel + 1;
-						WaitingPixels = 0;
-					end
-				else
-					begin
-						WaitingPixels = WaitingPixels + 1;
+						if (nextPixel <= 9999 && WaitingPixels == 3'b111)
+							begin
+								nextPixel = nextPixel + 1;
+								WaitingPixels = 0;
+							end
+						if (nextPixel > 9999) nextPixel = 0;
+						else
+							begin
+								WaitingPixels = WaitingPixels + 1;
+							end
 					end
 			end
 	end
