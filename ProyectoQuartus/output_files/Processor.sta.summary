@@ -3,147 +3,147 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'clock_divider:myClk|clock_out'
-Slack : -99.057
-TNS   : -72938.496
+Slack : -96.212
+TNS   : -71497.383
 
 Type  : Slow 1100mV 85C Model Setup 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : -91.470
-TNS   : -213.945
+Slack : -89.817
+TNS   : -209.546
 
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : -2.633
-TNS   : -96.893
+Slack : -2.766
+TNS   : -107.057
 
 Type  : Slow 1100mV 85C Model Hold 'clock_divider:myClk|clock_out'
-Slack : -0.215
-TNS   : -0.429
+Slack : 0.246
+TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : 0.390
+Slack : 0.391
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : 2.581
+Slack : 1.950
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_divider:myClk|clock_out'
 Slack : -2.174
-TNS   : -3746.752
+TNS   : -3700.997
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : -0.782
-TNS   : -5.707
+Slack : -1.345
+TNS   : -12.101
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -0.622
-TNS   : -20.780
+Slack : -0.661
+TNS   : -22.394
 
 Type  : Slow 1100mV 0C Model Setup 'clock_divider:myClk|clock_out'
-Slack : -100.477
-TNS   : -73899.357
+Slack : -97.459
+TNS   : -72316.705
 
 Type  : Slow 1100mV 0C Model Setup 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : -93.128
-TNS   : -216.155
+Slack : -91.204
+TNS   : -211.197
 
 Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : -2.830
-TNS   : -95.974
+Slack : -3.015
+TNS   : -105.886
 
 Type  : Slow 1100mV 0C Model Hold 'clock_divider:myClk|clock_out'
-Slack : -0.139
-TNS   : -0.277
+Slack : 0.166
+TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'clk'
-Slack : 0.387
+Slack : 0.388
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : 2.387
+Slack : 1.725
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_divider:myClk|clock_out'
 Slack : -2.174
-TNS   : -3683.587
+TNS   : -3643.240
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : -0.686
-TNS   : -5.065
+Slack : -1.291
+TNS   : -12.087
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : -0.632
-TNS   : -22.315
+Slack : -0.669
+TNS   : -23.965
 
 Type  : Fast 1100mV 85C Model Setup 'clock_divider:myClk|clock_out'
-Slack : -56.183
-TNS   : -41338.390
+Slack : -54.824
+TNS   : -40923.136
 
 Type  : Fast 1100mV 85C Model Setup 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : -51.544
-TNS   : -123.469
+Slack : -51.118
+TNS   : -121.978
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : -1.327
-TNS   : -43.027
+Slack : -1.256
+TNS   : -46.066
 
 Type  : Fast 1100mV 85C Model Hold 'clock_divider:myClk|clock_out'
-Slack : -0.107
-TNS   : -0.229
+Slack : -0.038
+TNS   : -0.038
 
 Type  : Fast 1100mV 85C Model Hold 'clk'
-Slack : 0.209
+Slack : 0.207
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : 1.443
+Slack : 1.382
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_divider:myClk|clock_out'
 Slack : -2.174
-TNS   : -3331.510
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -0.597
-TNS   : -4.221
+TNS   : -3304.582
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : -0.522
-TNS   : -2.772
+Slack : -0.718
+TNS   : -4.613
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.611
+TNS   : -4.483
 
 Type  : Fast 1100mV 0C Model Setup 'clock_divider:myClk|clock_out'
-Slack : -52.440
-TNS   : -38533.802
+Slack : -51.090
+TNS   : -38013.467
 
 Type  : Fast 1100mV 0C Model Setup 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : -48.353
-TNS   : -114.623
+Slack : -47.743
+TNS   : -112.878
 
 Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : -1.255
-TNS   : -36.255
+Slack : -1.221
+TNS   : -39.420
 
 Type  : Fast 1100mV 0C Model Hold 'clock_divider:myClk|clock_out'
-Slack : -0.053
-TNS   : -0.105
+Slack : -0.021
+TNS   : -0.021
 
 Type  : Fast 1100mV 0C Model Hold 'clk'
-Slack : 0.196
+Slack : 0.195
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : 1.386
+Slack : 1.150
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_divider:myClk|clock_out'
 Slack : -2.174
-TNS   : -3288.834
+TNS   : -3270.216
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : -0.577
-TNS   : -4.158
+Slack : -0.592
+TNS   : -4.457
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop|state[0]'
-Slack : -0.343
-TNS   : -1.671
+Slack : -0.557
+TNS   : -3.579
 
 ------------------------------------------------------------

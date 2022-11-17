@@ -7,356 +7,410 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying D:/Quartus/Exec/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v}
+# vlog -vlog01compat -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:45 on Nov 16,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v 
+# Start time: 19:09:31 on Nov 16,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v 
 # -- Compiling module ipRam
 # 
 # Top level modules:
 # 	ipRam
-# End time: 21:23:45 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:31 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:45 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv 
+# Start time: 19:09:31 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Controller.sv 
+# -- Compiling module VGA_Controller
+# 
+# Top level modules:
+# 	VGA_Controller
+# End time: 19:09:31 on Nov 16,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:09:31 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv 
 # -- Compiling module subtracter
 # 
 # Top level modules:
 # 	subtracter
-# End time: 21:23:45 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:31 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:45 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv 
+# Start time: 19:09:33 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv 
 # -- Compiling module sign_magnitud_to_complement
 # 
 # Top level modules:
 # 	sign_magnitud_to_complement
-# End time: 21:23:45 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:33 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:45 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv 
+# Start time: 19:09:33 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv 
 # -- Compiling module shifR
 # 
 # Top level modules:
 # 	shifR
-# End time: 21:23:45 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:33 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:45 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv 
+# Start time: 19:09:33 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv 
 # -- Compiling module shifL
 # 
 # Top level modules:
 # 	shifL
-# End time: 21:23:45 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv 
 # -- Compiling module Operations
 # 
 # Top level modules:
 # 	Operations
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv 
 # -- Compiling module mux_9_1
 # 
 # Top level modules:
 # 	mux_9_1
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv 
 # -- Compiling module multiplier
 # 
 # Top level modules:
 # 	multiplier
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mod.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mod.sv 
 # -- Compiling module mod
 # 
 # Top level modules:
 # 	mod
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv 
 # -- Compiling module FlagsM
 # 
 # Top level modules:
 # 	FlagsM
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/division.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/division.sv 
 # -- Compiling module division
 # 
 # Top level modules:
 # 	division
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv 
 # -- Compiling module complement_2_to_sign_magnitud
 # 
 # Top level modules:
 # 	complement_2_to_sign_magnitud
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv 
 # -- Compiling module bitwise_xor
 # 
 # Top level modules:
 # 	bitwise_xor
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv 
 # -- Compiling module bitwise_or
 # 
 # Top level modules:
 # 	bitwise_or
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv 
 # -- Compiling module bitwise_and
 # 
 # Top level modules:
 # 	bitwise_and
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/adder.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/adder.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv 
 # -- Compiling module instructionDecoder
 # 
 # Top level modules:
 # 	instructionDecoder
-# End time: 21:23:46 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:46 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv 
 # -- Compiling module registerBank
 # 
 # Top level modules:
 # 	registerBank
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:01
+# End time: 19:09:34 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv 
+# Start time: 19:09:34 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv 
 # -- Compiling module controlUnit
 # 
 # Top level modules:
 # 	controlUnit
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/processor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/processor.sv 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv 
 # -- Compiling module mux2_1
 # 
 # Top level modules:
 # 	mux2_1
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv 
 # -- Compiling module armToALUAdapter
 # 
 # Top level modules:
 # 	armToALUAdapter
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv 
 # -- Compiling module flipFlopD
 # 
 # Top level modules:
 # 	flipFlopD
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv 
 # -- Compiling module branchingCondition
 # 
 # Top level modules:
 # 	branchingCondition
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv 
 # -- Compiling module FlagHolder
 # 
 # Top level modules:
 # 	FlagHolder
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv 
 # -- Compiling module periModule
 # 
 # Top level modules:
 # 	periModule
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv 
 # -- Compiling module chipSet
 # 
 # Top level modules:
 # 	chipSet
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv 
 # -- Compiling module cpu
 # 
 # Top level modules:
 # 	cpu
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv 
 # -- Compiling module mux4_1
 # 
 # Top level modules:
 # 	mux4_1
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv 
 # -- Compiling module bitwise_not
 # 
 # Top level modules:
 # 	bitwise_not
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cputoDataAdapter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:47 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv 
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cputoDataAdapter.sv 
+# -- Compiling module cputoDataAdapter
+# 
+# Top level modules:
+# 	cputoDataAdapter
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/topModel.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/topModel.sv 
+# -- Compiling module topModel
+# 
+# Top level modules:
+# 	topModel
+# End time: 19:09:35 on Nov 16,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/clock_divider.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:09:35 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 19:09:36 on Nov 16,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:09:36 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv 
 # -- Compiling module InstructionRom
 # 
 # Top level modules:
 # 	InstructionRom
-# End time: 21:23:47 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:36 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:48 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv 
+# Start time: 19:09:36 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv 
 # -- Compiling module imageRom
 # 
 # Top level modules:
 # 	imageRom
-# End time: 21:23:48 on Nov 16,2022, Elapsed time: 0:00:00
+# End time: 19:09:36 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus {C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv}
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:23:48 on Nov 16,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus" C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv 
-# -- Compiling module cpu_test
+# Start time: 19:09:36 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Controller.sv 
+# -- Compiling module VGA_Controller
 # 
 # Top level modules:
-# 	cpu_test
-# End time: 21:23:48 on Nov 16,2022, Elapsed time: 0:00:00
+# 	VGA_Controller
+# End time: 19:09:36 on Nov 16,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus {D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Rom_test.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:09:36 on Nov 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus" D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Rom_test.sv 
+# -- Compiling module VGA_Rom_test
+# 
+# Top level modules:
+# 	VGA_Rom_test
+# End time: 19:09:36 on Nov 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  cpu_test
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" cpu_test 
-# Start time: 21:23:48 on Nov 16,2022
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  VGA_Rom_test
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" VGA_Rom_test 
+# Start time: 19:09:36 on Nov 16,2022
 # Loading sv_std.std
-# Loading work.cpu_test
+# Loading work.VGA_Rom_test
+# Loading work.topModel
+# Loading work.clock_divider
+# Loading work.cputoDataAdapter
+# Loading work.mux2_1
 # Loading work.cpu
 # Loading work.InstructionRom
 # Loading work.processor
@@ -383,7 +437,6 @@
 # Loading work.complement_2_to_sign_magnitud
 # Loading work.mux_9_1
 # Loading work.FlagsM
-# Loading work.mux2_1
 # Loading work.flipFlopD
 # Loading work.ipRam
 # Loading altera_mf_ver.altsyncram
@@ -391,64 +444,64 @@
 # Loading work.periModule
 # Loading work.chipSet
 # Loading work.mux4_1
+# Loading work.VGA_Controller
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mycpuModule'.  Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv Line: 8
-# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'GPUAddress'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv Line: 8
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'GPUData'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv Line: 8
-# ** Warning: (vsim-3722) C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv(8): [TFMPC] - Missing connection for port 'GPUDataRom'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'R15'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myRegisterBank File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 21
-# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (32) for port 'multOutComp'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myOperations File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 19
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'movOut'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myOperations File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 19
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'movNOut'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myOperations File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 19
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myOperations/myshiftL File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 19
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myOperations/myshiftR File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myOperations/myand File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 21
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myOperations/myor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 22
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myOperations/myxor File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 23
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myOperations/mymov File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 24
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myOperations/mymovn File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 25
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'f'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'g'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'h'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'j'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'k'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'l'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myALU/myMux File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/PCselector File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 29
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'In'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myClockFlop File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 31
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'Out'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myprocessor/myClockFlop File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 31
-# ** Warning: (vsim-3015) [PCDPC] - Port size (14) does not match connection size (16) for port 'address_b'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myramModule File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 23
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'data_a'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v(43).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myramModule File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 23
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'outputGPU'. The port definition is at: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/mycpuModule/myImageRom File: C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 27
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (9) for port 'switch'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/topModel.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Rom_test.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'R15'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myRegisterBank File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (32) for port 'multOutComp'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myOperations File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'movOut'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myOperations File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'movNOut'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myOperations File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myOperations/myshiftL File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myOperations/myshiftR File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myOperations/myand File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myOperations/myor File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myOperations/myxor File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myOperations/mymov File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'c'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myOperations/mymovn File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv Line: 25
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'f'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myMux File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'g'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myMux File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'h'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myMux File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myMux File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'j'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myMux File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'k'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myMux File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'l'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myALU/myMux File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/PCselector File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'In'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myClockFlop File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'Out'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myprocessor/myClockFlop File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/processor.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (14) does not match connection size (32) for port 'address_a'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myramModule File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (14) does not match connection size (16) for port 'address_b'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v(42).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myramModule File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'data_a'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v(44).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myramModule File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'q_a'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v(50).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myramModule File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'outputGPU'. The port definition is at: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myImageRom File: D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv Line: 27
 # 
 # add wave *
 # view structure
@@ -456,7 +509,9 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "Processor.mem". (Current address [256], address range [0:255])    : D:/Git/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv(3)
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Rom_test/mydecripto/myCPU/myinstructionrom
 # Break key hit
-# Break in Module registerBank at C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv line 18
-# End time: 21:24:38 on Nov 16,2022, Elapsed time: 0:00:50
+# Simulation stop requested.
+# End time: 19:14:48 on Nov 16,2022, Elapsed time: 0:05:12
 # Errors: 0, Warnings: 28

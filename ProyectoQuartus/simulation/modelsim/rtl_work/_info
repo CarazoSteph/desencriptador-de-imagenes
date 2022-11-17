@@ -8,32 +8,32 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/simulation/modelsim
+Z0 dD:/Git/desencriptador-de-imagenes/ProyectoQuartus/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1668655426
+Z2 !s110 1668647374
 !i10b 1
 !s100 [gM8J3BeehcC=`V9hC@NT0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IlH]VGV?FOQn]U@b_E?Hdg1
+IHg=jUZQ2[9YIz:gk8R0ZW0
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1667629017
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/adder.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/adder.sv
-!i122 16
+Z5 w1667953420
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/adder.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/adder.sv
+!i122 17
 Z6 L0 1 4
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1668655426.000000
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/adder.sv|
+Z8 !s108 1668647374.000000
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/adder.sv|
 !i113 1
 Z9 o-sv -work work
-Z10 !s92 -sv -work work {+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus}
+Z10 !s92 -sv -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus
 Z11 tCvgOpt 0
 vALU
 R1
@@ -41,22 +41,22 @@ R2
 !i10b 1
 !s100 CVnMFZWW3Klzk6`zg40V62
 R3
-IHUo78ajVRh`RnoF2Q7UMG0
+I;]^d6`2Km>ToU0DnXnY<f3
 R4
 S1
 R0
-w1668218756
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv
-!i122 15
-L0 1 23
+Z12 w1668281733
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv
+!i122 16
+Z13 L0 1 23
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ALU.sv|
 !i113 1
 R9
 R10
@@ -64,26 +64,26 @@ R11
 n@a@l@u
 varmToALUAdapter
 R1
-Z12 !s110 1668655427
+Z14 !s110 1668647375
 !i10b 1
 !s100 7QaQC]ZC;6`iTodWDW]d60
 R3
-Igh=XH35V6NkUk1Bcf19j92
+IP[^dNiBHgKUV5DV9[=?]71
 R4
 S1
 R0
-w1668288643
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv
-!i122 22
+w1668545409
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv
+!i122 23
 L0 1 27
 R7
 r1
 !s85 0
 31
-Z13 !s108 1668655427.000000
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv|
+Z15 !s108 1668647375.000000
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/armToALUAdapter.sv|
 !i113 1
 R9
 R10
@@ -95,48 +95,48 @@ R2
 !i10b 1
 !s100 LP]857X>`[Y<FH:hzX?FK3
 R3
-I64F814;fU0[3:I:;M^;k]1
+IOKoef^`iI9HR4ZVJhFlTd1
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv
-!i122 14
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv
+!i122 15
 R6
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_and.sv|
 !i113 1
 R9
 R10
 R11
 vbitwise_not
 R1
-R12
+R14
 !i10b 1
 !s100 AehJVM>_ZY?<jkMh=_^SQ2
 R3
-I?1`API>k2IhXb]2DoZ1TG3
+IH;<YRhBWeLO7kBaUzGg692
 R4
 S1
 R0
-w1668218449
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv
-!i122 30
+R12
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv
+!i122 31
 R6
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv|
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_not.sv|
 !i113 1
 R9
 R10
@@ -147,22 +147,22 @@ R2
 !i10b 1
 !s100 EjA@[KFFmOJb6G:Q_EXf01
 R3
-Ik?gjjiV7k83[g8B]1TYdl0
+IU<KHoniGJHCSzOSd2;5SG2
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv
-!i122 13
-Z14 L0 1 3
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv
+!i122 14
+Z16 L0 1 3
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_or.sv|
 !i113 1
 R9
 R10
@@ -173,48 +173,48 @@ R2
 !i10b 1
 !s100 kARHfz`YX]oC:HaDd7SM82
 R3
-Il]>^XHMC`@8IcllNXgokd3
+IFZ:6jO:ToWGoBahmmcYHa0
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv
-!i122 12
-R14
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv
+!i122 13
+R16
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/bitwise_xor.sv|
 !i113 1
 R9
 R10
 R11
 vbranchingCondition
 R1
-R12
+R14
 !i10b 1
 !s100 E81PFalgDV0X1>Ozz>OaQ2
 R3
-I7kSLPAKKeT>32ASV4_]dc2
+IMFQ>Y5BLmBDNeNQoLNaGo1
 R4
 S1
 R0
-w1668135288
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv
-!i122 24
-Z15 L0 1 19
+Z17 w1668207590
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv
+!i122 25
+Z18 L0 1 19
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv|
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/branchingCondition.sv|
 !i113 1
 R9
 R10
@@ -222,79 +222,105 @@ R11
 nbranching@condition
 vchipSet
 R1
-R12
+R14
 !i10b 1
 !s100 PP4LgJi]M<<7C;CT1ENGE2
 R3
-IDH_V2DE6]<GhMiHPYkL[?0
+I40JiZ<IXVFe5Ch^WoRLbU0
 R4
 S1
 R0
-w1668285722
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv
-!i122 27
+w1668285785
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv
+!i122 28
 L0 1 28
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv|
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/chipSet.sv|
 !i113 1
 R9
 R10
 R11
 nchip@set
+vclock_divider
+R1
+Z19 !s110 1668647376
+!i10b 1
+!s100 6876=`6aHj=O[Pjjg95S71
+R3
+I3XGgKeojjK[V8j:GC@@1^3
+R4
+S1
+R0
+w1668640682
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/clock_divider.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/clock_divider.sv
+!i122 34
+L0 4 18
+R7
+r1
+!s85 0
+31
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/clock_divider.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/clock_divider.sv|
+!i113 1
+R9
+R10
+R11
 vcomplement_2_to_sign_magnitud
 R1
 R2
 !i10b 1
 !s100 <aB8f_?]>>P<UWZGkTFo_3
 R3
-I=OKh?c_ja6[m6^jSBM03e1
+I<8;A[`6`UmKJ?2^>XoW]K0
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv
-!i122 11
-Z16 L0 1 12
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv
+!i122 12
+Z20 L0 1 12
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/complement_2.sv|
 !i113 1
 R9
 R10
 R11
 vcontrolUnit
 R1
-R12
+R14
 !i10b 1
 !s100 C0aNgG:Xj^D;C5HIA5>_S1
 R3
-IVAUBnQAE=g:1=5=0]9FW]2
+I1f2K_jJAM4?CncgTX?F[b0
 R4
 S1
 R0
-w1668206945
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv
-!i122 19
+R12
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv
+!i122 20
 L0 1 55
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv|
+R8
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/controlUnit.sv|
 !i113 1
 R9
 R10
@@ -302,104 +328,105 @@ R11
 ncontrol@unit
 vcpu
 R1
-R12
+R14
 !i10b 1
-!s100 zmoV[mWmQV<K9n>ZQzBe62
+!s100 ng]XOn4G;mg<9k_oYPmch2
 R3
-Ij:N][FB`R0QGdj2ES6<G;3
+I5]TMUn`F4Y15c?TQdE7SX3
 R4
 S1
 R0
-w1668652134
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv
-!i122 28
+Z21 w1668640688
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv
+!i122 29
 L0 1 47
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv|
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cpu.sv|
 !i113 1
 R9
 R10
 R11
-vcpu_test
+vcputoDataAdapter
 R1
-Z17 !s110 1668655428
+R14
 !i10b 1
-!s100 @Ob4]Yo:P:^eM6M6k`N_62
+!s100 KEOJMaSTO4Lea@ZP_HUC=2
 R3
-ID@NELCFKY5JmbQCGDK9800
+I0IGMSDcf9BkADU6A:F6@:2
 R4
 S1
 R0
-w1668653395
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv
-!i122 33
-L0 3 38
+R21
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cputoDataAdapter.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/cputoDataAdapter.sv
+!i122 32
+L0 1 6
 R7
 r1
 !s85 0
 31
-Z18 !s108 1668655428.000000
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/cpu_test.sv|
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cputoDataAdapter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/cputoDataAdapter.sv|
 !i113 1
 R9
 R10
 R11
+ncputo@data@adapter
 vdivision
 R1
 R2
 !i10b 1
 !s100 hA]Se@XK0>7YnaTOdgRR90
 R3
-IMP_hE_J7mHi0IoMbJ:`;a0
+In;4fPn>P<7dYo`mCYof7B1
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv
-!i122 10
-Z19 L0 1 5
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/division.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/division.sv
+!i122 11
+Z22 L0 1 5
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/division.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/division.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/division.sv|
 !i113 1
 R9
 R10
 R11
 vFlagHolder
 R1
-R12
+R14
 !i10b 1
 !s100 AEXCeZ;=8<Wb5X<4]=[IU2
 R3
-I4F;zTP>TnBAZ3[:i[FnX72
+IIfP30V5MhlSM4maGfNXRm3
 R4
 S1
 R0
-w1668136155
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv
-!i122 25
+R17
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv
+!i122 26
 L0 1 17
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv|
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagHolder.sv|
 !i113 1
 R9
 R10
@@ -411,22 +438,22 @@ R2
 !i10b 1
 !s100 1LOAMFcjd9_=Ukk`VMcc51
 R3
-In7>Ghmb:@RPVok_k0BAVC2
+I6o48oeDOc:7Aed5^OREb33
 R4
 S1
 R0
-w1668218880
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv
-!i122 9
+R12
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv
+!i122 10
 L0 1 105
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/FlagsM.sv|
 !i113 1
 R9
 R10
@@ -434,26 +461,26 @@ R11
 n@flags@m
 vflipFlopD
 R1
-R12
+R14
 !i10b 1
 !s100 <o_e7JKl`kk4jTWZ1iUOX1
 R3
-IH6hDRd^ZTEEIY?JO6bjLf1
+Ic;2U00^oUc5eOk;zGJcIH3
 R4
 S1
 R0
-w1668120362
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv
-!i122 23
+R17
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv
+!i122 24
 L0 1 14
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv|
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/flipFlopD.sv|
 !i113 1
 R9
 R10
@@ -461,26 +488,26 @@ R11
 nflip@flop@d
 vimageRom
 R1
-R17
+R19
 !i10b 1
 !s100 2FMVegJgV9de<n7Tmz3]A0
 R3
-IVMGY9a=>gM@oNNRG5:AzS3
+Ieh1H7>bWanNMYo9j@e?bM2
 R4
 S1
 R0
-w1668635868
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv
-!i122 32
-Z20 L0 1 11
+w1668640683
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv
+!i122 36
+Z23 L0 1 11
 R7
 r1
 !s85 0
 31
-R18
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv|
+Z24 !s108 1668647376.000000
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/imageRom.sv|
 !i113 1
 R9
 R10
@@ -492,22 +519,22 @@ R2
 !i10b 1
 !s100 mZ[>PhKM5e48A4J`1c68E2
 R3
-Ie8`1h7Q`XnNdoBK2Q5^mZ1
+IC5Bf]FTjj5JM07PM]daI02
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv
-!i122 17
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv
+!i122 18
 L0 1 78
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/instructionDecoder.sv|
 !i113 1
 R9
 R10
@@ -515,54 +542,54 @@ R11
 ninstruction@decoder
 vInstructionRom
 R1
-R12
+R19
 !i10b 1
 !s100 NO7WYdaWJ9:D8U?ah<D5A2
 R3
-I4=6`VV]B0nJ?mzV^^^[[N2
+ITJATgjjoaX2HG6?LdN7Qh0
 R4
 S1
 R0
-w1668281710
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv
-!i122 31
-R20
+Z25 w1668282257
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv
+!i122 35
+R23
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv|
+R24
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/InstructionRom.sv|
 !i113 1
 R9
 R10
 R11
 n@instruction@rom
 vipRam
-Z21 !s110 1668655425
+Z26 !s110 1668647371
 !i10b 1
-!s100 FA@<DFQlcBHmUM?i9_jGQ2
+!s100 e5==V>>Llzb=4IU^GWCzn2
 R3
-Ii5ioQlcaCYE3f<LabPc]F1
+IfY=8V77CMYEK0dOz1`FhD2
 R4
 R0
-w1668650172
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v
+R21
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v
 !i122 0
-L0 40 91
+L0 40 95
 R7
 r1
 !s85 0
 31
-Z22 !s108 1668655425.000000
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v|
+Z27 !s108 1668647371.000000
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/ipRam.v|
 !i113 1
 o-vlog01compat -work work
-!s92 -vlog01compat -work work {+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus}
+!s92 -vlog01compat -work work +incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus
 R11
 nip@ram
 vmod
@@ -571,22 +598,22 @@ R2
 !i10b 1
 !s100 U6BU>SJP5?_zTDma=WNZl3
 R3
-Ih^N_<3<Bl8X?eDb2fNO<X3
+IYI3@Z_Gm<7;kQ6@W1[6ne3
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv
-!i122 8
-R19
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mod.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/mod.sv
+!i122 9
+R22
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mod.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mod.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mod.sv|
 !i113 1
 R9
 R10
@@ -597,74 +624,74 @@ R2
 !i10b 1
 !s100 gn@CbR5J6[_NLUjJU6P]G3
 R3
-I^ABQ5Uh>1MXDO:3MHDF?U1
+Ie0o<eW6TX@nUIQg6XJ0Vm3
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv
-!i122 7
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv
+!i122 8
 R6
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/multiplier.sv|
 !i113 1
 R9
 R10
 R11
 vmux2_1
 R1
-R12
+R14
 !i10b 1
 !s100 I6DehUNKT8aQf9Oo3f6WS3
 R3
-IXlI99dlbCU9C9g3@0m44b2
+Ig_H0ZK<=oJN7^Ad[VC0U_3
 R4
 S1
 R0
-w1668052138
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv
-!i122 21
+R17
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv
+!i122 22
 L0 1 7
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv|
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux21.sv|
 !i113 1
 R9
 R10
 R11
 vmux4_1
 R1
-R12
+R14
 !i10b 1
 !s100 kJ2;jmKDz@0ZK53ZO:m>53
 R3
-I4`hkPI3zVb^Gz3A5C1nOO1
+IJX1cBS;_gXTbMUaF[U4JF3
 R4
 S1
 R0
-w1668210236
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv
-!i122 29
+R12
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv
+!i122 30
 L0 1 13
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv|
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux4_1.sv|
 !i113 1
 R9
 R10
@@ -675,22 +702,22 @@ R2
 !i10b 1
 !s100 5f6k0[SKXXLFD:IIF25TR1
 R3
-IeAIAgWXSg6RIk;6[KU7LE0
+I1`0e@X^^07[W^@VIXThdf1
 R4
 S1
 R0
-w1668218698
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv
-!i122 6
-R15
+R12
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv
+!i122 7
+R18
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/mux_9_1.sv|
 !i113 1
 R9
 R10
@@ -701,22 +728,22 @@ R2
 !i10b 1
 !s100 Yc<eha@1[8WTUz^TZC9LF1
 R3
-I?cCLZP0_65gzaZ6I1MIb]0
+IEj25:?W>Vd2_gQXml3mnL0
 R4
 S1
 R0
-w1668218530
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv
-!i122 5
+R12
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv
+!i122 6
 L0 1 52
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/Operations.sv|
 !i113 1
 R9
 R10
@@ -724,26 +751,26 @@ R11
 n@operations
 vperiModule
 R1
-R12
+R14
 !i10b 1
 !s100 8OAWO_K1nQz=7]ln9gF0l3
 R3
-Ii;^>ok6H;89lHFXilGK=f3
+Ij7>86kXEE@Y[b<^YQ6H:@3
 R4
 S1
 R0
-w1668297983
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv
-!i122 26
-R16
+w1668632831
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv
+!i122 27
+R20
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv|
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/periModule.sv|
 !i113 1
 R9
 R10
@@ -751,52 +778,52 @@ R11
 nperi@module
 vprocessor
 R1
-R12
+R14
 !i10b 1
 !s100 nY1LzIN=lf[_96TQ`2H]l0
 R3
-IC4779hINOTf;e`oMncZDY0
+I]3gOK3IX1<lS6=RJQ8ZBi0
 R4
 S1
 R0
-w1668279309
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv
-!i122 20
+R25
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/processor.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/processor.sv
+!i122 21
 L0 1 44
 R7
 r1
 !s85 0
 31
-R13
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/processor.sv|
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/processor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/processor.sv|
 !i113 1
 R9
 R10
 R11
 vregisterBank
 R1
-R12
+R2
 !i10b 1
 !s100 @HRb:f6VJD6WT6TlAZ5m63
 R3
-I:OhaQW@gG[=QHW^fA=@:P1
+I0ToAYToc6]LS`G@`:<`]82
 R4
 S1
 R0
-w1668094705
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv
-!i122 18
+R17
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv
+!i122 19
 L0 1 29
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv|
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/registerBank.sv|
 !i113 1
 R9
 R10
@@ -804,26 +831,26 @@ R11
 nregister@bank
 vshifL
 R1
-R21
+R2
 !i10b 1
 !s100 elnLjYMF]IfD1PI3IP@4k1
 R3
-Ik=Gj7E@>dkFbcXfJ]7OcJ0
+IQU4B@anJSj4^MH`TGPEzm2
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv
-!i122 4
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv
+!i122 5
 R6
 R7
 r1
 !s85 0
 31
-R22
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv|
+Z28 !s108 1668647373.000000
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftL.sv|
 !i113 1
 R9
 R10
@@ -831,26 +858,26 @@ R11
 nshif@l
 vshifR
 R1
-R21
+Z29 !s110 1668647373
 !i10b 1
 !s100 ZA<PXLUgnL7Y<P_Pbi6d60
 R3
-IeAVFVi66GOOI0?JB`@Y<M1
+IPJz4ZA[=Kn1LS26MjoMU82
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv
-!i122 3
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv
+!i122 4
 R6
 R7
 r1
 !s85 0
 31
-R22
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv|
+R28
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/shiftR.sv|
 !i113 1
 R9
 R10
@@ -858,53 +885,134 @@ R11
 nshif@r
 vsign_magnitud_to_complement
 R1
-R21
+R29
 !i10b 1
 !s100 NiQdB@L39`PzNI?M=9A^S3
 R3
-I35Nf_1lL?iDB?5Z]HG_MC0
+I57K?gC:ca^4O;SIE:0A@h3
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv
-!i122 2
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv
+!i122 3
 L0 1 18
 R7
 r1
 !s85 0
 31
-R22
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv|
+R28
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/sign_magnitud_to_complement.sv|
 !i113 1
 R9
 R10
 R11
 vsubtracter
 R1
-R21
+R26
 !i10b 1
 !s100 ;eLlO?Z7>74:hfTTcQzUC3
 R3
-I_kGT0jCI]N=0Sho4@7C]`3
+IDE8mbneFS;lgZbXGSBJ5O2
 R4
 S1
 R0
 R5
-8C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv
-FC:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv
-!i122 1
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv
+!i122 2
 R6
 R7
 r1
 !s85 0
 31
-R22
-!s107 C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus|C:/TEC/Segundo Semestre/Taller/Proyecto/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv|
+R27
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/subtracter.sv|
 !i113 1
 R9
 R10
 R11
+vtopModel
+R1
+R14
+!i10b 1
+!s100 mCJzeB[kNTXOUhPc^M@Gn0
+R3
+IPflcA;7=d<>QCQf<BkP5<0
+R4
+S1
+R0
+w1668646999
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/topModel.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/topModel.sv
+!i122 33
+R13
+R7
+r1
+!s85 0
+31
+R15
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/topModel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/topModel.sv|
+!i113 1
+R9
+R10
+R11
+ntop@model
+vVGA_Controller
+R1
+R19
+!i10b 1
+!s100 zfc7<m@7TGHJFz9I4GRI^1
+R3
+IaERRXo>_Ho1[F[6Nl7]TS0
+R4
+S1
+R0
+w1668643805
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Controller.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Controller.sv
+!i122 37
+L0 1 101
+R7
+r1
+!s85 0
+31
+R24
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Controller.sv|
+!i113 1
+R9
+R10
+R11
+n@v@g@a_@controller
+vVGA_Rom_test
+R1
+R19
+!i10b 1
+!s100 HF5YE_E<T@kdJBM;570`90
+R3
+Ii1W:6[HP9_`^K]8AEglNT2
+R4
+S1
+R0
+w1668647351
+8D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Rom_test.sv
+FD:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Rom_test.sv
+!i122 38
+L0 2 24
+R7
+r1
+!s85 0
+31
+R24
+!s107 D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Rom_test.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/desencriptador-de-imagenes/ProyectoQuartus|D:/Git/desencriptador-de-imagenes/ProyectoQuartus/VGA_Rom_test.sv|
+!i113 1
+R9
+R10
+R11
+n@v@g@a_@rom_test

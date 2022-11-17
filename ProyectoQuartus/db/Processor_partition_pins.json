@@ -4,127 +4,147 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "GPUData[0]",
+					"name" : "Hsync",
 					"strict" : false
 				},
 				{
-					"name" : "GPUData[1]",
+					"name" : "Vsync",
 					"strict" : false
 				},
 				{
-					"name" : "GPUData[2]",
+					"name" : "Red[0]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUData[3]",
+					"name" : "Red[1]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUData[4]",
+					"name" : "Red[2]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUData[5]",
+					"name" : "Red[3]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUData[6]",
+					"name" : "Red[4]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUData[7]",
+					"name" : "Red[5]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUDataRom[0]",
+					"name" : "Red[6]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUDataRom[1]",
+					"name" : "Red[7]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUDataRom[2]",
+					"name" : "Green[0]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUDataRom[3]",
+					"name" : "Green[1]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUDataRom[4]",
+					"name" : "Green[2]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUDataRom[5]",
+					"name" : "Green[3]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUDataRom[6]",
+					"name" : "Green[4]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUDataRom[7]",
+					"name" : "Green[5]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[12]",
+					"name" : "Green[6]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[11]",
+					"name" : "Green[7]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[13]",
+					"name" : "Blue[0]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[4]",
+					"name" : "Blue[1]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[8]",
+					"name" : "Blue[2]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[6]",
+					"name" : "Blue[3]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[5]",
+					"name" : "Blue[4]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[7]",
+					"name" : "Blue[5]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[0]",
+					"name" : "Blue[6]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[1]",
+					"name" : "Blue[7]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[2]",
+					"name" : "VGA_clk",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[3]",
+					"name" : "switch[5]",
 					"strict" : false
 				},
 				{
-					"name" : "GPUAddress[9]",
-					"strict" : false
-				},
-				{
-					"name" : "GPUAddress[10]",
+					"name" : "switch[6]",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "switch[4]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[3]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[2]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[0]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[7]",
 					"strict" : false
 				}
 			]

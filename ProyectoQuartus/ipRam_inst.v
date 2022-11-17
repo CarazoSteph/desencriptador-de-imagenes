@@ -1,6 +1,7 @@
 ipRam	ipRam_inst (
 	.address_a ( address_a_sig ),
 	.address_b ( address_b_sig ),
+	.byteena_a ( byteena_a_sig ),
 	.data_a ( data_a_sig ),
 	.data_b ( data_b_sig ),
 	.inclock ( inclock_sig ),
