@@ -1,139 +1,4 @@
-|topModel
-clk => clk.IN1
-switch[0] => switch[0].IN1
-switch[1] => switch[1].IN1
-switch[2] => switch[2].IN1
-switch[3] => switch[3].IN1
-switch[4] => switch[4].IN1
-switch[5] => switch[5].IN2
-switch[6] => switch[6].IN1
-switch[7] => switch[7].IN1
-Hsync << VGA_Controller:myVGA.port4
-Vsync << VGA_Controller:myVGA.port5
-Red[0] << VGA_Controller:myVGA.port6
-Red[1] << VGA_Controller:myVGA.port6
-Red[2] << VGA_Controller:myVGA.port6
-Red[3] << VGA_Controller:myVGA.port6
-Red[4] << VGA_Controller:myVGA.port6
-Red[5] << VGA_Controller:myVGA.port6
-Red[6] << VGA_Controller:myVGA.port6
-Red[7] << VGA_Controller:myVGA.port6
-Green[0] << VGA_Controller:myVGA.port7
-Green[1] << VGA_Controller:myVGA.port7
-Green[2] << VGA_Controller:myVGA.port7
-Green[3] << VGA_Controller:myVGA.port7
-Green[4] << VGA_Controller:myVGA.port7
-Green[5] << VGA_Controller:myVGA.port7
-Green[6] << VGA_Controller:myVGA.port7
-Green[7] << VGA_Controller:myVGA.port7
-Blue[0] << VGA_Controller:myVGA.port8
-Blue[1] << VGA_Controller:myVGA.port8
-Blue[2] << VGA_Controller:myVGA.port8
-Blue[3] << VGA_Controller:myVGA.port8
-Blue[4] << VGA_Controller:myVGA.port8
-Blue[5] << VGA_Controller:myVGA.port8
-Blue[6] << VGA_Controller:myVGA.port8
-Blue[7] << VGA_Controller:myVGA.port8
-VGA_clk << VGA_Controller:myVGA.port9
-
-
-|topModel|clock_divider:myClk
-clock_in => clock_out~reg0.CLK
-clock_in => counter[0].CLK
-clock_in => counter[1].CLK
-clock_in => counter[2].CLK
-clock_in => counter[3].CLK
-clock_in => counter[4].CLK
-clock_in => counter[5].CLK
-clock_in => counter[6].CLK
-clock_in => counter[7].CLK
-clock_in => counter[8].CLK
-clock_in => counter[9].CLK
-clock_in => counter[10].CLK
-clock_in => counter[11].CLK
-clock_in => counter[12].CLK
-clock_in => counter[13].CLK
-clock_in => counter[14].CLK
-clock_in => counter[15].CLK
-clock_in => counter[16].CLK
-clock_in => counter[17].CLK
-clock_in => counter[18].CLK
-clock_in => counter[19].CLK
-clock_in => counter[20].CLK
-clock_in => counter[21].CLK
-clock_in => counter[22].CLK
-clock_in => counter[23].CLK
-clock_in => counter[24].CLK
-clock_in => counter[25].CLK
-clock_in => counter[26].CLK
-clock_in => counter[27].CLK
-clock_out <= clock_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|topModel|cputoDataAdapter:myCPuAdapter
-dataRom[0] => dataRom[0].IN1
-dataRom[1] => dataRom[1].IN1
-dataRom[2] => dataRom[2].IN1
-dataRom[3] => dataRom[3].IN1
-dataRom[4] => dataRom[4].IN1
-dataRom[5] => dataRom[5].IN1
-dataRom[6] => dataRom[6].IN1
-dataRom[7] => dataRom[7].IN1
-dataRam[0] => dataRam[0].IN1
-dataRam[1] => dataRam[1].IN1
-dataRam[2] => dataRam[2].IN1
-dataRam[3] => dataRam[3].IN1
-dataRam[4] => dataRam[4].IN1
-dataRam[5] => dataRam[5].IN1
-dataRam[6] => dataRam[6].IN1
-dataRam[7] => dataRam[7].IN1
-select => select.IN1
-out[0] <= mux2_1:mymux.C
-out[1] <= mux2_1:mymux.C
-out[2] <= mux2_1:mymux.C
-out[3] <= mux2_1:mymux.C
-out[4] <= mux2_1:mymux.C
-out[5] <= mux2_1:mymux.C
-out[6] <= mux2_1:mymux.C
-out[7] <= mux2_1:mymux.C
-
-
-|topModel|cputoDataAdapter:myCPuAdapter|mux2_1:mymux
-A[0] => C.DATAB
-A[1] => C.DATAB
-A[2] => C.DATAB
-A[3] => C.DATAB
-A[4] => C.DATAB
-A[5] => C.DATAB
-A[6] => C.DATAB
-A[7] => C.DATAB
-B[0] => C.DATAA
-B[1] => C.DATAA
-B[2] => C.DATAA
-B[3] => C.DATAA
-B[4] => C.DATAA
-B[5] => C.DATAA
-B[6] => C.DATAA
-B[7] => C.DATAA
-sel => C.OUTPUTSELECT
-sel => C.OUTPUTSELECT
-sel => C.OUTPUTSELECT
-sel => C.OUTPUTSELECT
-sel => C.OUTPUTSELECT
-sel => C.OUTPUTSELECT
-sel => C.OUTPUTSELECT
-sel => C.OUTPUTSELECT
-C[0] <= C.DB_MAX_OUTPUT_PORT_TYPE
-C[1] <= C.DB_MAX_OUTPUT_PORT_TYPE
-C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
-C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
-C[4] <= C.DB_MAX_OUTPUT_PORT_TYPE
-C[5] <= C.DB_MAX_OUTPUT_PORT_TYPE
-C[6] <= C.DB_MAX_OUTPUT_PORT_TYPE
-C[7] <= C.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|topModel|cpu:myCPU
+|cpu
 clk => clk.IN3
 rst => rst.IN2
 switch[0] => switch[0].IN1
@@ -161,155 +26,68 @@ GPUAddress[12] => GPUAddress[12].IN2
 GPUAddress[13] => GPUAddress[13].IN2
 GPUAddress[14] => GPUAddress[14].IN2
 GPUAddress[15] => GPUAddress[15].IN2
-GPUData[0] <= GPUData[0].DB_MAX_OUTPUT_PORT_TYPE
-GPUData[1] <= GPUData[1].DB_MAX_OUTPUT_PORT_TYPE
-GPUData[2] <= GPUData[2].DB_MAX_OUTPUT_PORT_TYPE
-GPUData[3] <= GPUData[3].DB_MAX_OUTPUT_PORT_TYPE
-GPUData[4] <= GPUData[4].DB_MAX_OUTPUT_PORT_TYPE
-GPUData[5] <= GPUData[5].DB_MAX_OUTPUT_PORT_TYPE
-GPUData[6] <= GPUData[6].DB_MAX_OUTPUT_PORT_TYPE
-GPUData[7] <= GPUData[7].DB_MAX_OUTPUT_PORT_TYPE
-GPUDataRom[0] <= imageRom:myImageRom.outputGPU
-GPUDataRom[1] <= imageRom:myImageRom.outputGPU
-GPUDataRom[2] <= imageRom:myImageRom.outputGPU
-GPUDataRom[3] <= imageRom:myImageRom.outputGPU
-GPUDataRom[4] <= imageRom:myImageRom.outputGPU
-GPUDataRom[5] <= imageRom:myImageRom.outputGPU
-GPUDataRom[6] <= imageRom:myImageRom.outputGPU
-GPUDataRom[7] <= imageRom:myImageRom.outputGPU
+GPUData[0] << GPUData[0].DB_MAX_OUTPUT_PORT_TYPE
+GPUData[1] << GPUData[1].DB_MAX_OUTPUT_PORT_TYPE
+GPUData[2] << GPUData[2].DB_MAX_OUTPUT_PORT_TYPE
+GPUData[3] << GPUData[3].DB_MAX_OUTPUT_PORT_TYPE
+GPUData[4] << GPUData[4].DB_MAX_OUTPUT_PORT_TYPE
+GPUData[5] << GPUData[5].DB_MAX_OUTPUT_PORT_TYPE
+GPUData[6] << GPUData[6].DB_MAX_OUTPUT_PORT_TYPE
+GPUData[7] << GPUData[7].DB_MAX_OUTPUT_PORT_TYPE
+GPUDataRom[0] << imageRom:myImageRom.outputGPU
+GPUDataRom[1] << imageRom:myImageRom.outputGPU
+GPUDataRom[2] << imageRom:myImageRom.outputGPU
+GPUDataRom[3] << imageRom:myImageRom.outputGPU
+GPUDataRom[4] << imageRom:myImageRom.outputGPU
+GPUDataRom[5] << imageRom:myImageRom.outputGPU
+GPUDataRom[6] << imageRom:myImageRom.outputGPU
+GPUDataRom[7] << imageRom:myImageRom.outputGPU
 
 
-|topModel|cpu:myCPU|InstructionRom:myinstructionrom
-address[0] => Mux0.IN263
-address[0] => Mux1.IN263
-address[0] => Mux2.IN263
-address[0] => Mux3.IN263
-address[0] => Mux4.IN263
-address[0] => Mux5.IN263
-address[0] => Mux6.IN263
-address[0] => Mux7.IN263
-address[0] => Add0.IN16
-address[0] => Mux16.IN263
-address[0] => Mux17.IN263
-address[0] => Mux18.IN263
-address[0] => Mux19.IN263
-address[0] => Mux20.IN263
-address[0] => Mux21.IN263
-address[0] => Mux22.IN263
-address[0] => Mux23.IN263
-address[0] => Add2.IN16
-address[1] => Mux0.IN262
-address[1] => Mux1.IN262
-address[1] => Mux2.IN262
-address[1] => Mux3.IN262
-address[1] => Mux4.IN262
-address[1] => Mux5.IN262
-address[1] => Mux6.IN262
-address[1] => Mux7.IN262
-address[1] => Add0.IN15
-address[1] => Add1.IN14
-address[1] => Add2.IN15
-address[2] => Mux0.IN261
-address[2] => Mux1.IN261
-address[2] => Mux2.IN261
-address[2] => Mux3.IN261
-address[2] => Mux4.IN261
-address[2] => Mux5.IN261
-address[2] => Mux6.IN261
-address[2] => Mux7.IN261
-address[2] => Add0.IN14
-address[2] => Add1.IN13
-address[2] => Add2.IN14
-address[3] => Mux0.IN260
-address[3] => Mux1.IN260
-address[3] => Mux2.IN260
-address[3] => Mux3.IN260
-address[3] => Mux4.IN260
-address[3] => Mux5.IN260
-address[3] => Mux6.IN260
-address[3] => Mux7.IN260
-address[3] => Add0.IN13
-address[3] => Add1.IN12
-address[3] => Add2.IN13
-address[4] => Mux0.IN259
-address[4] => Mux1.IN259
-address[4] => Mux2.IN259
-address[4] => Mux3.IN259
-address[4] => Mux4.IN259
-address[4] => Mux5.IN259
-address[4] => Mux6.IN259
-address[4] => Mux7.IN259
-address[4] => Add0.IN12
-address[4] => Add1.IN11
-address[4] => Add2.IN12
-address[5] => Mux0.IN258
-address[5] => Mux1.IN258
-address[5] => Mux2.IN258
-address[5] => Mux3.IN258
-address[5] => Mux4.IN258
-address[5] => Mux5.IN258
-address[5] => Mux6.IN258
-address[5] => Mux7.IN258
-address[5] => Add0.IN11
-address[5] => Add1.IN10
-address[5] => Add2.IN11
-address[6] => Mux0.IN257
-address[6] => Mux1.IN257
-address[6] => Mux2.IN257
-address[6] => Mux3.IN257
-address[6] => Mux4.IN257
-address[6] => Mux5.IN257
-address[6] => Mux6.IN257
-address[6] => Mux7.IN257
-address[6] => Add0.IN10
-address[6] => Add1.IN9
-address[6] => Add2.IN10
-address[7] => Mux0.IN256
-address[7] => Mux1.IN256
-address[7] => Mux2.IN256
-address[7] => Mux3.IN256
-address[7] => Mux4.IN256
-address[7] => Mux5.IN256
-address[7] => Mux6.IN256
-address[7] => Mux7.IN256
-address[7] => Add0.IN9
-address[7] => Add1.IN8
-address[7] => Add2.IN9
-Q[0] <= Mux31.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Mux30.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Mux29.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Mux28.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Mux27.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Mux26.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Mux25.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Mux24.DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= Mux23.DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= Mux22.DB_MAX_OUTPUT_PORT_TYPE
-Q[10] <= Mux21.DB_MAX_OUTPUT_PORT_TYPE
-Q[11] <= Mux20.DB_MAX_OUTPUT_PORT_TYPE
-Q[12] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
-Q[13] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
-Q[14] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
-Q[15] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
-Q[16] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
-Q[17] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
-Q[18] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
-Q[19] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
-Q[20] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
-Q[21] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
-Q[22] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
-Q[23] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
-Q[24] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
-Q[25] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-Q[26] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-Q[27] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-Q[28] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-Q[29] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-Q[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-Q[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+|cpu|InstructionRom:myinstructionrom
+address[0] => ~NO_FANOUT~
+address[1] => ~NO_FANOUT~
+address[2] => ~NO_FANOUT~
+address[3] => ~NO_FANOUT~
+address[4] => ~NO_FANOUT~
+address[5] => ~NO_FANOUT~
+address[6] => ~NO_FANOUT~
+address[7] => ~NO_FANOUT~
+Q[0] <= <GND>
+Q[1] <= <GND>
+Q[2] <= <GND>
+Q[3] <= <GND>
+Q[4] <= <GND>
+Q[5] <= <GND>
+Q[6] <= <GND>
+Q[7] <= <GND>
+Q[8] <= <GND>
+Q[9] <= <GND>
+Q[10] <= <GND>
+Q[11] <= <GND>
+Q[12] <= <GND>
+Q[13] <= <GND>
+Q[14] <= <GND>
+Q[15] <= <GND>
+Q[16] <= <GND>
+Q[17] <= <GND>
+Q[18] <= <GND>
+Q[19] <= <GND>
+Q[20] <= <GND>
+Q[21] <= <GND>
+Q[22] <= <GND>
+Q[23] <= <GND>
+Q[24] <= <GND>
+Q[25] <= <GND>
+Q[26] <= <GND>
+Q[27] <= <GND>
+Q[28] <= <GND>
+Q[29] <= <GND>
+Q[30] <= <GND>
+Q[31] <= <GND>
 
 
-|topModel|cpu:myCPU|processor:myprocessor
+|cpu|processor:myprocessor
 rst => rst.IN3
 clk => clk.IN1
 readData[0] => readData[0].IN2
@@ -452,7 +230,7 @@ pc[6] <= flipFlopD:myClockFlop.Out
 pc[7] <= flipFlopD:myClockFlop.Out
 
 
-|topModel|cpu:myCPU|processor:myprocessor|instructionDecoder:myDecoder
+|cpu|processor:myprocessor|instructionDecoder:myDecoder
 instruction[0] => Rm.DATAA
 instruction[0] => Rm.DATAB
 instruction[0] => Mux17.IN3
@@ -633,7 +411,7 @@ imm[22] <= imm.DB_MAX_OUTPUT_PORT_TYPE
 imm[23] <= imm.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|controlUnit:myControlUnit
+|cpu|processor:myprocessor|controlUnit:myControlUnit
 op[0] => Decoder0.IN1
 op[0] => Equal0.IN31
 op[0] => Equal1.IN0
@@ -680,7 +458,7 @@ RegSrc[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 RegSrc[1] <= always7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|controlUnit:myControlUnit|armToALUAdapter:myAdapter
+|cpu|processor:myprocessor|controlUnit:myControlUnit|armToALUAdapter:myAdapter
 In[0] => Decoder0.IN3
 In[1] => Decoder0.IN2
 In[2] => Decoder0.IN1
@@ -691,7 +469,7 @@ Out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 Out[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|controlUnit:myControlUnit|branchingCondition:myBranchCondition
+|cpu|processor:myprocessor|controlUnit:myControlUnit|branchingCondition:myBranchCondition
 Cond[0] => Mux0.IN18
 Cond[1] => Mux0.IN17
 Cond[2] => Mux0.IN16
@@ -706,7 +484,7 @@ Flags[3] => bCon.IN1
 bCon <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|FlagHolder:myFlagHolder
+|cpu|processor:myprocessor|FlagHolder:myFlagHolder
 rst => state[3].ACLR
 rst => state[2].ACLR
 rst => state[1].ACLR
@@ -725,7 +503,7 @@ FlagsOut[2] <= state[2].DB_MAX_OUTPUT_PORT_TYPE
 FlagsOut[3] <= state[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|registerBank:myRegisterBank
+|cpu|processor:myprocessor|registerBank:myRegisterBank
 clk => register[0][0].CLK
 clk => register[0][1].CLK
 clk => register[0][2].CLK
@@ -3068,7 +2846,7 @@ RD2[30] <= Mux33.DB_MAX_OUTPUT_PORT_TYPE
 RD2[31] <= Mux32.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU
+|cpu|processor:myprocessor|ALU:myALU
 A[0] => A[0].IN2
 A[1] => A[1].IN2
 A[2] => A[2].IN2
@@ -3175,7 +2953,7 @@ Ca <= FlagsM:myFlags.Ca
 Neg <= FlagsM:myFlags.Neg
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations
 A[0] => A[0].IN6
 A[1] => A[1].IN6
 A[2] => A[2].IN6
@@ -3859,7 +3637,7 @@ multOutComp[62] <= <GND>
 multOutComp[63] <= <GND>
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_1
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_1
 A[0] => B.DATAA
 A[0] => Add0.IN64
 A[1] => B.DATAA
@@ -3988,7 +3766,7 @@ B[30] <= B.DB_MAX_OUTPUT_PORT_TYPE
 B[31] <= B.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_2
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|sign_magnitud_to_complement:to_comp_2
 A[0] => B.DATAA
 A[0] => Add0.IN64
 A[1] => B.DATAA
@@ -4117,7 +3895,7 @@ B[30] <= B.DB_MAX_OUTPUT_PORT_TYPE
 B[31] <= B.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|adder:myadder
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|adder:myadder
 a[0] => Add0.IN32
 a[1] => Add0.IN31
 a[2] => Add0.IN30
@@ -4217,7 +3995,7 @@ c[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 c[32] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|subtracter:mysubstracter
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|subtracter:mysubstracter
 a[0] => Add0.IN64
 a[1] => Add0.IN63
 a[2] => Add0.IN62
@@ -4317,7 +4095,7 @@ c[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 c[32] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|multiplier:mymultiplier
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|multiplier:mymultiplier
 a[0] => Mult0.IN31
 a[1] => Mult0.IN30
 a[2] => Mult0.IN29
@@ -4448,7 +4226,7 @@ c[62] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
 c[63] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|division:mydiv
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|division:mydiv
 A[0] => Div0.IN31
 A[1] => Div0.IN30
 A[2] => Div0.IN29
@@ -4548,7 +4326,7 @@ C[31] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 C[32] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|mod:mymod
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|mod:mymod
 A[0] => Mod0.IN31
 A[1] => Mod0.IN30
 A[2] => Mod0.IN29
@@ -4648,7 +4426,7 @@ C[31] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
 C[32] <= <GND>
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|shifL:myshiftL
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|shifL:myshiftL
 a[0] => ShiftLeft0.IN32
 a[1] => ShiftLeft0.IN31
 a[2] => ShiftLeft0.IN30
@@ -4747,7 +4525,7 @@ c[30] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 c[31] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|shifR:myshiftR
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|shifR:myshiftR
 a[0] => ShiftRight0.IN32
 a[1] => ShiftRight0.IN31
 a[2] => ShiftRight0.IN30
@@ -4846,7 +4624,7 @@ c[30] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 c[31] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_and:myand
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_and:myand
 a[0] => c.IN0
 a[1] => c.IN0
 a[2] => c.IN0
@@ -4945,7 +4723,7 @@ c[30] <= c.DB_MAX_OUTPUT_PORT_TYPE
 c[31] <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_or:myor
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_or:myor
 a[0] => c.IN0
 a[1] => c.IN0
 a[2] => c.IN0
@@ -5044,7 +4822,7 @@ c[30] <= c.DB_MAX_OUTPUT_PORT_TYPE
 c[31] <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_xor:myxor
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_xor:myxor
 a[0] => c.IN0
 a[1] => c.IN0
 a[2] => c.IN0
@@ -5143,7 +4921,7 @@ c[30] <= c.DB_MAX_OUTPUT_PORT_TYPE
 c[31] <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_or:mymov
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_or:mymov
 a[0] => c.IN0
 a[1] => c.IN0
 a[2] => c.IN0
@@ -5242,7 +5020,7 @@ c[30] <= c.DB_MAX_OUTPUT_PORT_TYPE
 c[31] <= c.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_not:mymovn
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|bitwise_not:mymovn
 a[0] => c[0].DATAIN
 a[1] => c[1].DATAIN
 a[2] => c[2].DATAIN
@@ -5309,7 +5087,7 @@ c[30] <= a[30].DB_MAX_OUTPUT_PORT_TYPE
 c[31] <= a[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_1
 A[0] => B.DATAA
 A[0] => Add0.IN62
 A[1] => B.DATAA
@@ -5438,7 +5216,7 @@ B[30] <= B.DB_MAX_OUTPUT_PORT_TYPE
 B[31] <= A[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_2
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_2
 A[0] => B.DATAA
 A[0] => Add0.IN62
 A[1] => B.DATAA
@@ -5567,7 +5345,7 @@ B[30] <= B.DB_MAX_OUTPUT_PORT_TYPE
 B[31] <= A[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_3
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_3
 A[0] => B.DATAA
 A[0] => Add0.IN62
 A[1] => B.DATAA
@@ -5696,7 +5474,7 @@ B[30] <= B.DB_MAX_OUTPUT_PORT_TYPE
 B[31] <= A[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_4
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_4
 A[0] => B.DATAA
 A[0] => Add0.IN62
 A[1] => B.DATAA
@@ -5825,7 +5603,7 @@ B[30] <= B.DB_MAX_OUTPUT_PORT_TYPE
 B[31] <= A[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_5
+|cpu|processor:myprocessor|ALU:myALU|Operations:myOperations|complement_2_to_sign_magnitud:to_mag_5
 A[0] => B.DATAA
 A[0] => Add0.IN62
 A[1] => B.DATAA
@@ -5954,7 +5732,7 @@ B[30] <= B.DB_MAX_OUTPUT_PORT_TYPE
 B[31] <= A[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|mux_9_1:myMux
+|cpu|processor:myprocessor|ALU:myALU|mux_9_1:myMux
 select[0] => Mux0.IN3
 select[0] => Mux1.IN3
 select[0] => Mux2.IN3
@@ -6629,7 +6407,7 @@ out[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|ALU:myALU|FlagsM:myFlags
+|cpu|processor:myprocessor|ALU:myALU|FlagsM:myFlags
 sel[0] => Mux0.IN3
 sel[0] => Mux1.IN3
 sel[0] => Mux2.IN3
@@ -7411,7 +7189,7 @@ c[63] => WideOr0.IN31
 c[63] => Mux32.IN19
 
 
-|topModel|cpu:myCPU|processor:myprocessor|mux2_1:A1Selector
+|cpu|processor:myprocessor|mux2_1:A1Selector
 A[0] => C.DATAB
 A[1] => C.DATAB
 A[2] => C.DATAB
@@ -7430,7 +7208,7 @@ C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|mux2_1:A2Selector
+|cpu|processor:myprocessor|mux2_1:A2Selector
 A[0] => C.DATAB
 A[1] => C.DATAB
 A[2] => C.DATAB
@@ -7449,7 +7227,7 @@ C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|mux2_1:PCselector
+|cpu|processor:myprocessor|mux2_1:PCselector
 A[0] => C.DATAB
 A[1] => C.DATAB
 A[2] => C.DATAB
@@ -7484,7 +7262,7 @@ C[6] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[7] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|flipFlopD:myClockFlop
+|cpu|processor:myprocessor|flipFlopD:myClockFlop
 clk => state[0].CLK
 clk => state[1].CLK
 clk => state[2].CLK
@@ -7615,7 +7393,7 @@ Out[30] <= state[30].DB_MAX_OUTPUT_PORT_TYPE
 Out[31] <= state[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|processor:myprocessor|mux2_1:myALUSelect
+|cpu|processor:myprocessor|mux2_1:myALUSelect
 A[0] => C.DATAB
 A[1] => C.DATAB
 A[2] => C.DATAB
@@ -7746,7 +7524,7 @@ C[30] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[31] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|ipRam:myramModule
+|cpu|ipRam:myramModule
 address_a[0] => address_a[0].IN1
 address_a[1] => address_a[1].IN1
 address_a[2] => address_a[2].IN1
@@ -7775,7 +7553,6 @@ address_b[10] => address_b[10].IN1
 address_b[11] => address_b[11].IN1
 address_b[12] => address_b[12].IN1
 address_b[13] => address_b[13].IN1
-byteena_a[0] => byteena_a[0].IN1
 data_a[0] => data_a[0].IN1
 data_a[1] => data_a[1].IN1
 data_a[2] => data_a[2].IN1
@@ -7814,89 +7591,89 @@ q_b[6] <= altsyncram:altsyncram_component.q_b
 q_b[7] <= altsyncram:altsyncram_component.q_b
 
 
-|topModel|cpu:myCPU|ipRam:myramModule|altsyncram:altsyncram_component
-wren_a => altsyncram_23p2:auto_generated.wren_a
+|cpu|ipRam:myramModule|altsyncram:altsyncram_component
+wren_a => altsyncram_n1n2:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
-wren_b => altsyncram_23p2:auto_generated.wren_b
+wren_b => altsyncram_n1n2:auto_generated.wren_b
 rden_b => ~NO_FANOUT~
-data_a[0] => altsyncram_23p2:auto_generated.data_a[0]
-data_a[1] => altsyncram_23p2:auto_generated.data_a[1]
-data_a[2] => altsyncram_23p2:auto_generated.data_a[2]
-data_a[3] => altsyncram_23p2:auto_generated.data_a[3]
-data_a[4] => altsyncram_23p2:auto_generated.data_a[4]
-data_a[5] => altsyncram_23p2:auto_generated.data_a[5]
-data_a[6] => altsyncram_23p2:auto_generated.data_a[6]
-data_a[7] => altsyncram_23p2:auto_generated.data_a[7]
-data_b[0] => altsyncram_23p2:auto_generated.data_b[0]
-data_b[1] => altsyncram_23p2:auto_generated.data_b[1]
-data_b[2] => altsyncram_23p2:auto_generated.data_b[2]
-data_b[3] => altsyncram_23p2:auto_generated.data_b[3]
-data_b[4] => altsyncram_23p2:auto_generated.data_b[4]
-data_b[5] => altsyncram_23p2:auto_generated.data_b[5]
-data_b[6] => altsyncram_23p2:auto_generated.data_b[6]
-data_b[7] => altsyncram_23p2:auto_generated.data_b[7]
-address_a[0] => altsyncram_23p2:auto_generated.address_a[0]
-address_a[1] => altsyncram_23p2:auto_generated.address_a[1]
-address_a[2] => altsyncram_23p2:auto_generated.address_a[2]
-address_a[3] => altsyncram_23p2:auto_generated.address_a[3]
-address_a[4] => altsyncram_23p2:auto_generated.address_a[4]
-address_a[5] => altsyncram_23p2:auto_generated.address_a[5]
-address_a[6] => altsyncram_23p2:auto_generated.address_a[6]
-address_a[7] => altsyncram_23p2:auto_generated.address_a[7]
-address_a[8] => altsyncram_23p2:auto_generated.address_a[8]
-address_a[9] => altsyncram_23p2:auto_generated.address_a[9]
-address_a[10] => altsyncram_23p2:auto_generated.address_a[10]
-address_a[11] => altsyncram_23p2:auto_generated.address_a[11]
-address_a[12] => altsyncram_23p2:auto_generated.address_a[12]
-address_a[13] => altsyncram_23p2:auto_generated.address_a[13]
-address_b[0] => altsyncram_23p2:auto_generated.address_b[0]
-address_b[1] => altsyncram_23p2:auto_generated.address_b[1]
-address_b[2] => altsyncram_23p2:auto_generated.address_b[2]
-address_b[3] => altsyncram_23p2:auto_generated.address_b[3]
-address_b[4] => altsyncram_23p2:auto_generated.address_b[4]
-address_b[5] => altsyncram_23p2:auto_generated.address_b[5]
-address_b[6] => altsyncram_23p2:auto_generated.address_b[6]
-address_b[7] => altsyncram_23p2:auto_generated.address_b[7]
-address_b[8] => altsyncram_23p2:auto_generated.address_b[8]
-address_b[9] => altsyncram_23p2:auto_generated.address_b[9]
-address_b[10] => altsyncram_23p2:auto_generated.address_b[10]
-address_b[11] => altsyncram_23p2:auto_generated.address_b[11]
-address_b[12] => altsyncram_23p2:auto_generated.address_b[12]
-address_b[13] => altsyncram_23p2:auto_generated.address_b[13]
+data_a[0] => altsyncram_n1n2:auto_generated.data_a[0]
+data_a[1] => altsyncram_n1n2:auto_generated.data_a[1]
+data_a[2] => altsyncram_n1n2:auto_generated.data_a[2]
+data_a[3] => altsyncram_n1n2:auto_generated.data_a[3]
+data_a[4] => altsyncram_n1n2:auto_generated.data_a[4]
+data_a[5] => altsyncram_n1n2:auto_generated.data_a[5]
+data_a[6] => altsyncram_n1n2:auto_generated.data_a[6]
+data_a[7] => altsyncram_n1n2:auto_generated.data_a[7]
+data_b[0] => altsyncram_n1n2:auto_generated.data_b[0]
+data_b[1] => altsyncram_n1n2:auto_generated.data_b[1]
+data_b[2] => altsyncram_n1n2:auto_generated.data_b[2]
+data_b[3] => altsyncram_n1n2:auto_generated.data_b[3]
+data_b[4] => altsyncram_n1n2:auto_generated.data_b[4]
+data_b[5] => altsyncram_n1n2:auto_generated.data_b[5]
+data_b[6] => altsyncram_n1n2:auto_generated.data_b[6]
+data_b[7] => altsyncram_n1n2:auto_generated.data_b[7]
+address_a[0] => altsyncram_n1n2:auto_generated.address_a[0]
+address_a[1] => altsyncram_n1n2:auto_generated.address_a[1]
+address_a[2] => altsyncram_n1n2:auto_generated.address_a[2]
+address_a[3] => altsyncram_n1n2:auto_generated.address_a[3]
+address_a[4] => altsyncram_n1n2:auto_generated.address_a[4]
+address_a[5] => altsyncram_n1n2:auto_generated.address_a[5]
+address_a[6] => altsyncram_n1n2:auto_generated.address_a[6]
+address_a[7] => altsyncram_n1n2:auto_generated.address_a[7]
+address_a[8] => altsyncram_n1n2:auto_generated.address_a[8]
+address_a[9] => altsyncram_n1n2:auto_generated.address_a[9]
+address_a[10] => altsyncram_n1n2:auto_generated.address_a[10]
+address_a[11] => altsyncram_n1n2:auto_generated.address_a[11]
+address_a[12] => altsyncram_n1n2:auto_generated.address_a[12]
+address_a[13] => altsyncram_n1n2:auto_generated.address_a[13]
+address_b[0] => altsyncram_n1n2:auto_generated.address_b[0]
+address_b[1] => altsyncram_n1n2:auto_generated.address_b[1]
+address_b[2] => altsyncram_n1n2:auto_generated.address_b[2]
+address_b[3] => altsyncram_n1n2:auto_generated.address_b[3]
+address_b[4] => altsyncram_n1n2:auto_generated.address_b[4]
+address_b[5] => altsyncram_n1n2:auto_generated.address_b[5]
+address_b[6] => altsyncram_n1n2:auto_generated.address_b[6]
+address_b[7] => altsyncram_n1n2:auto_generated.address_b[7]
+address_b[8] => altsyncram_n1n2:auto_generated.address_b[8]
+address_b[9] => altsyncram_n1n2:auto_generated.address_b[9]
+address_b[10] => altsyncram_n1n2:auto_generated.address_b[10]
+address_b[11] => altsyncram_n1n2:auto_generated.address_b[11]
+address_b[12] => altsyncram_n1n2:auto_generated.address_b[12]
+address_b[13] => altsyncram_n1n2:auto_generated.address_b[13]
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_23p2:auto_generated.clock0
-clock1 => altsyncram_23p2:auto_generated.clock1
+clock0 => altsyncram_n1n2:auto_generated.clock0
+clock1 => altsyncram_n1n2:auto_generated.clock1
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
 clocken2 => ~NO_FANOUT~
 clocken3 => ~NO_FANOUT~
 aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
-byteena_a[0] => altsyncram_23p2:auto_generated.byteena_a[0]
+byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_23p2:auto_generated.q_a[0]
-q_a[1] <= altsyncram_23p2:auto_generated.q_a[1]
-q_a[2] <= altsyncram_23p2:auto_generated.q_a[2]
-q_a[3] <= altsyncram_23p2:auto_generated.q_a[3]
-q_a[4] <= altsyncram_23p2:auto_generated.q_a[4]
-q_a[5] <= altsyncram_23p2:auto_generated.q_a[5]
-q_a[6] <= altsyncram_23p2:auto_generated.q_a[6]
-q_a[7] <= altsyncram_23p2:auto_generated.q_a[7]
-q_b[0] <= altsyncram_23p2:auto_generated.q_b[0]
-q_b[1] <= altsyncram_23p2:auto_generated.q_b[1]
-q_b[2] <= altsyncram_23p2:auto_generated.q_b[2]
-q_b[3] <= altsyncram_23p2:auto_generated.q_b[3]
-q_b[4] <= altsyncram_23p2:auto_generated.q_b[4]
-q_b[5] <= altsyncram_23p2:auto_generated.q_b[5]
-q_b[6] <= altsyncram_23p2:auto_generated.q_b[6]
-q_b[7] <= altsyncram_23p2:auto_generated.q_b[7]
+q_a[0] <= altsyncram_n1n2:auto_generated.q_a[0]
+q_a[1] <= altsyncram_n1n2:auto_generated.q_a[1]
+q_a[2] <= altsyncram_n1n2:auto_generated.q_a[2]
+q_a[3] <= altsyncram_n1n2:auto_generated.q_a[3]
+q_a[4] <= altsyncram_n1n2:auto_generated.q_a[4]
+q_a[5] <= altsyncram_n1n2:auto_generated.q_a[5]
+q_a[6] <= altsyncram_n1n2:auto_generated.q_a[6]
+q_a[7] <= altsyncram_n1n2:auto_generated.q_a[7]
+q_b[0] <= altsyncram_n1n2:auto_generated.q_b[0]
+q_b[1] <= altsyncram_n1n2:auto_generated.q_b[1]
+q_b[2] <= altsyncram_n1n2:auto_generated.q_b[2]
+q_b[3] <= altsyncram_n1n2:auto_generated.q_b[3]
+q_b[4] <= altsyncram_n1n2:auto_generated.q_b[4]
+q_b[5] <= altsyncram_n1n2:auto_generated.q_b[5]
+q_b[6] <= altsyncram_n1n2:auto_generated.q_b[6]
+q_b[7] <= altsyncram_n1n2:auto_generated.q_b[7]
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|topModel|cpu:myCPU|ipRam:myramModule|altsyncram:altsyncram_component|altsyncram_23p2:auto_generated
+|cpu|ipRam:myramModule|altsyncram:altsyncram_component|altsyncram_n1n2:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -8317,22 +8094,6 @@ address_b[12] => ram_block1a14.PORTBADDR12
 address_b[12] => ram_block1a15.PORTBADDR12
 address_b[13] => address_reg_b[0].DATAIN
 address_b[13] => decode_5la:decode3.data[0]
-byteena_a[0] => ram_block1a0.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a1.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a2.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a3.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a4.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a5.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a6.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a7.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a8.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a9.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a10.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a11.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a12.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a13.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a14.PORTABYTEENAMASKS
-byteena_a[0] => ram_block1a15.PORTABYTEENAMASKS
 clock0 => ram_block1a0.CLK0
 clock0 => ram_block1a1.CLK0
 clock0 => ram_block1a2.CLK0
@@ -8421,7 +8182,7 @@ wren_a => decode_5la:decode2.enable
 wren_b => decode_5la:decode3.enable
 
 
-|topModel|cpu:myCPU|ipRam:myramModule|altsyncram:altsyncram_component|altsyncram_23p2:auto_generated|decode_5la:decode2
+|cpu|ipRam:myramModule|altsyncram:altsyncram_component|altsyncram_n1n2:auto_generated|decode_5la:decode2
 data[0] => eq_node[1].IN0
 data[0] => eq_node[0].IN0
 enable => eq_node[1].IN1
@@ -8430,7 +8191,7 @@ eq[0] <= eq_node[0].DB_MAX_OUTPUT_PORT_TYPE
 eq[1] <= eq_node[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|ipRam:myramModule|altsyncram:altsyncram_component|altsyncram_23p2:auto_generated|decode_5la:decode3
+|cpu|ipRam:myramModule|altsyncram:altsyncram_component|altsyncram_n1n2:auto_generated|decode_5la:decode3
 data[0] => eq_node[1].IN0
 data[0] => eq_node[0].IN0
 enable => eq_node[1].IN1
@@ -8439,7 +8200,7 @@ eq[0] <= eq_node[0].DB_MAX_OUTPUT_PORT_TYPE
 eq[1] <= eq_node[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|ipRam:myramModule|altsyncram:altsyncram_component|altsyncram_23p2:auto_generated|mux_lfb:mux4
+|cpu|ipRam:myramModule|altsyncram:altsyncram_component|altsyncram_n1n2:auto_generated|mux_lfb:mux4
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w1_n0_mux_dataout.IN1
 data[2] => l1_w2_n0_mux_dataout.IN1
@@ -8482,7 +8243,7 @@ sel[0] => l1_w7_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|topModel|cpu:myCPU|ipRam:myramModule|altsyncram:altsyncram_component|altsyncram_23p2:auto_generated|mux_lfb:mux5
+|cpu|ipRam:myramModule|altsyncram:altsyncram_component|altsyncram_n1n2:auto_generated|mux_lfb:mux5
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w1_n0_mux_dataout.IN1
 data[2] => l1_w2_n0_mux_dataout.IN1
@@ -8525,7 +8286,7 @@ sel[0] => l1_w7_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|topModel|cpu:myCPU|imageRom:myImageRom
+|cpu|imageRom:myImageRom
 address[0] => memory.RADDR
 address[1] => memory.RADDR1
 address[2] => memory.RADDR2
@@ -8624,7 +8385,7 @@ outputGPU[30] <= <GND>
 outputGPU[31] <= <GND>
 
 
-|topModel|cpu:myCPU|periModule:myperiModule
+|cpu|periModule:myperiModule
 rst => switchState[0][0].ACLR
 rst => switchState[0][1].ACLR
 rst => switchState[0][2].ACLR
@@ -8702,7 +8463,7 @@ out[30] <= <GND>
 out[31] <= <GND>
 
 
-|topModel|cpu:myCPU|chipSet:mychipset
+|cpu|chipSet:mychipset
 WR => en1.DATAB
 WR => en2.DATAB
 WR => en3.DATAA
@@ -8841,7 +8602,7 @@ en2 <= en2.DB_MAX_OUTPUT_PORT_TYPE
 en3 <= en3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|mux4_1:myMemorySelector
+|cpu|mux4_1:myMemorySelector
 A[0] => Mux31.IN0
 A[1] => Mux30.IN0
 A[2] => Mux29.IN0
@@ -9068,7 +8829,7 @@ Out[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 Out[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|topModel|cpu:myCPU|mux2_1:MemRegSelector
+|cpu|mux2_1:MemRegSelector
 A[0] => C.DATAB
 A[1] => C.DATAB
 A[2] => C.DATAB
@@ -9197,204 +8958,5 @@ C[28] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[29] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[30] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[31] <= C.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|topModel|VGA_Controller:myVGA
-clk_25Mhz => WaitingPixels[0].CLK
-clk_25Mhz => WaitingPixels[1].CLK
-clk_25Mhz => WaitingPixels[2].CLK
-clk_25Mhz => nextPixel[0].CLK
-clk_25Mhz => nextPixel[1].CLK
-clk_25Mhz => nextPixel[2].CLK
-clk_25Mhz => nextPixel[3].CLK
-clk_25Mhz => nextPixel[4].CLK
-clk_25Mhz => nextPixel[5].CLK
-clk_25Mhz => nextPixel[6].CLK
-clk_25Mhz => nextPixel[7].CLK
-clk_25Mhz => nextPixel[8].CLK
-clk_25Mhz => nextPixel[9].CLK
-clk_25Mhz => nextPixel[10].CLK
-clk_25Mhz => nextPixel[11].CLK
-clk_25Mhz => nextPixel[12].CLK
-clk_25Mhz => nextPixel[13].CLK
-clk_25Mhz => nextPixel[14].CLK
-clk_25Mhz => nextPixel[15].CLK
-clk_25Mhz => Green[0]~reg0.CLK
-clk_25Mhz => Green[1]~reg0.CLK
-clk_25Mhz => Green[2]~reg0.CLK
-clk_25Mhz => Green[3]~reg0.CLK
-clk_25Mhz => Green[4]~reg0.CLK
-clk_25Mhz => Green[5]~reg0.CLK
-clk_25Mhz => Green[6]~reg0.CLK
-clk_25Mhz => Green[7]~reg0.CLK
-clk_25Mhz => Blue[0]~reg0.CLK
-clk_25Mhz => Blue[1]~reg0.CLK
-clk_25Mhz => Blue[2]~reg0.CLK
-clk_25Mhz => Blue[3]~reg0.CLK
-clk_25Mhz => Blue[4]~reg0.CLK
-clk_25Mhz => Blue[5]~reg0.CLK
-clk_25Mhz => Blue[6]~reg0.CLK
-clk_25Mhz => Blue[7]~reg0.CLK
-clk_25Mhz => Red[0]~reg0.CLK
-clk_25Mhz => Red[1]~reg0.CLK
-clk_25Mhz => Red[2]~reg0.CLK
-clk_25Mhz => Red[3]~reg0.CLK
-clk_25Mhz => Red[4]~reg0.CLK
-clk_25Mhz => Red[5]~reg0.CLK
-clk_25Mhz => Red[6]~reg0.CLK
-clk_25Mhz => Red[7]~reg0.CLK
-clk_25Mhz => enable_v_counter.CLK
-clk_25Mhz => V_count_value[0].CLK
-clk_25Mhz => V_count_value[1].CLK
-clk_25Mhz => V_count_value[2].CLK
-clk_25Mhz => V_count_value[3].CLK
-clk_25Mhz => V_count_value[4].CLK
-clk_25Mhz => V_count_value[5].CLK
-clk_25Mhz => V_count_value[6].CLK
-clk_25Mhz => V_count_value[7].CLK
-clk_25Mhz => V_count_value[8].CLK
-clk_25Mhz => V_count_value[9].CLK
-clk_25Mhz => V_count_value[10].CLK
-clk_25Mhz => V_count_value[11].CLK
-clk_25Mhz => V_count_value[12].CLK
-clk_25Mhz => V_count_value[13].CLK
-clk_25Mhz => V_count_value[14].CLK
-clk_25Mhz => V_count_value[15].CLK
-clk_25Mhz => H_count_value[0].CLK
-clk_25Mhz => H_count_value[1].CLK
-clk_25Mhz => H_count_value[2].CLK
-clk_25Mhz => H_count_value[3].CLK
-clk_25Mhz => H_count_value[4].CLK
-clk_25Mhz => H_count_value[5].CLK
-clk_25Mhz => H_count_value[6].CLK
-clk_25Mhz => H_count_value[7].CLK
-clk_25Mhz => H_count_value[8].CLK
-clk_25Mhz => H_count_value[9].CLK
-clk_25Mhz => H_count_value[10].CLK
-clk_25Mhz => H_count_value[11].CLK
-clk_25Mhz => H_count_value[12].CLK
-clk_25Mhz => H_count_value[13].CLK
-clk_25Mhz => H_count_value[14].CLK
-clk_25Mhz => H_count_value[15].CLK
-clk_25Mhz => VGA_clk.DATAIN
-rst => WaitingPixels[0].ACLR
-rst => WaitingPixels[1].ACLR
-rst => WaitingPixels[2].ACLR
-rst => nextPixel[0].ACLR
-rst => nextPixel[1].ACLR
-rst => nextPixel[2].ACLR
-rst => nextPixel[3].ACLR
-rst => nextPixel[4].ACLR
-rst => nextPixel[5].ACLR
-rst => nextPixel[6].ACLR
-rst => nextPixel[7].ACLR
-rst => nextPixel[8].ACLR
-rst => nextPixel[9].ACLR
-rst => nextPixel[10].ACLR
-rst => nextPixel[11].ACLR
-rst => nextPixel[12].ACLR
-rst => nextPixel[13].ACLR
-rst => nextPixel[14].ACLR
-rst => nextPixel[15].ACLR
-rst => V_count_value[0].ACLR
-rst => V_count_value[1].ACLR
-rst => V_count_value[2].ACLR
-rst => V_count_value[3].ACLR
-rst => V_count_value[4].ACLR
-rst => V_count_value[5].ACLR
-rst => V_count_value[6].ACLR
-rst => V_count_value[7].ACLR
-rst => V_count_value[8].ACLR
-rst => V_count_value[9].ACLR
-rst => V_count_value[10].ACLR
-rst => V_count_value[11].ACLR
-rst => V_count_value[12].ACLR
-rst => V_count_value[13].ACLR
-rst => V_count_value[14].ACLR
-rst => V_count_value[15].ACLR
-rst => H_count_value[0].ACLR
-rst => H_count_value[1].ACLR
-rst => H_count_value[2].ACLR
-rst => H_count_value[3].ACLR
-rst => H_count_value[4].ACLR
-rst => H_count_value[5].ACLR
-rst => H_count_value[6].ACLR
-rst => H_count_value[7].ACLR
-rst => H_count_value[8].ACLR
-rst => H_count_value[9].ACLR
-rst => H_count_value[10].ACLR
-rst => H_count_value[11].ACLR
-rst => H_count_value[12].ACLR
-rst => H_count_value[13].ACLR
-rst => H_count_value[14].ACLR
-rst => H_count_value[15].ACLR
-rst => enable_v_counter.ENA
-colorInput[0] => Green[0]~reg0.DATAIN
-colorInput[0] => Blue[0]~reg0.DATAIN
-colorInput[0] => Red[0]~reg0.DATAIN
-colorInput[1] => Green[1]~reg0.DATAIN
-colorInput[1] => Blue[1]~reg0.DATAIN
-colorInput[1] => Red[1]~reg0.DATAIN
-colorInput[2] => Green[2]~reg0.DATAIN
-colorInput[2] => Blue[2]~reg0.DATAIN
-colorInput[2] => Red[2]~reg0.DATAIN
-colorInput[3] => Green[3]~reg0.DATAIN
-colorInput[3] => Blue[3]~reg0.DATAIN
-colorInput[3] => Red[3]~reg0.DATAIN
-colorInput[4] => Green[4]~reg0.DATAIN
-colorInput[4] => Blue[4]~reg0.DATAIN
-colorInput[4] => Red[4]~reg0.DATAIN
-colorInput[5] => Green[5]~reg0.DATAIN
-colorInput[5] => Blue[5]~reg0.DATAIN
-colorInput[5] => Red[5]~reg0.DATAIN
-colorInput[6] => Green[6]~reg0.DATAIN
-colorInput[6] => Blue[6]~reg0.DATAIN
-colorInput[6] => Red[6]~reg0.DATAIN
-colorInput[7] => Green[7]~reg0.DATAIN
-colorInput[7] => Blue[7]~reg0.DATAIN
-colorInput[7] => Red[7]~reg0.DATAIN
-nextAddress[0] <= nextPixel[0].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[1] <= nextPixel[1].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[2] <= nextPixel[2].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[3] <= nextPixel[3].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[4] <= nextPixel[4].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[5] <= nextPixel[5].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[6] <= nextPixel[6].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[7] <= nextPixel[7].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[8] <= nextPixel[8].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[9] <= nextPixel[9].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[10] <= nextPixel[10].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[11] <= nextPixel[11].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[12] <= nextPixel[12].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[13] <= nextPixel[13].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[14] <= nextPixel[14].DB_MAX_OUTPUT_PORT_TYPE
-nextAddress[15] <= nextPixel[15].DB_MAX_OUTPUT_PORT_TYPE
-Hsync <= Hsync.DB_MAX_OUTPUT_PORT_TYPE
-Vsync <= Vsync.DB_MAX_OUTPUT_PORT_TYPE
-Red[0] <= Red[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Red[1] <= Red[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Red[2] <= Red[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Red[3] <= Red[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Red[4] <= Red[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Red[5] <= Red[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Red[6] <= Red[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Red[7] <= Red[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Green[0] <= Green[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Green[1] <= Green[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Green[2] <= Green[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Green[3] <= Green[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Green[4] <= Green[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Green[5] <= Green[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Green[6] <= Green[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Green[7] <= Green[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Blue[0] <= Blue[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Blue[1] <= Blue[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Blue[2] <= Blue[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Blue[3] <= Blue[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Blue[4] <= Blue[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Blue[5] <= Blue[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Blue[6] <= Blue[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Blue[7] <= Blue[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-VGA_clk <= clk_25Mhz.DB_MAX_OUTPUT_PORT_TYPE
 
 

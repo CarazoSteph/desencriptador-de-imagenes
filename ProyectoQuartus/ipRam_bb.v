@@ -35,7 +35,6 @@
 module ipRam (
 	address_a,
 	address_b,
-	byteena_a,
 	data_a,
 	data_b,
 	inclock,
@@ -47,7 +46,6 @@ module ipRam (
 
 	input	[13:0]  address_a;
 	input	[13:0]  address_b;
-	input	[0:0]  byteena_a;
 	input	[7:0]  data_a;
 	input	[7:0]  data_b;
 	input	  inclock;
@@ -59,7 +57,6 @@ module ipRam (
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
-	tri1	[0:0]  byteena_a;
 	tri1	  inclock;
 	tri0	  wren_a;
 	tri0	  wren_b;
@@ -76,7 +73,7 @@ endmodule
 // Retrieval info: PRIVATE: ADDRESSSTALL_B NUMERIC "0"
 // Retrieval info: PRIVATE: BYTEENA_ACLR_A NUMERIC "0"
 // Retrieval info: PRIVATE: BYTEENA_ACLR_B NUMERIC "0"
-// Retrieval info: PRIVATE: BYTE_ENABLE_A NUMERIC "1"
+// Retrieval info: PRIVATE: BYTE_ENABLE_A NUMERIC "0"
 // Retrieval info: PRIVATE: BYTE_ENABLE_B NUMERIC "0"
 // Retrieval info: PRIVATE: BYTE_SIZE NUMERIC "8"
 // Retrieval info: PRIVATE: BlankMemory NUMERIC "1"
@@ -133,7 +130,6 @@ endmodule
 // Retrieval info: PRIVATE: rden NUMERIC "0"
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 // Retrieval info: CONSTANT: ADDRESS_REG_B STRING "CLOCK0"
-// Retrieval info: CONSTANT: BYTE_SIZE NUMERIC "8"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_B STRING "BYPASS"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
@@ -161,7 +157,6 @@ endmodule
 // Retrieval info: CONSTANT: WRCONTROL_WRADDRESS_REG_B STRING "CLOCK0"
 // Retrieval info: USED_PORT: address_a 0 0 14 0 INPUT NODEFVAL "address_a[13..0]"
 // Retrieval info: USED_PORT: address_b 0 0 14 0 INPUT NODEFVAL "address_b[13..0]"
-// Retrieval info: USED_PORT: byteena_a 0 0 1 0 INPUT VCC "byteena_a[0..0]"
 // Retrieval info: USED_PORT: data_a 0 0 8 0 INPUT NODEFVAL "data_a[7..0]"
 // Retrieval info: USED_PORT: data_b 0 0 8 0 INPUT NODEFVAL "data_b[7..0]"
 // Retrieval info: USED_PORT: inclock 0 0 0 0 INPUT VCC "inclock"
@@ -172,7 +167,6 @@ endmodule
 // Retrieval info: USED_PORT: wren_b 0 0 0 0 INPUT GND "wren_b"
 // Retrieval info: CONNECT: @address_a 0 0 14 0 address_a 0 0 14 0
 // Retrieval info: CONNECT: @address_b 0 0 14 0 address_b 0 0 14 0
-// Retrieval info: CONNECT: @byteena_a 0 0 1 0 byteena_a 0 0 1 0
 // Retrieval info: CONNECT: @clock0 0 0 0 0 inclock 0 0 0 0
 // Retrieval info: CONNECT: @clock1 0 0 0 0 outclock 0 0 0 0
 // Retrieval info: CONNECT: @data_a 0 0 8 0 data_a 0 0 8 0
